@@ -93,24 +93,16 @@ def write_fighter_data(fight_data_file=FIGHT_DATA_FILE, output_file=OUTPUT_FILE)
                     if not current_fight_is_valid_weight_class or not previous_weight_class_is_valid_weight_class: continue
 
                     fighter_opponent_weight_ratio = weight_classes[previous_weight_class]/weight_classes[current_bout_weight_class]
-                    if fighter == "Georges St-Pierre": print (f"Ratio: {fighter_opponent_weight_ratio}")
                     break
 
                 current_elo = fighter_data[fighter]["elo"]
                 opponent_name = fighter_data[fighter]["record"][row[DATE_INDEX]]["opponent"]
                 opponent_elo = fighter_data[opponent_name]["elo"]
-                if fighter == "Georges St-Pierre":
-                    print (f"Fighter: {fighter} ({current_elo})")
 
                 current_fight_odds = expected_odds(current_elo, int(opponent_elo), target_opponent_weight_ratio=fighter_opponent_weight_ratio)
-                if fighter == "Georges St-Pierre":
-                    print (f"Odds: {current_fight_odds}")
                 k_factor = STANDARD_K_FACTOR
                 if fighter_is_novel: k_factor = NOVEL_K_FACTOR
                 fighter_data[fighter]["elo"] += elo_change(current_fight_odds, result, k_factor)
-                if fighter == "Georges St-Pierre":
-                    print(f"Opponent: {opponent_name} ({opponent_elo})")
-                    print(fighter_data[fighter]["elo"])
 
     with (open(OUTPUT_FILE, "w", newline='')) as f:
         writer = csv.writer(f)
