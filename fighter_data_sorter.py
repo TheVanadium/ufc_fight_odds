@@ -4,7 +4,7 @@ import csv
 import json
 from odds_calculation_methods import expected_odds, elo_change
 
-FIGHT_DATA_FILE = "chronological_total_fight_data.csv"
+FIGHT_DATA_FILE = "fight-data/chronological_total_fight_data.csv"
 OUTPUT_FILE = "fighter_data.json"
 
 def write_fighter_data(fight_data_file=FIGHT_DATA_FILE, output_file=OUTPUT_FILE):
