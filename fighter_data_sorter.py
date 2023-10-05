@@ -6,6 +6,7 @@ FIGHT_DATA_FILE = "chronological_total_fight_data.csv"
 OUTPUT_FILE = "fighter_data.csv"
 
 def write_fighter_data(fight_data_file=FIGHT_DATA_FILE, output_file=OUTPUT_FILE):
+    highest_elo: int = 0
     fighter_data = {}
     with (open(FIGHT_DATA_FILE, "r")) as f:
         reader = csv.reader(f, delimiter=';')
@@ -99,11 +100,15 @@ def write_fighter_data(fight_data_file=FIGHT_DATA_FILE, output_file=OUTPUT_FILE)
                 opponent_name = fighter_data[fighter]["record"][row[DATE_INDEX]]["opponent"]
                 opponent_elo = fighter_data[opponent_name]["elo"]
 
-                current_fight_odds = expected_odds(current_elo, int(opponent_elo), target_opponent_weight_ratio=fighter_opponent_weight_ratio)
+                current_fight_odds = expected_odds(current_elo, int(opponent_elo), target_opponent_weight_ratio=fighter_opponent_weight_ratio)                
                 k_factor = STANDARD_K_FACTOR
                 if fighter_is_novel: k_factor = NOVEL_K_FACTOR
                 fighter_data[fighter]["elo"] += elo_change(current_fight_odds, result, k_factor)
+                if fighter_data[fighter]["elo"] > highest_elo: 
+                    highest_elo = fighter_data[fighter]["elo"]
+                    print(f"Fighter: {fighter}, Opponent: {opponent_name}, Elo: {fighter_data[fighter]['elo']}")
 
+    return
     with (open(OUTPUT_FILE, "w", newline='')) as f:
         writer = csv.writer(f)
         writer.writerow(["fighter", "elo", "record"])
