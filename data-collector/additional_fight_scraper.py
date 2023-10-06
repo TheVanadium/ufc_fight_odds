@@ -60,8 +60,8 @@ def scrape_ufc_events(early_to_recent=True):
 
             replace_characters = {
                 "\n": "",
-                "(c)": "",
-                "(ic)": ""
+                " (c)": "",
+                " (ic)": ""
             }
             for character in replace_characters:
                 winner = winner.replace(character, "")
@@ -80,7 +80,7 @@ def scrape_ufc_events(early_to_recent=True):
                 "championship_fight": championship_fight
             }
         if row_number == INDEX_OF_EARLIEST_NON_DOCUMENTED_FIGHT: break
-    with open("remaining_ufc_fights.json", "w") as f:
+    with open("test_remaining_ufc_fights.json", "w") as f:
         json.dump(ufc_event_fights, f)            
 
 if __name__ == "__main__":
