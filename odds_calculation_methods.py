@@ -1,5 +1,5 @@
 # expected odds
-def expected_odds(target_fighter_elo, opponent_elo, target_fighter_last_game_was_loss=False, opponent_last_game_was_loss=False, target_opponent_weight_ratio=0):
+def expected_odds(target_fighter_elo, opponent_elo, target_fighter_last_game_was_loss=False, opponent_last_game_was_loss=False, target_opponent_weight_ratio=1):
     elo_difference = target_fighter_elo - opponent_elo
     # test this variable later
     # LAST_GAME_WAS_LOST = 50
