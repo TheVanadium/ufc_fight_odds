@@ -90,8 +90,8 @@
     }
   },
   "Sep 16, 2023": {
-    "Fight: Alexa Grasso  vs Valentina Shevchenko": {
-      "winner": "Alexa Grasso ",
+    "Fight: Alexa Grasso vs Valentina Shevchenko": {
+      "winner": "Alexa Grasso",
       "loser": "Valentina Shevchenko",
       "weight_class": "Women's Flyweight",
       "draw": true,
@@ -180,9 +180,9 @@
     }
   },
   "Sep 10, 2023": {
-    "Fight: Sean Strickland vs Israel Adesanya ": {
+    "Fight: Sean Strickland vs Israel Adesanya": {
       "winner": "Sean Strickland",
-      "loser": "Israel Adesanya ",
+      "loser": "Israel Adesanya",
       "weight_class": "Middleweight",
       "draw": false,
       "no_contest": false,
@@ -474,16 +474,16 @@
     }
   },
   "Aug 19, 2023": {
-    "Fight: Sean O'Malley vs Aljamain Sterling ": {
+    "Fight: Sean O'Malley vs Aljamain Sterling": {
       "winner": "Sean O'Malley",
-      "loser": "Aljamain Sterling ",
+      "loser": "Aljamain Sterling",
       "weight_class": "Bantamweight",
       "draw": false,
       "no_contest": false,
       "championship_fight": true
     },
-    "Fight: Zhang Weili  vs Amanda Lemos": {
-      "winner": "Zhang Weili ",
+    "Fight: Zhang Weili vs Amanda Lemos": {
+      "winner": "Zhang Weili",
       "loser": "Amanda Lemos",
       "weight_class": "Women's Strawweight",
       "draw": false,
@@ -1094,17 +1094,17 @@
     }
   },
   "Jul 8, 2023": {
-    "Fight: Alexander Volkanovski  vs Yair Rodr\u00edguez ": {
-      "winner": "Alexander Volkanovski ",
-      "loser": "Yair Rodr\u00edguez ",
+    "Fight: Alexander Volkanovski vs Yair Rodr\u00edguez": {
+      "winner": "Alexander Volkanovski",
+      "loser": "Yair Rodr\u00edguez",
       "weight_class": "Featherweight",
       "draw": false,
       "no_contest": false,
       "championship_fight": true
     },
-    "Fight: Alexandre Pantoja vs Brandon Moreno ": {
+    "Fight: Alexandre Pantoja vs Brandon Moreno": {
       "winner": "Alexandre Pantoja",
-      "loser": "Brandon Moreno ",
+      "loser": "Brandon Moreno",
       "weight_class": "Flyweight",
       "draw": false,
       "no_contest": false,
@@ -1502,8 +1502,8 @@
     }
   },
   "Jun 10, 2023": {
-    "Fight: Amanda Nunes  vs Irene Aldana": {
-      "winner": "Amanda Nunes ",
+    "Fight: Amanda Nunes vs Irene Aldana": {
+      "winner": "Amanda Nunes",
       "loser": "Irene Aldana",
       "weight_class": "Women's Bantamweight",
       "draw": false,
@@ -1886,8 +1886,8 @@
     }
   },
   "May 6, 2023": {
-    "Fight: Aljamain Sterling  vs Henry Cejudo": {
-      "winner": "Aljamain Sterling ",
+    "Fight: Aljamain Sterling vs Henry Cejudo": {
+      "winner": "Aljamain Sterling",
       "loser": "Henry Cejudo",
       "weight_class": "Bantamweight",
       "draw": false,
@@ -2278,9 +2278,9 @@
     }
   },
   "Apr 8, 2023": {
-    "Fight: Israel Adesanya vs Alex Pereira ": {
+    "Fight: Israel Adesanya vs Alex Pereira": {
       "winner": "Israel Adesanya",
-      "loser": "Alex Pereira ",
+      "loser": "Alex Pereira",
       "weight_class": "Middleweight",
       "draw": false,
       "no_contest": false,
@@ -2458,8 +2458,8 @@
     }
   },
   "Mar 18, 2023": {
-    "Fight: Leon Edwards  vs Kamaru Usman": {
-      "winner": "Leon Edwards ",
+    "Fight: Leon Edwards vs Kamaru Usman": {
+      "winner": "Leon Edwards",
       "loser": "Kamaru Usman",
       "weight_class": "Welterweight",
       "draw": false,
@@ -2694,9 +2694,9 @@
       "no_contest": false,
       "championship_fight": false
     },
-    "Fight: Alexa Grasso vs Valentina Shevchenko ": {
+    "Fight: Alexa Grasso vs Valentina Shevchenko": {
       "winner": "Alexa Grasso",
-      "loser": "Valentina Shevchenko ",
+      "loser": "Valentina Shevchenko",
       "weight_class": "Women's Flyweight",
       "draw": false,
       "no_contest": false,
@@ -2972,8 +2972,8 @@
     }
   },
   "Feb 12, 2023": {
-    "Fight: Islam Makhachev  vs Alexander Volkanovski": {
-      "winner": "Islam Makhachev ",
+    "Fight: Islam Makhachev vs Alexander Volkanovski": {
+      "winner": "Islam Makhachev",
       "loser": "Alexander Volkanovski",
       "weight_class": "Lightweight",
       "draw": false,
@@ -3176,9 +3176,9 @@
       "no_contest": false,
       "championship_fight": false
     },
-    "Fight: Brandon Moreno  vs Deiveson Figueiredo ": {
-      "winner": "Brandon Moreno ",
-      "loser": "Deiveson Figueiredo ",
+    "Fight: Brandon Moreno vs Deiveson Figueiredo": {
+      "winner": "Brandon Moreno",
+      "loser": "Deiveson Figueiredo",
       "weight_class": "Flyweight",
       "draw": false,
       "no_contest": false,
@@ -3788,17 +3788,17 @@
     }
   },
   "Nov 12, 2022": {
-    "Fight: Alex Pereira vs Israel Adesanya ": {
+    "Fight: Alex Pereira vs Israel Adesanya": {
       "winner": "Alex Pereira",
-      "loser": "Israel Adesanya ",
+      "loser": "Israel Adesanya",
       "weight_class": "Middleweight",
       "draw": false,
       "no_contest": false,
       "championship_fight": true
     },
-    "Fight: Zhang Weili vs Carla Esparza ": {
+    "Fight: Zhang Weili vs Carla Esparza": {
       "winner": "Zhang Weili",
-      "loser": "Carla Esparza ",
+      "loser": "Carla Esparza",
       "weight_class": "Women's Strawweight",
       "draw": false,
       "no_contest": false,
@@ -4090,8 +4090,8 @@
       "no_contest": false,
       "championship_fight": false
     },
-    "Fight: Aljamain Sterling  vs T.J. Dillashaw": {
-      "winner": "Aljamain Sterling ",
+    "Fight: Aljamain Sterling vs T.J. Dillashaw": {
+      "winner": "Aljamain Sterling",
       "loser": "T.J. Dillashaw",
       "weight_class": "Bantamweight",
       "draw": false,
@@ -4670,9 +4670,9 @@
     }
   },
   "Aug 20, 2022": {
-    "Fight: Leon Edwards vs Kamaru Usman ": {
+    "Fight: Leon Edwards vs Kamaru Usman": {
       "winner": "Leon Edwards",
-      "loser": "Kamaru Usman ",
+      "loser": "Kamaru Usman",
       "weight_class": "Welterweight",
       "draw": false,
       "no_contest": false,
@@ -4956,9 +4956,9 @@
     }
   },
   "Jul 30, 2022": {
-    "Fight: Amanda Nunes vs Julianna Pe\u00f1a ": {
+    "Fight: Amanda Nunes vs Julianna Pe\u00f1a": {
       "winner": "Amanda Nunes",
-      "loser": "Julianna Pe\u00f1a ",
+      "loser": "Julianna Pe\u00f1a",
       "weight_class": "Women's Bantamweight",
       "draw": false,
       "no_contest": false,
@@ -5364,16 +5364,16 @@
     }
   },
   "Jul 2, 2022": {
-    "Fight: Israel Adesanya  vs Jared Cannonier": {
-      "winner": "Israel Adesanya ",
+    "Fight: Israel Adesanya vs Jared Cannonier": {
+      "winner": "Israel Adesanya",
       "loser": "Jared Cannonier",
       "weight_class": "Middleweight",
       "draw": false,
       "no_contest": false,
       "championship_fight": true
     },
-    "Fight: Alexander Volkanovski  vs Max Holloway": {
-      "winner": "Alexander Volkanovski ",
+    "Fight: Alexander Volkanovski vs Max Holloway": {
+      "winner": "Alexander Volkanovski",
       "loser": "Max Holloway",
       "weight_class": "Featherweight",
       "draw": false,
@@ -5666,16 +5666,16 @@
     }
   },
   "Jun 12, 2022": {
-    "Fight: Ji\u0159\u00ed Proch\u00e1zka vs Glover Teixeira ": {
+    "Fight: Ji\u0159\u00ed Proch\u00e1zka vs Glover Teixeira": {
       "winner": "Ji\u0159\u00ed Proch\u00e1zka",
-      "loser": "Glover Teixeira ",
+      "loser": "Glover Teixeira",
       "weight_class": "Light Heavyweight",
       "draw": false,
       "no_contest": false,
       "championship_fight": true
     },
-    "Fight: Valentina Shevchenko  vs Taila Santos": {
-      "winner": "Valentina Shevchenko ",
+    "Fight: Valentina Shevchenko vs Taila Santos": {
+      "winner": "Valentina Shevchenko",
       "loser": "Taila Santos",
       "weight_class": "Women's Flyweight",
       "draw": false,
@@ -6058,9 +6058,9 @@
       "no_contest": false,
       "championship_fight": false
     },
-    "Fight: Carla Esparza vs Rose Namajunas ": {
+    "Fight: Carla Esparza vs Rose Namajunas": {
       "winner": "Carla Esparza",
-      "loser": "Rose Namajunas ",
+      "loser": "Rose Namajunas",
       "weight_class": "Women's Strawweight",
       "draw": false,
       "no_contest": false,
@@ -6458,17 +6458,17 @@
     }
   },
   "Apr 9, 2022": {
-    "Fight: Alexander Volkanovski  vs Chan Sung Jung": {
-      "winner": "Alexander Volkanovski ",
+    "Fight: Alexander Volkanovski vs Chan Sung Jung": {
+      "winner": "Alexander Volkanovski",
       "loser": "Chan Sung Jung",
       "weight_class": "Featherweight",
       "draw": false,
       "no_contest": false,
       "championship_fight": true
     },
-    "Fight: Aljamain Sterling  vs Petr Yan ": {
-      "winner": "Aljamain Sterling ",
-      "loser": "Petr Yan ",
+    "Fight: Aljamain Sterling vs Petr Yan": {
+      "winner": "Aljamain Sterling",
+      "loser": "Petr Yan",
       "weight_class": "Bantamweight",
       "draw": false,
       "no_contest": false,
@@ -7160,8 +7160,8 @@
     }
   },
   "Feb 12, 2022": {
-    "Fight: Israel Adesanya  vs Robert Whittaker": {
-      "winner": "Israel Adesanya ",
+    "Fight: Israel Adesanya vs Robert Whittaker": {
+      "winner": "Israel Adesanya",
       "loser": "Robert Whittaker",
       "weight_class": "Middleweight",
       "draw": false,
@@ -7380,17 +7380,17 @@
     }
   },
   "Jan 22, 2022": {
-    "Fight: Francis Ngannou  vs Ciryl Gane ": {
-      "winner": "Francis Ngannou ",
-      "loser": "Ciryl Gane ",
+    "Fight: Francis Ngannou vs Ciryl Gane": {
+      "winner": "Francis Ngannou",
+      "loser": "Ciryl Gane",
       "weight_class": "Heavyweight",
       "draw": false,
       "no_contest": false,
       "championship_fight": true
     },
-    "Fight: Deiveson Figueiredo vs Brandon Moreno ": {
+    "Fight: Deiveson Figueiredo vs Brandon Moreno": {
       "winner": "Deiveson Figueiredo",
-      "loser": "Brandon Moreno ",
+      "loser": "Brandon Moreno",
       "weight_class": "Flyweight",
       "draw": false,
       "no_contest": false,
@@ -7658,17 +7658,17 @@
     }
   },
   "Dec 11, 2021": {
-    "Fight: Charles Oliveira  vs Dustin Poirier": {
-      "winner": "Charles Oliveira ",
+    "Fight: Charles Oliveira vs Dustin Poirier": {
+      "winner": "Charles Oliveira",
       "loser": "Dustin Poirier",
       "weight_class": "Lightweight",
       "draw": false,
       "no_contest": false,
       "championship_fight": true
     },
-    "Fight: Julianna Pe\u00f1a vs Amanda Nunes ": {
+    "Fight: Julianna Pe\u00f1a vs Amanda Nunes": {
       "winner": "Julianna Pe\u00f1a",
-      "loser": "Amanda Nunes ",
+      "loser": "Amanda Nunes",
       "weight_class": "Women's Bantamweight",
       "draw": false,
       "no_contest": false,
@@ -8058,16 +8058,16 @@
     }
   },
   "Nov 6, 2021": {
-    "Fight: Kamaru Usman  vs Colby Covington": {
-      "winner": "Kamaru Usman ",
+    "Fight: Kamaru Usman vs Colby Covington": {
+      "winner": "Kamaru Usman",
       "loser": "Colby Covington",
       "weight_class": "Welterweight",
       "draw": false,
       "no_contest": false,
       "championship_fight": true
     },
-    "Fight: Rose Namajunas  vs Zhang Weili": {
-      "winner": "Rose Namajunas ",
+    "Fight: Rose Namajunas vs Zhang Weili": {
+      "winner": "Rose Namajunas",
       "loser": "Zhang Weili",
       "weight_class": "Women's Strawweight",
       "draw": false,
@@ -8172,9 +8172,9 @@
     }
   },
   "Oct 30, 2021": {
-    "Fight: Glover Teixeira vs Jan B\u0142achowicz ": {
+    "Fight: Glover Teixeira vs Jan B\u0142achowicz": {
       "winner": "Glover Teixeira",
-      "loser": "Jan B\u0142achowicz ",
+      "loser": "Jan B\u0142achowicz",
       "weight_class": "Light Heavyweight",
       "draw": false,
       "no_contest": false,
@@ -8654,16 +8654,16 @@
     }
   },
   "Sep 25, 2021": {
-    "Fight: Alexander Volkanovski  vs Brian Ortega": {
-      "winner": "Alexander Volkanovski ",
+    "Fight: Alexander Volkanovski vs Brian Ortega": {
+      "winner": "Alexander Volkanovski",
       "loser": "Brian Ortega",
       "weight_class": "Featherweight",
       "draw": false,
       "no_contest": false,
       "championship_fight": true
     },
-    "Fight: Valentina Shevchenko  vs Lauren Murphy": {
-      "winner": "Valentina Shevchenko ",
+    "Fight: Valentina Shevchenko vs Lauren Murphy": {
+      "winner": "Valentina Shevchenko",
       "loser": "Lauren Murphy",
       "weight_class": "Women\u2019s Flyweight",
       "draw": false,
@@ -9806,17 +9806,17 @@
     }
   },
   "Jun 12, 2021": {
-    "Fight: Israel Adesanya  vs Marvin Vettori": {
-      "winner": "Israel Adesanya ",
+    "Fight: Israel Adesanya vs Marvin Vettori": {
+      "winner": "Israel Adesanya",
       "loser": "Marvin Vettori",
       "weight_class": "Middleweight",
       "draw": false,
       "no_contest": false,
       "championship_fight": true
     },
-    "Fight: Brandon Moreno vs Deiveson Figueiredo ": {
+    "Fight: Brandon Moreno vs Deiveson Figueiredo": {
       "winner": "Brandon Moreno",
-      "loser": "Deiveson Figueiredo ",
+      "loser": "Deiveson Figueiredo",
       "weight_class": "Flyweight",
       "draw": false,
       "no_contest": false,
@@ -10386,24 +10386,24 @@
     }
   },
   "Apr 24, 2021": {
-    "Fight: Kamaru Usman  vs Jorge Masvidal": {
-      "winner": "Kamaru Usman ",
+    "Fight: Kamaru Usman vs Jorge Masvidal": {
+      "winner": "Kamaru Usman",
       "loser": "Jorge Masvidal",
       "weight_class": "Welterweight",
       "draw": false,
       "no_contest": false,
       "championship_fight": true
     },
-    "Fight: Rose Namajunas vs Zhang Weili ": {
+    "Fight: Rose Namajunas vs Zhang Weili": {
       "winner": "Rose Namajunas",
-      "loser": "Zhang Weili ",
+      "loser": "Zhang Weili",
       "weight_class": "Women\u2019s Strawweight",
       "draw": false,
       "no_contest": false,
       "championship_fight": true
     },
-    "Fight: Valentina Shevchenko  vs J\u00e9ssica Andrade": {
-      "winner": "Valentina Shevchenko ",
+    "Fight: Valentina Shevchenko vs J\u00e9ssica Andrade": {
+      "winner": "Valentina Shevchenko",
       "loser": "J\u00e9ssica Andrade",
       "weight_class": "Women\u2019s Flyweight",
       "draw": false,
@@ -10680,9 +10680,9 @@
     }
   },
   "Mar 27, 2021": {
-    "Fight: Francis Ngannou vs Stipe Miocic ": {
+    "Fight: Francis Ngannou vs Stipe Miocic": {
       "winner": "Francis Ngannou",
-      "loser": "Stipe Miocic ",
+      "loser": "Stipe Miocic",
       "weight_class": "Heavyweight",
       "draw": false,
       "no_contest": false,
