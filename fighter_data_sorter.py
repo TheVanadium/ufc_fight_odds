@@ -7,7 +7,7 @@ OUTPUT_FILE = "fighter_data.csv"
 
 def write_fighter_data(fight_data_file=FIGHT_DATA_FILE, output_file=OUTPUT_FILE):
     fighter_data = {}
-    with (open(FIGHT_DATA_FILE, "r")) as f:
+    with (open(fight_data_file, "r")) as f:
         reader = csv.reader(f, delimiter=';')
         header = next(reader)
 
@@ -73,7 +73,7 @@ def write_fighter_data(fight_data_file=FIGHT_DATA_FILE, output_file=OUTPUT_FILE)
                     "Lightweight": 155,
                     "Welterweight": 170,
                     "Middleweight": 185,
-                    "Light_Heavyweight": 205,
+                    "LightHeavyweight": 205,
                     "Heavyweight": 265
                 }
                 fighter_opponent_weight_ratio = 1
@@ -104,7 +104,7 @@ def write_fighter_data(fight_data_file=FIGHT_DATA_FILE, output_file=OUTPUT_FILE)
                 if fighter_is_novel: k_factor = NOVEL_K_FACTOR
                 fighter_data[fighter]["elo"] += elo_change(current_fight_odds, result, k_factor)
 
-    with (open(OUTPUT_FILE, "w", newline='')) as f:
+    with (open(output_file, "w", newline='')) as f:
         writer = csv.writer(f)
         writer.writerow(["fighter", "elo", "record"])
         for fighter in fighter_data:
