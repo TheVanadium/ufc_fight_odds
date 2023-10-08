@@ -73,7 +73,7 @@ def write_fighter_data(fight_data_file=FIGHT_DATA_FILE, output_file=OUTPUT_FILE)
                     "Lightweight": 155,
                     "Welterweight": 170,
                     "Middleweight": 185,
-                    "Light_Heavyweight": 205,
+                    "LightHeavyweight": 205,
                     "Heavyweight": 265
                 }
                 fighter_opponent_weight_ratio = 1
