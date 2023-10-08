@@ -1,0 +1,13 @@
+fighter_data_sorter.py sorts all the data from UFC 2 to Brunson vs. Holland
+
+fight data is https://www.kaggle.com/datasets/rajeevw/ufcdata
+
+it adds fights and calculates elos and all that stuff
+
+(test_)fighter_data.csv:
+csv: fighter, elo, record
+record is a dict, so it was probably a better idea to use json
+i'll refactor it at some point
+
+the fighter names don't have accents because of the dataset i used
+i'll have to come up with a more robust system to fix the accent problem, as accents are hard to read
