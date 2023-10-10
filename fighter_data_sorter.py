@@ -1,9 +1,10 @@
 # elo system for the fighter data
 
 import csv
+import json
 
 FIGHT_DATA_FILE = "chronological_total_fight_data.csv"
-OUTPUT_FILE = "fighter_data.csv"
+OUTPUT_FILE = "fighter_data.json"
 
 def write_fighter_data(fight_data_file=FIGHT_DATA_FILE, output_file=OUTPUT_FILE):
     fighter_data = {}
@@ -105,10 +106,9 @@ def write_fighter_data(fight_data_file=FIGHT_DATA_FILE, output_file=OUTPUT_FILE)
                 fighter_data[fighter]["elo"] += elo_change(current_fight_odds, result, k_factor)
 
     with (open(output_file, "w", newline='')) as f:
-        writer = csv.writer(f)
-        writer.writerow(["fighter", "elo", "record"])
-        for fighter in fighter_data:
-            writer.writerow([fighter, fighter_data[fighter]["elo"], fighter_data[fighter]["record"]])
+        # dump fighter_data json
+        json.dump(fighter_data, f, indent=4)
+        
 
 
 # expected odds
@@ -132,4 +132,4 @@ def elo_change(expected_odds, result, k_factor=32):
     return k_factor * (result - expected_odds)
 
 if __name__ == "__main__":
-    write_fighter_data()
+    write_fighter_data(output_file="fighter_data.json")
