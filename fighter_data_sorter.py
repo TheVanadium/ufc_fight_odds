@@ -14,19 +14,6 @@ def write_fighter_data(fight_data_file=FIGHT_DATA_FILE, output_file=OUTPUT_FILE)
     with (open(fight_data_file, "r")) as f:
         reader = csv.reader(f, delimiter=';')
         header = next(reader)
-
-        # fighter_name {
-        # elo: 1500 (default)
-        #   record: {
-        #       date: 
-        #           opponent:
-        #           result:
-        #       date: 
-        #           opponent:
-        #           result:
-        #  }    etc.
-        #   }
-        # }
         
         DATE_INDEX = -4
         WINNER_INDEX = -1
@@ -37,7 +24,6 @@ def write_fighter_data(fight_data_file=FIGHT_DATA_FILE, output_file=OUTPUT_FILE)
         MAXIMUM_NUMBER_OF_FIGHTS_FOR_NOVEL_K_FACTOR = 2
 
         for row in reader:
-            # print fighter names, date, and winner
             for fighter in (row[0], row[1]):
                 if fighter not in fighter_data:
                     fighter_data[fighter] = {
@@ -113,7 +99,6 @@ def write_fighter_data(fight_data_file=FIGHT_DATA_FILE, output_file=OUTPUT_FILE)
                     print(f"Fighter: {fighter}, Opponent: {opponent_name}, Elo: {fighter_data[fighter]['elo']}")
 
     with (open(output_file, "w", newline='')) as f:
-        # dump fighter_data json
         json.dump(fighter_data, f, indent=4)
         
 
