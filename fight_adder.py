@@ -39,35 +39,31 @@ def add_fight(fighter_one: str, fighter_two: str, winner: str, date: str, weight
         weight_class_ratio = WEIGHT_CLASSES[fighter_weight_classes[index]] / WEIGHT_CLASSES[weight_class]
         fighter_odds[index] = expected_odds(fighter_elos[index], fighter_elos[abs(index-1)], weight_class_ratio)
 
-        if not draw: fighter_results[index] = int(fighter_name == winner)
+        if not draw and not no_contest: fighter_results[index] = int(fighter_name == winner)
 
     new_fighter_elos = [0, 0]
     for i in range(2):
         if fighter_odds[i] == 0: KeyError(f"Fighter {fighter_one} or {fighter_two} not found in {fighter_data_file}")
-        new_fighter_elos[i] = elo_change(fighter_odds[i], int())
+        new_fighter_elos[i] = fighter_elos[i]+elo_change(fighter_odds[i], fighter_results[i])
         if no_contest: new_fighter_elos[i] = fighter_elos[i]
-
 
     # update elos, add fight to fighter records
     for fighter_name in fighter_data:
         if fighter_name != fighter_one and (fighter_name != fighter_two): continue
+        print (f"Updating {fighter_name}'s elo from {fighter_data[fighter_name]['elo']} to {new_fighter_elos[FIGHTER_ONE_INDEX if fighter_name == fighter_one else FIGHTER_TWO_INDEX]}")
         index = FIGHTER_ONE_INDEX
         if fighter_name == fighter_two: index = FIGHTER_TWO_INDEX
         # add fight to fighter's record
-        fighter_data[fighter_name]["elo"] = fighter_elos[index]
+        fighter_data[fighter_name]["elo"] = new_fighter_elos[index]
         fighter_data[fighter_name]["record"][date] = {
-            "opponent": fighter_one,
-            "winner": winner,
+            "opponent": fighter_one if fighter_name == fighter_two else fighter_two,
+            "result": fighter_results[index],
             "weight_class": weight_class,
-            "draw": draw,
-            "no_contest": no_contest,
-            "championship_fight": championship_fight,
-            "odds": fighter_odds[index]
         }
     
     with open(fighter_data_file, "w") as f:
         json.dump(fighter_data, f, indent=4)
-        print (f"Fight between {fighter_one} and {fighter_two} added to {fighter_data_file}")
+        print (f"Fight between {fighter_one} and {fighter_two} on date {date} added to {fighter_data_file}")
     return
 
 # get last 2 fights chronologically (they're sorted first->last), then pick the lighter of the 2 weight classes, then return that
