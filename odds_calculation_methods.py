@@ -15,5 +15,5 @@ def expected_odds(target_fighter_elo, opponent_elo, target_fighter_last_game_was
     return 1 / (1 + 10 ** (-(adjusted_elo_difference) / 400))
 
 # elo change
-def elo_change(expected_odds, result, k_factor=32):
+def elo_change(expected_odds: float, result: float, k_factor: int=32):
     return k_factor * (result - expected_odds)
