@@ -3,24 +3,19 @@ import json
 from odds_calculation_methods import expected_odds
 
 FIGHT_DATA_FILE = "fight-data/remaining_ufc_fights.json"
-FIGHTER_DATA_FILE = "fighter_data.csv"
-OUTPUT_FILE = "fight-data/predictions.csv"
-
-HEADER = "date,fighter1,fighter2,expected_odds_for_fighter1,result"
+FIGHTER_DATA_FILE = "fighter_data.json"
+OUTPUT_FILE = "fight-data/predictions.json"
 
 def write_fight_predictions(fight_data_file=FIGHT_DATA_FILE, output_file=OUTPUT_FILE, fighter_data_file=FIGHTER_DATA_FILE):
     # open fight-data/remaining_ufc_fights.json
     with open(fight_data_file, "r") as f:
         remaining_fights = json.load(f)
     with open(fighter_data_file, "r") as f:
-        fighter_data = csv.DictReader(f)
-        fighter_data = [fighter for fighter in fighter_data]
+        fighter_data = json.load(f)
 
     fighter_elos = {}
-    for fighter in fighter_data:
-        fighter["fighter"] = fighter["fighter"].replace("\\", "")
-        # get just the name and elo, cutting off the elo after the . in the string
-        fighter_elos[fighter["fighter"]] = fighter["elo"][:fighter["elo"].index(".")]
+    for fighter_name, individual_fighter_info in fighter_data.items():
+        fighter_elos[fighter_name] = individual_fighter_info["elo"]
 
 
     DEFAULT_ELO = 1500
