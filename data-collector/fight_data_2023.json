@@ -1,0 +1,3660 @@
+{
+  "Oct 21, 2023": {
+    "Fight: Islam Makhachev vs Alexander Volkanovski": {
+      "winner": "Islam Makhachev",
+      "loser": "Alexander Volkanovski",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": true
+    },
+    "Fight: Khamzat Chimaev vs Kamaru Usman": {
+      "winner": "Khamzat Chimaev",
+      "loser": "Kamaru Usman",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Magomed Ankalaev vs Johnny Walker": {
+      "winner": "Magomed Ankalaev",
+      "loser": "Johnny Walker",
+      "weight_class": "Light Heavyweight",
+      "draw": false,
+      "no_contest": true,
+      "championship_fight": false
+    },
+    "Fight: Ikram Aliskerov vs Warlley Alves": {
+      "winner": "Ikram Aliskerov",
+      "loser": "Warlley Alves",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Said Nurmagomedov vs Muin Gafurov": {
+      "winner": "Said Nurmagomedov",
+      "loser": "Muin Gafurov",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Muhammad Mokaev vs Tim Elliott": {
+      "winner": "Muhammad Mokaev",
+      "loser": "Tim Elliott",
+      "weight_class": "Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Trevor Peek vs Mohammad Yahya": {
+      "winner": "Trevor Peek",
+      "loser": "Mohammad Yahya",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Javid Basharat vs Victor Henry": {
+      "winner": "Javid Basharat",
+      "loser": "Victor Henry",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": true,
+      "championship_fight": false
+    },
+    "Fight: Sedriques Dumas vs Abu Azaitar": {
+      "winner": "Sedriques Dumas",
+      "loser": "Abu Azaitar",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Mike Breeden vs Anshul Jubli": {
+      "winner": "Mike Breeden",
+      "loser": "Anshul Jubli",
+      "weight_class": "Catchweight (159.5 lb)",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Muhammad Naimov vs Nathaniel Wood": {
+      "winner": "Muhammad Naimov",
+      "loser": "Nathaniel Wood",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Victoria Dudakova vs Jinh Yu Frey": {
+      "winner": "Victoria Dudakova",
+      "loser": "Jinh Yu Frey",
+      "weight_class": "Catchweight (116.6 lb)",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Shara Magomedov vs Bruno Silva": {
+      "winner": "Shara Magomedov",
+      "loser": "Bruno Silva",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "Oct 14, 2023": {
+    "Fight: Edson Barboza vs Sodiq Yusuff": {
+      "winner": "Edson Barboza",
+      "loser": "Sodiq Yusuff",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Viviane Ara\u00fajo vs Jennifer Maia": {
+      "winner": "Viviane Ara\u00fajo",
+      "loser": "Jennifer Maia",
+      "weight_class": "Women's Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Jonathan Martinez vs Adrian Yanez": {
+      "winner": "Jonathan Martinez",
+      "loser": "Adrian Yanez",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Michel Pereira vs Andre Petroski": {
+      "winner": "Michel Pereira",
+      "loser": "Andre Petroski",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Christian Rodriguez vs Cameron Saaiman": {
+      "winner": "Christian Rodriguez",
+      "loser": "Cameron Saaiman",
+      "weight_class": "Catchweight (140 lb)",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Darren Elkins vs T.J. Brown": {
+      "winner": "Darren Elkins",
+      "loser": "T.J. Brown",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Tainara Lisboa vs Ravena Oliveira": {
+      "winner": "Tainara Lisboa",
+      "loser": "Ravena Oliveira",
+      "weight_class": "Women's Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Terrance McKinney vs Brendan Marotte": {
+      "winner": "Terrance McKinney",
+      "loser": "Brendan Marotte",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Melissa Dixon vs Irina Alekseeva": {
+      "winner": "Melissa Dixon",
+      "loser": "Irina Alekseeva",
+      "weight_class": "Women's Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Chris Guti\u00e9rrez vs Alateng Heili": {
+      "winner": "Chris Guti\u00e9rrez",
+      "loser": "Alateng Heili",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Emily Ducote vs Ashley Yoder": {
+      "winner": "Emily Ducote",
+      "loser": "Ashley Yoder",
+      "weight_class": "Women's Strawweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "Oct 7, 2023": {
+    "Fight: Bobby Green vs Grant Dawson": {
+      "winner": "Bobby Green",
+      "loser": "Grant Dawson",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Joe Pyfer vs Abdul Razak Alhassan": {
+      "winner": "Joe Pyfer",
+      "loser": "Abdul Razak Alhassan",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Joaquin Buckley vs Alex Morono": {
+      "winner": "Joaquin Buckley",
+      "loser": "Alex Morono",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Drew Dober vs Ricky Glenn": {
+      "winner": "Drew Dober",
+      "loser": "Ricky Glenn",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Bill Algeo vs Alexander Hernandez": {
+      "winner": "Bill Algeo",
+      "loser": "Alexander Hernandez",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Karolina Kowalkiewicz vs Diana Belbi\u0163\u0103": {
+      "winner": "Karolina Kowalkiewicz",
+      "loser": "Diana Belbi\u0163\u0103",
+      "weight_class": "Women's Strawweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Nate Maness vs Mateus Mendon\u00e7a": {
+      "winner": "Nate Maness",
+      "loser": "Mateus Mendon\u00e7a",
+      "weight_class": "Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Vanessa Demopoulos vs Kanako Murata": {
+      "winner": "Vanessa Demopoulos",
+      "loser": "Kanako Murata",
+      "weight_class": "Women's Strawweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Aori Qileng vs Johnny Mu\u00f1oz Jr.": {
+      "winner": "Aori Qileng",
+      "loser": "Johnny Mu\u00f1oz Jr.",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: JJ Aldrich vs Montana De La Rosa": {
+      "winner": "JJ Aldrich",
+      "loser": "Montana De La Rosa",
+      "weight_class": "Women's Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "Sep 23, 2023": {
+    "Fight: Mateusz Gamrot vs Rafael Fiziev": {
+      "winner": "Mateusz Gamrot",
+      "loser": "Rafael Fiziev",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Bryce Mitchell vs Dan Ige": {
+      "winner": "Bryce Mitchell",
+      "loser": "Dan Ige",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Marina Rodriguez vs Michelle Waterson-Gomez": {
+      "winner": "Marina Rodriguez",
+      "loser": "Michelle Waterson-Gomez",
+      "weight_class": "Women's Strawweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Bryan Battle vs AJ Fletcher": {
+      "winner": "Bryan Battle",
+      "loser": "AJ Fletcher",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Charles Jourdain vs Ricardo Ramos": {
+      "winner": "Charles Jourdain",
+      "loser": "Ricardo Ramos",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Miles Johns vs Dan Argueta": {
+      "winner": "Miles Johns",
+      "loser": "Dan Argueta",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Tim Means vs Andr\u00e9 Fialho": {
+      "winner": "Tim Means",
+      "loser": "Andr\u00e9 Fialho",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Cody Brundage vs Jacob Malkoun": {
+      "winner": "Cody Brundage",
+      "loser": "Jacob Malkoun",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Mohammed Usman vs Jake Collier": {
+      "winner": "Mohammed Usman",
+      "loser": "Jake Collier",
+      "weight_class": "Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Mizuki Inoue vs Hannah Goldy": {
+      "winner": "Mizuki Inoue",
+      "loser": "Hannah Goldy",
+      "weight_class": "Women's Strawweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Montserrat Rendon vs Tamires Vidal": {
+      "winner": "Montserrat Rendon",
+      "loser": "Tamires Vidal",
+      "weight_class": "Women's Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "Sep 16, 2023": {
+    "Fight: Alexa Grasso vs Valentina Shevchenko": {
+      "winner": "Alexa Grasso",
+      "loser": "Valentina Shevchenko",
+      "weight_class": "Women's Flyweight",
+      "draw": true,
+      "no_contest": false,
+      "championship_fight": true
+    },
+    "Fight: Jack Della Maddalena vs Kevin Holland": {
+      "winner": "Jack Della Maddalena",
+      "loser": "Kevin Holland",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Ra\u00fal Rosas Jr. vs Terrence Mitchell": {
+      "winner": "Ra\u00fal Rosas Jr.",
+      "loser": "Terrence Mitchell",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Daniel Zellhuber vs Christos Giagos": {
+      "winner": "Daniel Zellhuber",
+      "loser": "Christos Giagos",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Kyle Nelson vs Fernando Padilla": {
+      "winner": "Kyle Nelson",
+      "loser": "Fernando Padilla",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Lupita Godinez vs Elise Reed": {
+      "winner": "Lupita Godinez",
+      "loser": "Elise Reed",
+      "weight_class": "Women's Strawweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Roman Kopylov vs Josh Fremd": {
+      "winner": "Roman Kopylov",
+      "loser": "Josh Fremd",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: \u00c9dgar Ch\u00e1irez vs Daniel Lacerda": {
+      "winner": "\u00c9dgar Ch\u00e1irez",
+      "loser": "Daniel Lacerda",
+      "weight_class": "Flyweight",
+      "draw": false,
+      "no_contest": true,
+      "championship_fight": false
+    },
+    "Fight: Tracy Cortez vs Jasmine Jasudavicius": {
+      "winner": "Tracy Cortez",
+      "loser": "Jasmine Jasudavicius",
+      "weight_class": "Women's Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Charlie Campbell vs Alex Reyes": {
+      "winner": "Charlie Campbell",
+      "loser": "Alex Reyes",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Josefine Lindgren Knutsson vs Marnic Mann": {
+      "winner": "Josefine Lindgren Knutsson",
+      "loser": "Marnic Mann",
+      "weight_class": "Women's Strawweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "Sep 10, 2023": {
+    "Fight: Sean Strickland vs Israel Adesanya": {
+      "winner": "Sean Strickland",
+      "loser": "Israel Adesanya",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": true
+    },
+    "Fight: Alexander Volkov vs Tai Tuivasa": {
+      "winner": "Alexander Volkov",
+      "loser": "Tai Tuivasa",
+      "weight_class": "Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Manel Kape vs Felipe dos Santos": {
+      "winner": "Manel Kape",
+      "loser": "Felipe dos Santos",
+      "weight_class": "Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Justin Tafa vs Austen Lane": {
+      "winner": "Justin Tafa",
+      "loser": "Austen Lane",
+      "weight_class": "Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Tyson Pedro vs Anton Turkalj": {
+      "winner": "Tyson Pedro",
+      "loser": "Anton Turkalj",
+      "weight_class": "Light Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Carlos Ulberg vs Jung Da-un": {
+      "winner": "Carlos Ulberg",
+      "loser": "Jung Da-un",
+      "weight_class": "Light Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Chepe Mariscal vs Jack Jenkins": {
+      "winner": "Chepe Mariscal",
+      "loser": "Jack Jenkins",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Jamie Mullarkey vs John Makdessi": {
+      "winner": "Jamie Mullarkey",
+      "loser": "John Makdessi",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Nasrat Haqparast vs Landon Qui\u00f1ones": {
+      "winner": "Nasrat Haqparast",
+      "loser": "Landon Qui\u00f1ones",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Charlie Radtke vs Mike Mathetha": {
+      "winner": "Charlie Radtke",
+      "loser": "Mike Mathetha",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Gabriel Miranda vs Shane Young": {
+      "winner": "Gabriel Miranda",
+      "loser": "Shane Young",
+      "weight_class": "Catchweight (149.75 lb)",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Kevin Jousset vs Kiefer Crosbie": {
+      "winner": "Kevin Jousset",
+      "loser": "Kiefer Crosbie",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "Sep 2, 2023": {
+    "Fight: Ciryl Gane vs Sergey Spivak": {
+      "winner": "Ciryl Gane",
+      "loser": "Sergey Spivak",
+      "weight_class": "Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Manon Fiorot vs Rose Namajunas": {
+      "winner": "Manon Fiorot",
+      "loser": "Rose Namajunas",
+      "weight_class": "Women\u2019s Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Beno\u00eet Saint-Denis vs Thiago Mois\u00e9s": {
+      "winner": "Beno\u00eet Saint-Denis",
+      "loser": "Thiago Mois\u00e9s",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Volkan Oezdemir vs Bogdan Guskov": {
+      "winner": "Volkan Oezdemir",
+      "loser": "Bogdan Guskov",
+      "weight_class": "Light Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: William Gomis vs Yanis Ghemmouri": {
+      "winner": "William Gomis",
+      "loser": "Yanis Ghemmouri",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Morgan Charri\u00e8re vs Manolo Zecchini": {
+      "winner": "Morgan Charri\u00e8re",
+      "loser": "Manolo Zecchini",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Taylor Lapilus vs Caol\u00e1n Loughran": {
+      "winner": "Taylor Lapilus",
+      "loser": "Caol\u00e1n Loughran",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Ange Loosa vs Rhys McKee": {
+      "winner": "Ange Loosa",
+      "loser": "Rhys McKee",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Nora Cornolle vs Joselyne Edwards": {
+      "winner": "Nora Cornolle",
+      "loser": "Joselyne Edwards",
+      "weight_class": "Women\u2019s Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Farid Basharat vs Kleydson Rodrigues": {
+      "winner": "Farid Basharat",
+      "loser": "Kleydson Rodrigues",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Jacqueline Cavalcanti vs Zarah Fairn": {
+      "winner": "Jacqueline Cavalcanti",
+      "loser": "Zarah Fairn",
+      "weight_class": "Catchweight (140 lb)",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "Aug 26, 2023": {
+    "Fight: Max Holloway vs Jung Chan-sung": {
+      "winner": "Max Holloway",
+      "loser": "Jung Chan-sung",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Anthony Smith vs Ryan Spann": {
+      "winner": "Anthony Smith",
+      "loser": "Ryan Spann",
+      "weight_class": "Light Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Giga Chikadze vs Alex Caceres": {
+      "winner": "Giga Chikadze",
+      "loser": "Alex Caceres",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Rinya Nakamura vs Fernie Garcia": {
+      "winner": "Rinya Nakamura",
+      "loser": "Fernie Garcia",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Erin Blanchfield vs Taila Santos": {
+      "winner": "Erin Blanchfield",
+      "loser": "Taila Santos",
+      "weight_class": "Women's Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Junior Tafa vs Parker Porter": {
+      "winner": "Junior Tafa",
+      "loser": "Parker Porter",
+      "weight_class": "Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Waldo Cortes-Acosta vs \u0141ukasz Brzeski": {
+      "winner": "Waldo Cortes-Acosta",
+      "loser": "\u0141ukasz Brzeski",
+      "weight_class": "Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Garrett Armfield vs Toshiomi Kazama": {
+      "winner": "Garrett Armfield",
+      "loser": "Toshiomi Kazama",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Micha\u0142 Oleksiejczuk vs Chidi Njokuani": {
+      "winner": "Micha\u0142 Oleksiejczuk",
+      "loser": "Chidi Njokuani",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Song Kenan vs Rolando Bedoya": {
+      "winner": "Song Kenan",
+      "loser": "Rolando Bedoya",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Billy Goff vs Yusaku Kinoshita": {
+      "winner": "Billy Goff",
+      "loser": "Yusaku Kinoshita",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: JJ Aldrich vs Liang Na": {
+      "winner": "JJ Aldrich",
+      "loser": "Liang Na",
+      "weight_class": "Women's Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Choi Seung-woo vs Jarno Errens": {
+      "winner": "Choi Seung-woo",
+      "loser": "Jarno Errens",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "Aug 19, 2023": {
+    "Fight: Sean O'Malley vs Aljamain Sterling": {
+      "winner": "Sean O'Malley",
+      "loser": "Aljamain Sterling",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": true
+    },
+    "Fight: Zhang Weili vs Amanda Lemos": {
+      "winner": "Zhang Weili",
+      "loser": "Amanda Lemos",
+      "weight_class": "Women's Strawweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": true
+    },
+    "Fight: Ian Machado Garry vs Neil Magny": {
+      "winner": "Ian Machado Garry",
+      "loser": "Neil Magny",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Mario Bautista vs Da'Mon Blackshear": {
+      "winner": "Mario Bautista",
+      "loser": "Da'Mon Blackshear",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Marlon Vera vs Pedro Munhoz": {
+      "winner": "Marlon Vera",
+      "loser": "Pedro Munhoz",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Brad Tavares vs Chris Weidman": {
+      "winner": "Brad Tavares",
+      "loser": "Chris Weidman",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Gregory Rodrigues vs Denis Tiuliulin": {
+      "winner": "Gregory Rodrigues",
+      "loser": "Denis Tiuliulin",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Kurt Holobaugh vs Austin Hubbard": {
+      "winner": "Kurt Holobaugh",
+      "loser": "Austin Hubbard",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Brad Katona vs Cody Gibson": {
+      "winner": "Brad Katona",
+      "loser": "Cody Gibson",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Andre Petroski vs Gerald Meerschaert": {
+      "winner": "Andre Petroski",
+      "loser": "Gerald Meerschaert",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Nat\u00e1lia Silva vs Andrea Lee": {
+      "winner": "Nat\u00e1lia Silva",
+      "loser": "Andrea Lee",
+      "weight_class": "Women's Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Karine Silva vs Maryna Moroz": {
+      "winner": "Karine Silva",
+      "loser": "Maryna Moroz",
+      "weight_class": "Women's Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "Aug 12, 2023": {
+    "Fight: Vicente Luque vs Rafael dos Anjos": {
+      "winner": "Vicente Luque",
+      "loser": "Rafael dos Anjos",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Cub Swanson vs Hakeem Dawodu": {
+      "winner": "Cub Swanson",
+      "loser": "Hakeem Dawodu",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Khalil Rountree Jr. vs Chris Daukaus": {
+      "winner": "Khalil Rountree Jr.",
+      "loser": "Chris Daukaus",
+      "weight_class": "Light Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Iasmin Lucindo vs Polyana Viana": {
+      "winner": "Iasmin Lucindo",
+      "loser": "Polyana Viana",
+      "weight_class": "Women's Strawweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: A.J. Dobson vs Tafon Nchukwi": {
+      "winner": "A.J. Dobson",
+      "loser": "Tafon Nchukwi",
+      "weight_class": "Catchweight (189.5 lb)",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Josh Fremd vs Jamie Pickett": {
+      "winner": "Josh Fremd",
+      "loser": "Jamie Pickett",
+      "weight_class": "Catchweight (189 lb)",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Marcus McGhee vs JP Buys": {
+      "winner": "Marcus McGhee",
+      "loser": "JP Buys",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Terrance McKinney vs Mike Breeden": {
+      "winner": "Terrance McKinney",
+      "loser": "Mike Breeden",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Isaac Dulgarian vs Francis Marshall": {
+      "winner": "Isaac Dulgarian",
+      "loser": "Francis Marshall",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Martin Buday vs Josh Parisian": {
+      "winner": "Martin Buday",
+      "loser": "Josh Parisian",
+      "weight_class": "Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Jaqueline Amorim vs Montserrat Ruiz": {
+      "winner": "Jaqueline Amorim",
+      "loser": "Montserrat Ruiz",
+      "weight_class": "Women's Strawweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Da'Mon Blackshear vs Jose Johnson": {
+      "winner": "Da'Mon Blackshear",
+      "loser": "Jose Johnson",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Luana Santos vs Juliana Miller": {
+      "winner": "Luana Santos",
+      "loser": "Juliana Miller",
+      "weight_class": "Women's Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "Aug 5, 2023": {
+    "Fight: Cory Sandhagen vs Rob Font": {
+      "winner": "Cory Sandhagen",
+      "loser": "Rob Font",
+      "weight_class": "Catchweight (140 lb)",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Tatiana Suarez vs J\u00e9ssica Andrade": {
+      "winner": "Tatiana Suarez",
+      "loser": "J\u00e9ssica Andrade",
+      "weight_class": "Women's Strawweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Dustin Jacoby vs Kennedy Nzechukwu": {
+      "winner": "Dustin Jacoby",
+      "loser": "Kennedy Nzechukwu",
+      "weight_class": "Light Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Diego Lopes vs Gavin Tucker": {
+      "winner": "Diego Lopes",
+      "loser": "Gavin Tucker",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Tanner Boser vs Aleksa Camur": {
+      "winner": "Tanner Boser",
+      "loser": "Aleksa Camur",
+      "weight_class": "Light Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: \u013dudov\u00edt Klein vs Ignacio Bahamondes": {
+      "winner": "\u013dudov\u00edt Klein",
+      "loser": "Ignacio Bahamondes",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Kyler Phillips vs Raoni Barcelos": {
+      "winner": "Kyler Phillips",
+      "loser": "Raoni Barcelos",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Carlston Harris vs Jeremiah Wells": {
+      "winner": "Carlston Harris",
+      "loser": "Jeremiah Wells",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Billy Quarantillo vs Damon Jackson": {
+      "winner": "Billy Quarantillo",
+      "loser": "Damon Jackson",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Cody Durden vs Jake Hadley": {
+      "winner": "Cody Durden",
+      "loser": "Jake Hadley",
+      "weight_class": "Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Sean Woodson vs Dennis Buzukja": {
+      "winner": "Sean Woodson",
+      "loser": "Dennis Buzukja",
+      "weight_class": "Catchweight (146.5 lb)",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Assu Almabayev vs Ode' Osbourne": {
+      "winner": "Assu Almabayev",
+      "loser": "Ode' Osbourne",
+      "weight_class": "Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "Jul 29, 2023": {
+    "Fight: Justin Gaethje vs Dustin Poirier": {
+      "winner": "Justin Gaethje",
+      "loser": "Dustin Poirier",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Alex Pereira vs Jan B\u0142achowicz": {
+      "winner": "Alex Pereira",
+      "loser": "Jan B\u0142achowicz",
+      "weight_class": "Light Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Derrick Lewis vs Marcos Rog\u00e9rio de Lima": {
+      "winner": "Derrick Lewis",
+      "loser": "Marcos Rog\u00e9rio de Lima",
+      "weight_class": "Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Bobby Green vs Tony Ferguson": {
+      "winner": "Bobby Green",
+      "loser": "Tony Ferguson",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Kevin Holland vs Michael Chiesa": {
+      "winner": "Kevin Holland",
+      "loser": "Michael Chiesa",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Gabriel Bonfim vs Trevin Giles": {
+      "winner": "Gabriel Bonfim",
+      "loser": "Trevin Giles",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: C.J. Vergara vs Vinicius Salvador": {
+      "winner": "C.J. Vergara",
+      "loser": "Vinicius Salvador",
+      "weight_class": "Catchweight (128.5 lb)",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Roman Kopylov vs Claudio Ribeiro": {
+      "winner": "Roman Kopylov",
+      "loser": "Claudio Ribeiro",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Jake Matthews vs Darrius Flowers": {
+      "winner": "Jake Matthews",
+      "loser": "Darrius Flowers",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Uro\u0161 Medi\u0107 vs Matthew Semelsberger": {
+      "winner": "Uro\u0161 Medi\u0107",
+      "loser": "Matthew Semelsberger",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Miranda Maverick vs Priscila Cachoeira": {
+      "winner": "Miranda Maverick",
+      "loser": "Priscila Cachoeira",
+      "weight_class": "Women's Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "Jul 22, 2023": {
+    "Fight: Tom Aspinall vs Marcin Tybura": {
+      "winner": "Tom Aspinall",
+      "loser": "Marcin Tybura",
+      "weight_class": "Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Julija Stoliarenko vs Molly McCann": {
+      "winner": "Julija Stoliarenko",
+      "loser": "Molly McCann",
+      "weight_class": "Women's Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Nathaniel Wood vs Andre Fili": {
+      "winner": "Nathaniel Wood",
+      "loser": "Andre Fili",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Paul Craig vs Andr\u00e9 Muniz": {
+      "winner": "Paul Craig",
+      "loser": "Andr\u00e9 Muniz",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Far\u00e8s Ziam vs Jai Herbert": {
+      "winner": "Far\u00e8s Ziam",
+      "loser": "Jai Herbert",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Lerone Murphy vs Joshua Culibao": {
+      "winner": "Lerone Murphy",
+      "loser": "Joshua Culibao",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Daniel Marcos vs Davey Grant": {
+      "winner": "Daniel Marcos",
+      "loser": "Davey Grant",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Jonny Parsons vs Danny Roberts": {
+      "winner": "Jonny Parsons",
+      "loser": "Danny Roberts",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Joel \u00c1lvarez vs Marc Diakiese": {
+      "winner": "Joel \u00c1lvarez",
+      "loser": "Marc Diakiese",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Mick Parkin vs Jamal Pogues": {
+      "winner": "Mick Parkin",
+      "loser": "Jamal Pogues",
+      "weight_class": "Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Makhmud Muradov vs Bryan Barberena": {
+      "winner": "Makhmud Muradov",
+      "loser": "Bryan Barberena",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Ketlen Vieira vs Pannie Kianzad": {
+      "winner": "Ketlen Vieira",
+      "loser": "Pannie Kianzad",
+      "weight_class": "Women's Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Chris Duncan vs Yanal Ashmouz": {
+      "winner": "Chris Duncan",
+      "loser": "Yanal Ashmouz",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Bruna Brasil vs Shauna Bannon": {
+      "winner": "Bruna Brasil",
+      "loser": "Shauna Bannon",
+      "weight_class": "Women's Strawweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Jafel Filho vs Daniel B\u00e1rez": {
+      "winner": "Jafel Filho",
+      "loser": "Daniel B\u00e1rez",
+      "weight_class": "Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "Jul 15, 2023": {
+    "Fight: Mayra Bueno Silva vs Holly Holm": {
+      "winner": "Mayra Bueno Silva",
+      "loser": "Holly Holm",
+      "weight_class": "Women's Bantamweight",
+      "draw": false,
+      "no_contest": true,
+      "championship_fight": false
+    },
+    "Fight: Jack Della Maddalena vs Bassil Hafez": {
+      "winner": "Jack Della Maddalena",
+      "loser": "Bassil Hafez",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Francisco Prado vs Ottman Azaitar": {
+      "winner": "Francisco Prado",
+      "loser": "Ottman Azaitar",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Park Jun-yong vs Albert Duraev": {
+      "winner": "Park Jun-yong",
+      "loser": "Albert Duraev",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Norma Dumont vs Chelsea Chandler": {
+      "winner": "Norma Dumont",
+      "loser": "Chelsea Chandler",
+      "weight_class": "Women's Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Nazim Sadykhov vs Terrance McKinney": {
+      "winner": "Nazim Sadykhov",
+      "loser": "Terrance McKinney",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Melsik Baghdasaryan vs Tucker Lutz": {
+      "winner": "Melsik Baghdasaryan",
+      "loser": "Tucker Lutz",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Viktoriya Dudakova vs Istela Nunes": {
+      "winner": "Viktoriya Dudakova",
+      "loser": "Istela Nunes",
+      "weight_class": "Women's Strawweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Melquizael Costa vs Austin Lingo": {
+      "winner": "Melquizael Costa",
+      "loser": "Austin Lingo",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Evan Elder vs Genaro Valdez": {
+      "winner": "Evan Elder",
+      "loser": "Genaro Valdez",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Azat Maksum vs Tyson Nam": {
+      "winner": "Azat Maksum",
+      "loser": "Tyson Nam",
+      "weight_class": "Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Alexander Munoz vs Carl Deaton III": {
+      "winner": "Alexander Munoz",
+      "loser": "Carl Deaton III",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Ail\u00edn P\u00e9rez vs Ashlee Evans-Smith": {
+      "winner": "Ail\u00edn P\u00e9rez",
+      "loser": "Ashlee Evans-Smith",
+      "weight_class": "Women's Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "Jul 8, 2023": {
+    "Fight: Alexander Volkanovski vs Yair Rodr\u00edguez": {
+      "winner": "Alexander Volkanovski",
+      "loser": "Yair Rodr\u00edguez",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": true
+    },
+    "Fight: Alexandre Pantoja vs Brandon Moreno": {
+      "winner": "Alexandre Pantoja",
+      "loser": "Brandon Moreno",
+      "weight_class": "Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": true
+    },
+    "Fight: Dricus du Plessis vs Robert Whittaker": {
+      "winner": "Dricus du Plessis",
+      "loser": "Robert Whittaker",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Dan Hooker vs Jalin Turner": {
+      "winner": "Dan Hooker",
+      "loser": "Jalin Turner",
+      "weight_class": "Catchweight (158 lb)",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Bo Nickal vs Val Woodburn": {
+      "winner": "Bo Nickal",
+      "loser": "Val Woodburn",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Robbie Lawler vs Niko Price": {
+      "winner": "Robbie Lawler",
+      "loser": "Niko Price",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Tatsuro Taira vs \u00c9dgar Ch\u00e1irez": {
+      "winner": "Tatsuro Taira",
+      "loser": "\u00c9dgar Ch\u00e1irez",
+      "weight_class": "Catchweight (130 lb)",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Denise Gomes vs Yazmin Jauregui": {
+      "winner": "Denise Gomes",
+      "loser": "Yazmin Jauregui",
+      "weight_class": "Women's Strawweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Alonzo Menifield vs Jimmy Crute": {
+      "winner": "Alonzo Menifield",
+      "loser": "Jimmy Crute",
+      "weight_class": "Light Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Vitor Petrino vs Marcin Prachnio": {
+      "winner": "Vitor Petrino",
+      "loser": "Marcin Prachnio",
+      "weight_class": "Light Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Cameron Saaiman vs Terrence Mitchell": {
+      "winner": "Cameron Saaiman",
+      "loser": "Terrence Mitchell",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Jes\u00fas Santos Aguilar vs Shannon Ross": {
+      "winner": "Jes\u00fas Santos Aguilar",
+      "loser": "Shannon Ross",
+      "weight_class": "Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Esteban Ribovics vs Kamuela Kirk": {
+      "winner": "Esteban Ribovics",
+      "loser": "Kamuela Kirk",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "Jul 1, 2023": {
+    "Fight: Sean Strickland vs Abusupiyan Magomedov": {
+      "winner": "Sean Strickland",
+      "loser": "Abusupiyan Magomedov",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Grant Dawson vs Damir Ismagulov": {
+      "winner": "Grant Dawson",
+      "loser": "Damir Ismagulov",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Michael Morales vs Max Griffin": {
+      "winner": "Michael Morales",
+      "loser": "Max Griffin",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Ariane Lipski vs Melissa Gatto": {
+      "winner": "Ariane Lipski",
+      "loser": "Melissa Gatto",
+      "weight_class": "Women's Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Beno\u00eet Saint-Denis vs Ismael Bonfim": {
+      "winner": "Beno\u00eet Saint-Denis",
+      "loser": "Ismael Bonfim",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Nursulton Ruziboev vs Brunno Ferreira": {
+      "winner": "Nursulton Ruziboev",
+      "loser": "Brunno Ferreira",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Rinat Fakhretdinov vs Kevin Lee": {
+      "winner": "Rinat Fakhretdinov",
+      "loser": "Kevin Lee",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Joanderson Brito vs Westin Wilson": {
+      "winner": "Joanderson Brito",
+      "loser": "Westin Wilson",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Karol Rosa vs Yana Santos": {
+      "winner": "Karol Rosa",
+      "loser": "Yana Santos",
+      "weight_class": "Women's Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Elves Brenner vs Guram Kutateladze": {
+      "winner": "Elves Brenner",
+      "loser": "Guram Kutateladze",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Luana Carolina vs Ivana Petrovi\u0107": {
+      "winner": "Luana Carolina",
+      "loser": "Ivana Petrovi\u0107",
+      "weight_class": "Women's Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Alexander Romanov vs Blagoy Ivanov": {
+      "winner": "Alexander Romanov",
+      "loser": "Blagoy Ivanov",
+      "weight_class": "Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "Jun 24, 2023": {
+    "Fight: Ilia Topuria vs Josh Emmett": {
+      "winner": "Ilia Topuria",
+      "loser": "Josh Emmett",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Maycee Barber vs Amanda Ribas": {
+      "winner": "Maycee Barber",
+      "loser": "Amanda Ribas",
+      "weight_class": "Women's Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Austen Lane vs Justin Tafa": {
+      "winner": "Austen Lane",
+      "loser": "Justin Tafa",
+      "weight_class": "Heavyweight",
+      "draw": false,
+      "no_contest": true,
+      "championship_fight": false
+    },
+    "Fight: David Onama vs Gabriel Santos": {
+      "winner": "David Onama",
+      "loser": "Gabriel Santos",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Brendan Allen vs Bruno Silva": {
+      "winner": "Brendan Allen",
+      "loser": "Bruno Silva",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Neil Magny vs Philip Rowe": {
+      "winner": "Neil Magny",
+      "loser": "Philip Rowe",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Randy Brown vs Wellington Turman": {
+      "winner": "Randy Brown",
+      "loser": "Wellington Turman",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Mateusz R\u0119becki vs Loik Radzhabov": {
+      "winner": "Mateusz R\u0119becki",
+      "loser": "Loik Radzhabov",
+      "weight_class": "Catchweight (157.25 lb)",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Tabatha Ricci vs Gillian Robertson": {
+      "winner": "Tabatha Ricci",
+      "loser": "Gillian Robertson",
+      "weight_class": "Women's Strawweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Joshua Van vs Zhalgas Zhumagulov": {
+      "winner": "Joshua Van",
+      "loser": "Zhalgas Zhumagulov",
+      "weight_class": "Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Jose Mariscal vs Trevor Peek": {
+      "winner": "Jose Mariscal",
+      "loser": "Trevor Peek",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Jack Jenkins vs Jamall Emmers": {
+      "winner": "Jack Jenkins",
+      "loser": "Jamall Emmers",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Sedriques Dumas vs Cody Brundage": {
+      "winner": "Sedriques Dumas",
+      "loser": "Cody Brundage",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "Jun 17, 2023": {
+    "Fight: Jared Cannonier vs Marvin Vettori": {
+      "winner": "Jared Cannonier",
+      "loser": "Marvin Vettori",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Arman Tsarukyan vs Joaquim Silva": {
+      "winner": "Arman Tsarukyan",
+      "loser": "Joaquim Silva",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Armen Petrosyan vs Christian Leroy Duncan": {
+      "winner": "Armen Petrosyan",
+      "loser": "Christian Leroy Duncan",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Pat Sabatini vs Lucas Almeida": {
+      "winner": "Pat Sabatini",
+      "loser": "Lucas Almeida",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Manuel Torres vs Nikolas Motta": {
+      "winner": "Manuel Torres",
+      "loser": "Nikolas Motta",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Nicolas Dalby vs Muslim Salikhov": {
+      "winner": "Nicolas Dalby",
+      "loser": "Muslim Salikhov",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Alessandro Costa vs Jimmy Flick": {
+      "winner": "Alessandro Costa",
+      "loser": "Jimmy Flick",
+      "weight_class": "Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Kang Kyung-ho vs Cristian Qui\u00f1onez": {
+      "winner": "Kang Kyung-ho",
+      "loser": "Cristian Qui\u00f1onez",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Carlos Hernandez vs Denys Bondar": {
+      "winner": "Carlos Hernandez",
+      "loser": "Denys Bondar",
+      "weight_class": "Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Tereza Bled\u00e1 vs Gabriella Fernandes": {
+      "winner": "Tereza Bled\u00e1",
+      "loser": "Gabriella Fernandes",
+      "weight_class": "Women's Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Dan Argueta vs Ronnie Lawrence": {
+      "winner": "Dan Argueta",
+      "loser": "Ronnie Lawrence",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": true,
+      "championship_fight": false
+    },
+    "Fight: Modestas Bukauskas vs Zac Pauga": {
+      "winner": "Modestas Bukauskas",
+      "loser": "Zac Pauga",
+      "weight_class": "Light Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "Jun 10, 2023": {
+    "Fight: Amanda Nunes vs Irene Aldana": {
+      "winner": "Amanda Nunes",
+      "loser": "Irene Aldana",
+      "weight_class": "Women's Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": true
+    },
+    "Fight: Charles Oliveira vs Beneil Dariush": {
+      "winner": "Charles Oliveira",
+      "loser": "Beneil Dariush",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Mike Malott vs Adam Fugitt": {
+      "winner": "Mike Malott",
+      "loser": "Adam Fugitt",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Dan Ige vs Nate Landwehr": {
+      "winner": "Dan Ige",
+      "loser": "Nate Landwehr",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Marc-Andr\u00e9 Barriault vs Eryk Anders": {
+      "winner": "Marc-Andr\u00e9 Barriault",
+      "loser": "Eryk Anders",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Nassourdine Imavov vs Chris Curtis": {
+      "winner": "Nassourdine Imavov",
+      "loser": "Chris Curtis",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": true,
+      "championship_fight": false
+    },
+    "Fight: Jasmine Jasudavicius vs Miranda Maverick": {
+      "winner": "Jasmine Jasudavicius",
+      "loser": "Miranda Maverick",
+      "weight_class": "Women's Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Aiemann Zahabi vs Aori Qileng": {
+      "winner": "Aiemann Zahabi",
+      "loser": "Aori Qileng",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Kyle Nelson vs Blake Bilder": {
+      "winner": "Kyle Nelson",
+      "loser": "Blake Bilder",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Stephen Erceg vs David Dvo\u0159\u00e1k": {
+      "winner": "Stephen Erceg",
+      "loser": "David Dvo\u0159\u00e1k",
+      "weight_class": "Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Diana Belbi\u0163\u0103 vs Maria Oliveira": {
+      "winner": "Diana Belbi\u0163\u0103",
+      "loser": "Maria Oliveira",
+      "weight_class": "Women's Strawweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "Jun 3, 2023": {
+    "Fight: Amir Albazi vs Kai Kara-France": {
+      "winner": "Amir Albazi",
+      "loser": "Kai Kara-France",
+      "weight_class": "Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Alex Caceres vs Daniel Pineda": {
+      "winner": "Alex Caceres",
+      "loser": "Daniel Pineda",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Jim Miller vs Jesse Butler": {
+      "winner": "Jim Miller",
+      "loser": "Jesse Butler",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Tim Elliott vs Victor Altamirano": {
+      "winner": "Tim Elliott",
+      "loser": "Victor Altamirano",
+      "weight_class": "Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Karine Silva vs Ketlen Souza": {
+      "winner": "Karine Silva",
+      "loser": "Ketlen Souza",
+      "weight_class": "Women's Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Elizeu Zaleski dos Santos vs Abubakar Nurmagomedov": {
+      "winner": "Elizeu Zaleski dos Santos",
+      "loser": "Abubakar Nurmagomedov",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Daniel Santos vs Johnny Mu\u00f1oz Jr.": {
+      "winner": "Daniel Santos",
+      "loser": "Johnny Mu\u00f1oz Jr.",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Don'Tale Mayes vs Andrei Arlovski": {
+      "winner": "Don'Tale Mayes",
+      "loser": "Andrei Arlovski",
+      "weight_class": "Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: John Casta\u00f1eda vs Muin Gafurov": {
+      "winner": "John Casta\u00f1eda",
+      "loser": "Muin Gafurov",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Muhammad Naimov vs Jamie Mullarkey": {
+      "winner": "Muhammad Naimov",
+      "loser": "Jamie Mullarkey",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Elise Reed vs Jinh Yu Frey": {
+      "winner": "Elise Reed",
+      "loser": "Jinh Yu Frey",
+      "weight_class": "Women's Strawweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Da'Mon Blackshear vs Luan Lacerda": {
+      "winner": "Da'Mon Blackshear",
+      "loser": "Luan Lacerda",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Philipe Lins vs Maxim Grishin": {
+      "winner": "Philipe Lins",
+      "loser": "Maxim Grishin",
+      "weight_class": "Light Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "May 20, 2023": {
+    "Fight: Mackenzie Dern vs Angela Hill": {
+      "winner": "Mackenzie Dern",
+      "loser": "Angela Hill",
+      "weight_class": "Women's Strawweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Anthony Hernandez vs Edmen Shahbazyan": {
+      "winner": "Anthony Hernandez",
+      "loser": "Edmen Shahbazyan",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Lupita Godinez vs Emily Ducote": {
+      "winner": "Lupita Godinez",
+      "loser": "Emily Ducote",
+      "weight_class": "Catchweight (120 lb)",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Joaquin Buckley vs Andr\u00e9 Fialho": {
+      "winner": "Joaquin Buckley",
+      "loser": "Andr\u00e9 Fialho",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Carlos Diego Ferreira vs Michael Johnson": {
+      "winner": "Carlos Diego Ferreira",
+      "loser": "Michael Johnson",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Viacheslav Borshchev vs Hayisaer Maheshate": {
+      "winner": "Viacheslav Borshchev",
+      "loser": "Hayisaer Maheshate",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Karolina Kowalkiewicz vs Vanessa Demopoulos": {
+      "winner": "Karolina Kowalkiewicz",
+      "loser": "Vanessa Demopoulos",
+      "weight_class": "Catchweight (117.5 lb)",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Gilbert Urbina vs Orion Cosce": {
+      "winner": "Gilbert Urbina",
+      "loser": "Orion Cosce",
+      "weight_class": "Catchweight (172.5 lb)",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Rodrigo Nascimento vs Ilir Latifi": {
+      "winner": "Rodrigo Nascimento",
+      "loser": "Ilir Latifi",
+      "weight_class": "Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Chase Hooper vs Nick Fiore": {
+      "winner": "Chase Hooper",
+      "loser": "Nick Fiore",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Nat\u00e1lia Silva vs Victoria Leonardo": {
+      "winner": "Nat\u00e1lia Silva",
+      "loser": "Victoria Leonardo",
+      "weight_class": "Women's Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Themba Gorimbo vs Takashi Sato": {
+      "winner": "Themba Gorimbo",
+      "loser": "Takashi Sato",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "May 13, 2023": {
+    "Fight: Jailton Almeida vs Jairzinho Rozenstruik": {
+      "winner": "Jailton Almeida",
+      "loser": "Jairzinho Rozenstruik",
+      "weight_class": "Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Johnny Walker vs Anthony Smith": {
+      "winner": "Johnny Walker",
+      "loser": "Anthony Smith",
+      "weight_class": "Light Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Ian Machado Garry vs Daniel Rodriguez": {
+      "winner": "Ian Machado Garry",
+      "loser": "Daniel Rodriguez",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Carlos Ulberg vs Ihor Potieria": {
+      "winner": "Carlos Ulberg",
+      "loser": "Ihor Potieria",
+      "weight_class": "Light Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Alex Morono vs Tim Means": {
+      "winner": "Alex Morono",
+      "loser": "Tim Means",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Matt Brown vs Court McGee": {
+      "winner": "Matt Brown",
+      "loser": "Court McGee",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Karl Williams vs Chase Sherman": {
+      "winner": "Karl Williams",
+      "loser": "Chase Sherman",
+      "weight_class": "Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Douglas Silva de Andrade vs Cody Stamann": {
+      "winner": "Douglas Silva de Andrade",
+      "loser": "Cody Stamann",
+      "weight_class": "Catchweight (140 lb)",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Mandy B\u00f6hm vs Kim Ji-yeon": {
+      "winner": "Mandy B\u00f6hm",
+      "loser": "Kim Ji-yeon",
+      "weight_class": "Women's Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Bryan Battle vs Gabriel Green": {
+      "winner": "Bryan Battle",
+      "loser": "Gabriel Green",
+      "weight_class": "Catchweight (173 lb)",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Tainara Lisboa vs Jessica-Rose Clark": {
+      "winner": "Tainara Lisboa",
+      "loser": "Jessica-Rose Clark",
+      "weight_class": "Women's Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "May 6, 2023": {
+    "Fight: Aljamain Sterling vs Henry Cejudo": {
+      "winner": "Aljamain Sterling",
+      "loser": "Henry Cejudo",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": true
+    },
+    "Fight: Belal Muhammad vs Gilbert Burns": {
+      "winner": "Belal Muhammad",
+      "loser": "Gilbert Burns",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Yan Xiaonan vs J\u00e9ssica Andrade": {
+      "winner": "Yan Xiaonan",
+      "loser": "J\u00e9ssica Andrade",
+      "weight_class": "Women's Strawweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Movsar Evloev vs Diego Lopes": {
+      "winner": "Movsar Evloev",
+      "loser": "Diego Lopes",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Charles Jourdain vs Kron Gracie": {
+      "winner": "Charles Jourdain",
+      "loser": "Kron Gracie",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Matt Frevola vs Drew Dober": {
+      "winner": "Matt Frevola",
+      "loser": "Drew Dober",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Kennedy Nzechukwu vs Devin Clark": {
+      "winner": "Kennedy Nzechukwu",
+      "loser": "Devin Clark",
+      "weight_class": "Light Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Khaos Williams vs Rolando Bedoya": {
+      "winner": "Khaos Williams",
+      "loser": "Rolando Bedoya",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Virna Jandiroba vs Marina Rodriguez": {
+      "winner": "Virna Jandiroba",
+      "loser": "Marina Rodriguez",
+      "weight_class": "Women's Strawweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Parker Porter vs Braxton Smith": {
+      "winner": "Parker Porter",
+      "loser": "Braxton Smith",
+      "weight_class": "Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Ikram Aliskerov vs Phil Hawes": {
+      "winner": "Ikram Aliskerov",
+      "loser": "Phil Hawes",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Claudio Ribeiro vs Joseph Holmes": {
+      "winner": "Claudio Ribeiro",
+      "loser": "Joseph Holmes",
+      "weight_class": "Catchweight (189 lb)",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "Apr 29, 2023": {
+    "Fight: Song Yadong vs Ricky Sim\u00f3n": {
+      "winner": "Song Yadong",
+      "loser": "Ricky Sim\u00f3n",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Caio Borralho vs Micha\u0142 Oleksiejczuk": {
+      "winner": "Caio Borralho",
+      "loser": "Micha\u0142 Oleksiejczuk",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Rodolfo Vieira vs Cody Brundage": {
+      "winner": "Rodolfo Vieira",
+      "loser": "Cody Brundage",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Fernando Padilla vs Julian Erosa": {
+      "winner": "Fernando Padilla",
+      "loser": "Julian Erosa",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Marcos Rog\u00e9rio de Lima vs Waldo Cortes-Acosta": {
+      "winner": "Marcos Rog\u00e9rio de Lima",
+      "loser": "Waldo Cortes-Acosta",
+      "weight_class": "Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Trey Waters vs Joshua Quinlan": {
+      "winner": "Trey Waters",
+      "loser": "Joshua Quinlan",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Martin Buday vs Jake Collier": {
+      "winner": "Martin Buday",
+      "loser": "Jake Collier",
+      "weight_class": "Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Cody Durden vs Charles Johnson": {
+      "winner": "Cody Durden",
+      "loser": "Charles Johnson",
+      "weight_class": "Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Irina Alekseeva vs Stephanie Egger": {
+      "winner": "Irina Alekseeva",
+      "loser": "Stephanie Egger",
+      "weight_class": "Catchweight (140 lb)",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Marcus McGhee vs Journey Newson": {
+      "winner": "Marcus McGhee",
+      "loser": "Journey Newson",
+      "weight_class": "Catchweight (140 lb)",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Jamey-Lyn Horth vs Hailey Cowan": {
+      "winner": "Jamey-Lyn Horth",
+      "loser": "Hailey Cowan",
+      "weight_class": "Catchweight (137.5 lb)",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "Apr 22, 2023": {
+    "Fight: Sergei Pavlovich vs Curtis Blaydes": {
+      "winner": "Sergei Pavlovich",
+      "loser": "Curtis Blaydes",
+      "weight_class": "Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Bruno Silva vs Brad Tavares": {
+      "winner": "Bruno Silva",
+      "loser": "Brad Tavares",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Bobby Green vs Jared Gordon": {
+      "winner": "Bobby Green",
+      "loser": "Jared Gordon",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": true,
+      "championship_fight": false
+    },
+    "Fight: Iasmin Lucindo vs Brogan Walker": {
+      "winner": "Iasmin Lucindo",
+      "loser": "Brogan Walker",
+      "weight_class": "Women's Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Jeremiah Wells vs Matthew Semelsberger": {
+      "winner": "Jeremiah Wells",
+      "loser": "Matthew Semelsberger",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Christos Giagos vs Ricky Glenn": {
+      "winner": "Christos Giagos",
+      "loser": "Ricky Glenn",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Montel Jackson vs Rani Yahya": {
+      "winner": "Montel Jackson",
+      "loser": "Rani Yahya",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Norma Dumont vs Karol Rosa": {
+      "winner": "Norma Dumont",
+      "loser": "Karol Rosa",
+      "weight_class": "Women's Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Mohammad Usman vs Junior Tafa": {
+      "winner": "Mohammad Usman",
+      "loser": "Junior Tafa",
+      "weight_class": "Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: William Gomis vs Francis Marshall": {
+      "winner": "William Gomis",
+      "loser": "Francis Marshall",
+      "weight_class": "Catchweight (147 lb)",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Brady Hiestand vs Danaa Batgerel": {
+      "winner": "Brady Hiestand",
+      "loser": "Danaa Batgerel",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "Apr 15, 2023": {
+    "Fight: Max Holloway vs Arnold Allen": {
+      "winner": "Max Holloway",
+      "loser": "Arnold Allen",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Edson Barboza vs Billy Quarantillo": {
+      "winner": "Edson Barboza",
+      "loser": "Billy Quarantillo",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Azamat Murzakanov vs Dustin Jacoby": {
+      "winner": "Azamat Murzakanov",
+      "loser": "Dustin Jacoby",
+      "weight_class": "Light Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Ion Cu\u021belaba vs Tanner Boser": {
+      "winner": "Ion Cu\u021belaba",
+      "loser": "Tanner Boser",
+      "weight_class": "Light Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Pedro Munhoz vs Chris Guti\u00e9rrez": {
+      "winner": "Pedro Munhoz",
+      "loser": "Chris Guti\u00e9rrez",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Rafa Garc\u00eda vs Clay Guida": {
+      "winner": "Rafa Garc\u00eda",
+      "loser": "Clay Guida",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Bill Algeo vs T.J. Brown": {
+      "winner": "Bill Algeo",
+      "loser": "T.J. Brown",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Brandon Royval vs Matheus Nicolau": {
+      "winner": "Brandon Royval",
+      "loser": "Matheus Nicolau",
+      "weight_class": "Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Zak Cummings vs Ed Herman": {
+      "winner": "Zak Cummings",
+      "loser": "Ed Herman",
+      "weight_class": "Light Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Gillian Robertson vs Piera Rodr\u00edguez": {
+      "winner": "Gillian Robertson",
+      "loser": "Piera Rodr\u00edguez",
+      "weight_class": "Women's Strawweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Daniel Zellhuber vs Lando Vannata": {
+      "winner": "Daniel Zellhuber",
+      "loser": "Lando Vannata",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Denise Gomes vs Bruna Brasil": {
+      "winner": "Denise Gomes",
+      "loser": "Bruna Brasil",
+      "weight_class": "Women's Strawweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Gast\u00f3n Bola\u00f1os vs Aaron Phillips": {
+      "winner": "Gast\u00f3n Bola\u00f1os",
+      "loser": "Aaron Phillips",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Joselyne Edwards vs Lucie Pudilov\u00e1": {
+      "winner": "Joselyne Edwards",
+      "loser": "Lucie Pudilov\u00e1",
+      "weight_class": "Catchweight (136.5 lb)",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "Apr 8, 2023": {
+    "Fight: Israel Adesanya vs Alex Pereira": {
+      "winner": "Israel Adesanya",
+      "loser": "Alex Pereira",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": true
+    },
+    "Fight: Gilbert Burns vs Jorge Masvidal": {
+      "winner": "Gilbert Burns",
+      "loser": "Jorge Masvidal",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Rob Font vs Adrian Yanez": {
+      "winner": "Rob Font",
+      "loser": "Adrian Yanez",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Kevin Holland vs Santiago Ponzinibbio": {
+      "winner": "Kevin Holland",
+      "loser": "Santiago Ponzinibbio",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Christian Rodriguez vs Ra\u00fal Rosas Jr.": {
+      "winner": "Christian Rodriguez",
+      "loser": "Ra\u00fal Rosas Jr.",
+      "weight_class": "Catchweight (137 lb)",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Kelvin Gastelum vs Chris Curtis": {
+      "winner": "Kelvin Gastelum",
+      "loser": "Chris Curtis",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Luana Pinheiro vs Michelle Waterson-Gomez": {
+      "winner": "Luana Pinheiro",
+      "loser": "Michelle Waterson-Gomez",
+      "weight_class": "Women's Strawweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Joe Pyfer vs Gerald Meerschaert": {
+      "winner": "Joe Pyfer",
+      "loser": "Gerald Meerschaert",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Lupita Godinez vs Cynthia Calvillo": {
+      "winner": "Lupita Godinez",
+      "loser": "Cynthia Calvillo",
+      "weight_class": "Women's Strawweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Ignacio Bahamondes vs Trey Ogden": {
+      "winner": "Ignacio Bahamondes",
+      "loser": "Trey Ogden",
+      "weight_class": "Catchweight (160 lb)",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Steve Garcia vs Shayilan Nuerdanbieke": {
+      "winner": "Steve Garcia",
+      "loser": "Shayilan Nuerdanbieke",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Sam Hughes vs Jaqueline Amorim": {
+      "winner": "Sam Hughes",
+      "loser": "Jaqueline Amorim",
+      "weight_class": "Women's Strawweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "Mar 25, 2023": {
+    "Fight: Cory Sandhagen vs Marlon Vera": {
+      "winner": "Cory Sandhagen",
+      "loser": "Marlon Vera",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Holly Holm vs Yana Santos": {
+      "winner": "Holly Holm",
+      "loser": "Yana Santos",
+      "weight_class": "Women's Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Nate Landwehr vs Austin Lingo": {
+      "winner": "Nate Landwehr",
+      "loser": "Austin Lingo",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Maycee Barber vs Andrea Lee": {
+      "winner": "Maycee Barber",
+      "loser": "Andrea Lee",
+      "weight_class": "Women's Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Albert Duraev vs Chidi Njokuani": {
+      "winner": "Albert Duraev",
+      "loser": "Chidi Njokuani",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Daniel Pineda vs Tucker Lutz": {
+      "winner": "Daniel Pineda",
+      "loser": "Tucker Lutz",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Lucas Alexander vs Steven Peterson": {
+      "winner": "Lucas Alexander",
+      "loser": "Steven Peterson",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Trevin Giles vs Preston Parsons": {
+      "winner": "Trevin Giles",
+      "loser": "Preston Parsons",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: C.J. Vergara vs Daniel da Silva": {
+      "winner": "C.J. Vergara",
+      "loser": "Daniel da Silva",
+      "weight_class": "Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Victor Altamirano vs Vinicius Salvador": {
+      "winner": "Victor Altamirano",
+      "loser": "Vinicius Salvador",
+      "weight_class": "Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "Mar 18, 2023": {
+    "Fight: Leon Edwards vs Kamaru Usman": {
+      "winner": "Leon Edwards",
+      "loser": "Kamaru Usman",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": true
+    },
+    "Fight: Justin Gaethje vs Rafael Fiziev": {
+      "winner": "Justin Gaethje",
+      "loser": "Rafael Fiziev",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Gunnar Nelson vs Bryan Barberena": {
+      "winner": "Gunnar Nelson",
+      "loser": "Bryan Barberena",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Jennifer Maia vs Casey O'Neill": {
+      "winner": "Jennifer Maia",
+      "loser": "Casey O'Neill",
+      "weight_class": "Women's Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Marvin Vettori vs Roman Dolidze": {
+      "winner": "Marvin Vettori",
+      "loser": "Roman Dolidze",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Jack Shore vs Makwan Amirkhani": {
+      "winner": "Jack Shore",
+      "loser": "Makwan Amirkhani",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Chris Duncan vs Omar Morales": {
+      "winner": "Chris Duncan",
+      "loser": "Omar Morales",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Yanal Ashmouz vs Sam Patterson": {
+      "winner": "Yanal Ashmouz",
+      "loser": "Sam Patterson",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Muhammad Mokaev vs Jafel Filho": {
+      "winner": "Muhammad Mokaev",
+      "loser": "Jafel Filho",
+      "weight_class": "Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Lerone Murphy vs Gabriel Santos": {
+      "winner": "Lerone Murphy",
+      "loser": "Gabriel Santos",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Christian Leroy Duncan vs Du\u0161ko Todorovi\u0107": {
+      "winner": "Christian Leroy Duncan",
+      "loser": "Du\u0161ko Todorovi\u0107",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Jake Hadley vs Malcolm Gordon": {
+      "winner": "Jake Hadley",
+      "loser": "Malcolm Gordon",
+      "weight_class": "Catchweight (129.5 lb)",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Joanne Wood vs Luana Carolina": {
+      "winner": "Joanne Wood",
+      "loser": "Luana Carolina",
+      "weight_class": "Women's Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Jai Herbert vs \u013dudov\u00edt Klein": {
+      "winner": "Jai Herbert",
+      "loser": "\u013dudov\u00edt Klein",
+      "weight_class": "Lightweight",
+      "draw": true,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Veronica Hardy vs Juliana Miller": {
+      "winner": "Veronica Hardy",
+      "loser": "Juliana Miller",
+      "weight_class": "Women's Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "Mar 11, 2023": {
+    "Fight: Merab Dvalishvili vs Petr Yan": {
+      "winner": "Merab Dvalishvili",
+      "loser": "Petr Yan",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Alexander Volkov vs Alexander Romanov": {
+      "winner": "Alexander Volkov",
+      "loser": "Alexander Romanov",
+      "weight_class": "Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Nikita Krylov vs Ryan Spann": {
+      "winner": "Nikita Krylov",
+      "loser": "Ryan Spann",
+      "weight_class": "Catchweight (215 lb)",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Jonathan Martinez vs Said Nurmagomedov": {
+      "winner": "Jonathan Martinez",
+      "loser": "Said Nurmagomedov",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Mario Bautista vs Guido Cannetti": {
+      "winner": "Mario Bautista",
+      "loser": "Guido Cannetti",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Vitor Petrino vs Anton Turkalj": {
+      "winner": "Vitor Petrino",
+      "loser": "Anton Turkalj",
+      "weight_class": "Light Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Karl Williams vs \u0141ukasz Brzeski": {
+      "winner": "Karl Williams",
+      "loser": "\u0141ukasz Brzeski",
+      "weight_class": "Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Davey Grant vs Raphael Assun\u00e7\u00e3o": {
+      "winner": "Davey Grant",
+      "loser": "Raphael Assun\u00e7\u00e3o",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Josh Fremd vs Sedriques Dumas": {
+      "winner": "Josh Fremd",
+      "loser": "Sedriques Dumas",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Victor Henry vs Tony Gravely": {
+      "winner": "Victor Henry",
+      "loser": "Tony Gravely",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Ariane Lipski vs JJ Aldrich": {
+      "winner": "Ariane Lipski",
+      "loser": "JJ Aldrich",
+      "weight_class": "Women's Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Bruno Gustavo da Silva vs Tyson Nam": {
+      "winner": "Bruno Gustavo da Silva",
+      "loser": "Tyson Nam",
+      "weight_class": "Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Carlston Harris vs Jared Gooden": {
+      "winner": "Carlston Harris",
+      "loser": "Jared Gooden",
+      "weight_class": "Catchweight (177 lb)",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "Mar 4, 2023": {
+    "Fight: Jon Jones vs Ciryl Gane": {
+      "winner": "Jon Jones",
+      "loser": "Ciryl Gane",
+      "weight_class": "Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Alexa Grasso vs Valentina Shevchenko": {
+      "winner": "Alexa Grasso",
+      "loser": "Valentina Shevchenko",
+      "weight_class": "Women's Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": true
+    },
+    "Fight: Shavkat Rakhmonov vs Geoff Neal": {
+      "winner": "Shavkat Rakhmonov",
+      "loser": "Geoff Neal",
+      "weight_class": "Catchweight (175 lb)",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Mateusz Gamrot vs Jalin Turner": {
+      "winner": "Mateusz Gamrot",
+      "loser": "Jalin Turner",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Bo Nickal vs Jamie Pickett": {
+      "winner": "Bo Nickal",
+      "loser": "Jamie Pickett",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Cody Garbrandt vs Trevin Jones": {
+      "winner": "Cody Garbrandt",
+      "loser": "Trevin Jones",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Dricus du Plessis vs Derek Brunson": {
+      "winner": "Dricus du Plessis",
+      "loser": "Derek Brunson",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Amanda Ribas vs Viviane Ara\u00fajo": {
+      "winner": "Amanda Ribas",
+      "loser": "Viviane Ara\u00fajo",
+      "weight_class": "Women's Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Marc-Andr\u00e9 Barriault vs Julian Marquez": {
+      "winner": "Marc-Andr\u00e9 Barriault",
+      "loser": "Julian Marquez",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Ian Garry vs Song Kenan": {
+      "winner": "Ian Garry",
+      "loser": "Song Kenan",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Cameron Saaiman vs Leomana Martinez": {
+      "winner": "Cameron Saaiman",
+      "loser": "Leomana Martinez",
+      "weight_class": "Catchweight (137 lb)",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Tabatha Ricci vs Jessica Penne": {
+      "winner": "Tabatha Ricci",
+      "loser": "Jessica Penne",
+      "weight_class": "Women's Strawweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Farid Basharat vs Da\u2019Mon Blackshear": {
+      "winner": "Farid Basharat",
+      "loser": "Da\u2019Mon Blackshear",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Loik Radzhabov vs Esteban Ribovics": {
+      "winner": "Loik Radzhabov",
+      "loser": "Esteban Ribovics",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "Feb 25, 2023": {
+    "Fight: Brendan Allen vs Andr\u00e9 Muniz": {
+      "winner": "Brendan Allen",
+      "loser": "Andr\u00e9 Muniz",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Augusto Sakai vs Don'Tale Mayes": {
+      "winner": "Augusto Sakai",
+      "loser": "Don'Tale Mayes",
+      "weight_class": "Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Tatiana Suarez vs Montana De La Rosa": {
+      "winner": "Tatiana Suarez",
+      "loser": "Montana De La Rosa",
+      "weight_class": "Women's Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Mike Malott vs Yohan Lainesse": {
+      "winner": "Mike Malott",
+      "loser": "Yohan Lainesse",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Trevor Peek vs Erick Gonzalez": {
+      "winner": "Trevor Peek",
+      "loser": "Erick Gonzalez",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Jasmine Jasudavicius vs Gabriella Fernandes": {
+      "winner": "Jasmine Jasudavicius",
+      "loser": "Gabriella Fernandes",
+      "weight_class": "Women's Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Jordan Leavitt vs Victor Martinez": {
+      "winner": "Jordan Leavitt",
+      "loser": "Victor Martinez",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Ode' Osbourne vs Charles Johnson": {
+      "winner": "Ode' Osbourne",
+      "loser": "Charles Johnson",
+      "weight_class": "Catchweight (130 lb)",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Joe Solecki vs Carl Deaton III": {
+      "winner": "Joe Solecki",
+      "loser": "Carl Deaton III",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Nurullo Aliev vs Rafael Alves": {
+      "winner": "Nurullo Aliev",
+      "loser": "Rafael Alves",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "Feb 18, 2023": {
+    "Fight: Erin Blanchfield vs J\u00e9ssica Andrade": {
+      "winner": "Erin Blanchfield",
+      "loser": "J\u00e9ssica Andrade",
+      "weight_class": "Women's Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Zac Pauga vs Jordan Wright": {
+      "winner": "Zac Pauga",
+      "loser": "Jordan Wright",
+      "weight_class": "Light Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Jamal Pogues vs Josh Parisian": {
+      "winner": "Jamal Pogues",
+      "loser": "Josh Parisian",
+      "weight_class": "Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Marcin Prachnio vs William Knight": {
+      "winner": "Marcin Prachnio",
+      "loser": "William Knight",
+      "weight_class": "Light Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Alexander Hernandez vs Jim Miller": {
+      "winner": "Alexander Hernandez",
+      "loser": "Jim Miller",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Nazim Sadykhov vs Evan Elder": {
+      "winner": "Nazim Sadykhov",
+      "loser": "Evan Elder",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Mayra Bueno Silva vs Lina L\u00e4nsberg": {
+      "winner": "Mayra Bueno Silva",
+      "loser": "Lina L\u00e4nsberg",
+      "weight_class": "Women's Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Jamall Emmers vs Khusein Askhabov": {
+      "winner": "Jamall Emmers",
+      "loser": "Khusein Askhabov",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Philipe Lins vs Ovince Saint Preux": {
+      "winner": "Philipe Lins",
+      "loser": "Ovince Saint Preux",
+      "weight_class": "Light Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: A.J. Fletcher vs Themba Gorimbo": {
+      "winner": "A.J. Fletcher",
+      "loser": "Themba Gorimbo",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Clayton Carpenter vs Juancamilo Ronderos": {
+      "winner": "Clayton Carpenter",
+      "loser": "Juancamilo Ronderos",
+      "weight_class": "Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "Feb 12, 2023": {
+    "Fight: Islam Makhachev vs Alexander Volkanovski": {
+      "winner": "Islam Makhachev",
+      "loser": "Alexander Volkanovski",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": true
+    },
+    "Fight: Yair Rodr\u00edguez vs Josh Emmett": {
+      "winner": "Yair Rodr\u00edguez",
+      "loser": "Josh Emmett",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Jack Della Maddalena vs Randy Brown": {
+      "winner": "Jack Della Maddalena",
+      "loser": "Randy Brown",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Justin Tafa vs Parker Porter": {
+      "winner": "Justin Tafa",
+      "loser": "Parker Porter",
+      "weight_class": "Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Jimmy Crute vs Alonzo Menifield": {
+      "winner": "Jimmy Crute",
+      "loser": "Alonzo Menifield",
+      "weight_class": "Light Heavyweight",
+      "draw": true,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Modestas Bukauskas vs Tyson Pedro": {
+      "winner": "Modestas Bukauskas",
+      "loser": "Tyson Pedro",
+      "weight_class": "Light Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Joshua Culibao vs Melsik Baghdasaryan": {
+      "winner": "Joshua Culibao",
+      "loser": "Melsik Baghdasaryan",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Kleydson Rodrigues vs Shannon Ross": {
+      "winner": "Kleydson Rodrigues",
+      "loser": "Shannon Ross",
+      "weight_class": "Catchweight (127 lb)",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Jamie Mullarkey vs Francisco Prado": {
+      "winner": "Jamie Mullarkey",
+      "loser": "Francisco Prado",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Jack Jenkins vs Don Shainis": {
+      "winner": "Jack Jenkins",
+      "loser": "Don Shainis",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Loma Lookboonmee vs Elise Reed": {
+      "winner": "Loma Lookboonmee",
+      "loser": "Elise Reed",
+      "weight_class": "Women's Strawweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Blake Bilder vs Shane Young": {
+      "winner": "Blake Bilder",
+      "loser": "Shane Young",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Elves Brener vs Zubaira Tukhugov": {
+      "winner": "Elves Brener",
+      "loser": "Zubaira Tukhugov",
+      "weight_class": "Catchweight (157.5 lb)",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "Feb 4, 2023": {
+    "Fight: Sergey Spivak vs Derrick Lewis": {
+      "winner": "Sergey Spivak",
+      "loser": "Derrick Lewis",
+      "weight_class": "Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Devin Clark vs Jung Da-un": {
+      "winner": "Devin Clark",
+      "loser": "Jung Da-un",
+      "weight_class": "Light Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Marcin Tybura vs Blagoy Ivanov": {
+      "winner": "Marcin Tybura",
+      "loser": "Blagoy Ivanov",
+      "weight_class": "Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Choi Doo-ho vs Kyle Nelson": {
+      "winner": "Choi Doo-ho",
+      "loser": "Kyle Nelson",
+      "weight_class": "Featherweight",
+      "draw": true,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Adam Fugitt vs Yusaku Kinoshita": {
+      "winner": "Adam Fugitt",
+      "loser": "Yusaku Kinoshita",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Anshul Jubli vs Jeka Saragih": {
+      "winner": "Anshul Jubli",
+      "loser": "Jeka Saragih",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Lee Jeong-yeong vs Yi Zha": {
+      "winner": "Lee Jeong-yeong",
+      "loser": "Yi Zha",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Rinya Nakamura vs Toshiomi Kazama": {
+      "winner": "Rinya Nakamura",
+      "loser": "Toshiomi Kazama",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Park Hyun-sung vs Choi Seung-guk": {
+      "winner": "Park Hyun-sung",
+      "loser": "Choi Seung-guk",
+      "weight_class": "Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Park Jun-yong vs Denis Tiuliulin": {
+      "winner": "Park Jun-yong",
+      "loser": "Denis Tiuliulin",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Tatsuro Taira vs Jes\u00fas Santos Aguilar": {
+      "winner": "Tatsuro Taira",
+      "loser": "Jes\u00fas Santos Aguilar",
+      "weight_class": "Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "Jan 21, 2023": {
+    "Fight: Jamahal Hill vs Glover Teixeira": {
+      "winner": "Jamahal Hill",
+      "loser": "Glover Teixeira",
+      "weight_class": "Light Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Brandon Moreno vs Deiveson Figueiredo": {
+      "winner": "Brandon Moreno",
+      "loser": "Deiveson Figueiredo",
+      "weight_class": "Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": true
+    },
+    "Fight: Gilbert Burns vs Neil Magny": {
+      "winner": "Gilbert Burns",
+      "loser": "Neil Magny",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: J\u00e9ssica Andrade vs Lauren Murphy": {
+      "winner": "J\u00e9ssica Andrade",
+      "loser": "Lauren Murphy",
+      "weight_class": "Women's Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Johnny Walker vs Paul Craig": {
+      "winner": "Johnny Walker",
+      "loser": "Paul Craig",
+      "weight_class": "Light Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Ihor Potieria vs Maur\u00edcio Rua": {
+      "winner": "Ihor Potieria",
+      "loser": "Maur\u00edcio Rua",
+      "weight_class": "Light Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Brunno Ferreira vs Gregory Rodrigues": {
+      "winner": "Brunno Ferreira",
+      "loser": "Gregory Rodrigues",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Thiago Mois\u00e9s vs Melquizael Costa": {
+      "winner": "Thiago Mois\u00e9s",
+      "loser": "Melquizael Costa",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Gabriel Bonfim vs Mounir Lazzez": {
+      "winner": "Gabriel Bonfim",
+      "loser": "Mounir Lazzez",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Jailton Almeida vs Shamil Abdurakhimov": {
+      "winner": "Jailton Almeida",
+      "loser": "Shamil Abdurakhimov",
+      "weight_class": "Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Cody Stamann vs Luan Lacerda": {
+      "winner": "Cody Stamann",
+      "loser": "Luan Lacerda",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Ismael Bonfim vs Terrance McKinney": {
+      "winner": "Ismael Bonfim",
+      "loser": "Terrance McKinney",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Nicolas Dalby vs Warlley Alves": {
+      "winner": "Nicolas Dalby",
+      "loser": "Warlley Alves",
+      "weight_class": "Welterweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Josiane Nunes vs Zarah Fairn": {
+      "winner": "Josiane Nunes",
+      "loser": "Zarah Fairn",
+      "weight_class": "Women's Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Daniel Marcos vs Saimon Oliveira": {
+      "winner": "Daniel Marcos",
+      "loser": "Saimon Oliveira",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  },
+  "Jan 14, 2023": {
+    "Fight: Sean Strickland vs Nassourdine Imavov": {
+      "winner": "Sean Strickland",
+      "loser": "Nassourdine Imavov",
+      "weight_class": "Light Heavyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Dan Ige vs Damon Jackson": {
+      "winner": "Dan Ige",
+      "loser": "Damon Jackson",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Roman Kopylov vs Punahele Soriano": {
+      "winner": "Roman Kopylov",
+      "loser": "Punahele Soriano",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Raquel Pennington vs Ketlen Vieira": {
+      "winner": "Raquel Pennington",
+      "loser": "Ketlen Vieira",
+      "weight_class": "Women's Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Umar Nurmagomedov vs Raoni Barcelos": {
+      "winner": "Umar Nurmagomedov",
+      "loser": "Raoni Barcelos",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Javid Basharat vs Mateus Mendon\u00e7a": {
+      "winner": "Javid Basharat",
+      "loser": "Mateus Mendon\u00e7a",
+      "weight_class": "Bantamweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Abdul Razak Alhassan vs Claudio Ribeiro": {
+      "winner": "Abdul Razak Alhassan",
+      "loser": "Claudio Ribeiro",
+      "weight_class": "Middleweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Mateusz R\u0119becki vs Nick Fiore": {
+      "winner": "Mateusz R\u0119becki",
+      "loser": "Nick Fiore",
+      "weight_class": "Lightweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Allan Nascimento vs Carlos Hern\u00e1ndez": {
+      "winner": "Allan Nascimento",
+      "loser": "Carlos Hern\u00e1ndez",
+      "weight_class": "Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Daniel Argueta vs Nick Aguirre": {
+      "winner": "Daniel Argueta",
+      "loser": "Nick Aguirre",
+      "weight_class": "Featherweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    },
+    "Fight: Charles Johnson vs Jimmy Flick": {
+      "winner": "Charles Johnson",
+      "loser": "Jimmy Flick",
+      "weight_class": "Flyweight",
+      "draw": false,
+      "no_contest": false,
+      "championship_fight": false
+    }
+  }
+}
