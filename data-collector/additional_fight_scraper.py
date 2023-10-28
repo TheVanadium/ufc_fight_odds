@@ -1,4 +1,4 @@
-import csv
+import threading
 import json
 import requests
 from bs4 import BeautifulSoup
@@ -8,7 +8,7 @@ INDEX_OF_EARLIEST_FIGHT_IN_2023 = 632
 UFC_EVENTS_LIST_LINK = "https://en.wikipedia.org/wiki/List_of_UFC_events"
 
 # "first" and "last" are inclusive and chronological; but the data starts with the first chronological fight and ends with the last chronological fight
-def scrape_ufc_events(first_fight_index: int, last_fight_index: int, file="test_remaining_ufc_fights.json"):
+def scrape_ufc_events(first_fight_index: int, last_fight_index: int, file="test_remaining_ufc_fights.json", process: str = "blank"):
     ufc_event_links: dict = {}
     # go to website
     # table<-id="Past_events"
@@ -38,11 +38,12 @@ def scrape_ufc_events(first_fight_index: int, last_fight_index: int, file="test_
         ufc_event_links[event_date] = event_link
         if event_number == first_fight_index: break
 
-    print (f"Number of events: {len(ufc_event_links)}")
+    # print (f"Number of events: {len(ufc_event_links)}")
 
     ufc_event_fights: dict = {}
     for date, link in ufc_event_links.items():
         print (f"Date: {date}")
+        print (f"Process: {process}")
         response_event_site = response = requests.get("https://en.wikipedia.org" + link)
         soup_event_site = BeautifulSoup(response_event_site.text, "lxml")
 
@@ -74,7 +75,7 @@ def scrape_ufc_events(first_fight_index: int, last_fight_index: int, file="test_
                 current_weight_class = current_weight_class.replace(character, "")
 
             fight_name = f"Fight: {winner} vs {loser}"
-            print(fight_name)
+            # print(fight_name)
             if not date in ufc_event_fights: ufc_event_fights[date] = {}
             ufc_event_fights[date][fight_name] = {
                 "winner": winner,
@@ -89,4 +90,8 @@ def scrape_ufc_events(first_fight_index: int, last_fight_index: int, file="test_
 
 if __name__ == "__main__":
     # scrape_ufc_events(INDEX_OF_EARLIEST_FIGHT_IN_2023, INDEX_OF_MOST_RECENT_FIGHT, file="fight_data_2023.json")
-    scrape_ufc_events(1, INDEX_OF_EARLIEST_FIGHT_IN_2023-1, file="fight_data_pre_2023.json")
+    args1 = (400, INDEX_OF_EARLIEST_FIGHT_IN_2023-1, "fight_data_pre_2023_a.json", "a")
+    args2 = (200, 399, "fight_data_pre_2023_b.json", "b")
+    threading.Thread(target=scrape_ufc_events, args=args1).start()
+    threading.Thread(target=scrape_ufc_events, args=args2).start()
+    scrape_ufc_events(0, 199, file="fight_data_pre_2023_c.json", process="c")
