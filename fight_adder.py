@@ -6,20 +6,20 @@ FIGHTER_DATA_FILE = "fighter_data.json"
 ACTION_LOG = "action_log.txt"
 
 WEIGHT_CLASSES = {
-        "Women'sStrawweight": 115,
-        "Women'sFlyweight": 125,
-        "Women'sBantamweight": 135,
-        "Women'sFeatherweight": 145,
-        "Strawweight": 115,
-        "Flyweight": 125,
-        "Bantamweight": 135,
-        "Featherweight": 145,
-        "Lightweight": 155,
-        "Welterweight": 170,
-        "Middleweight": 185,
-        "LightHeavyweight": 205,
-        "Heavyweight": 265,
-    }
+    "Women'sStrawweight": 115,
+    "Women'sFlyweight": 125,
+    "Women'sBantamweight": 135,
+    "Women'sFeatherweight": 145,
+    "Strawweight": 115,
+    "Flyweight": 125,
+    "Bantamweight": 135,
+    "Featherweight": 145,
+    "Lightweight": 155,
+    "Welterweight": 170,
+    "Middleweight": 185,
+    "LightHeavyweight": 205,
+    "Heavyweight": 265,
+}
 
 # no accents in fighter_one or fighter_two please
 # winner is fighter_one or fighter_two, even if it's a draw
@@ -30,49 +30,54 @@ def add_fight(fighter_one: str, fighter_two: str, winner: str, date: str, weight
     # remove spaces from weight class to be consistent with other data
     weight_class = weight_class.replace(" ", "")
     weight_class = weight_class.replace("’", "'")
+    
+    FIGHTER_ONE_INDEX = 0
+    FIGHTER_TWO_INDEX = 1
 
     DEFAULT_ELO = 1500
     fighter_elos = [DEFAULT_ELO, DEFAULT_ELO]
     fighter_weight_classes = ["", ""]
     fighter_odds = [0, 0]
     fighter_results = [0.5, 0.5]
-    FIGHTER_ONE_INDEX = 0
-    FIGHTER_TWO_INDEX = 1
 
+    # if fighters are not in fighter_data, add them
     for fighter_name in (fighter_one, fighter_two):
         if fighter_name in fighter_data: continue
         fighter_data[fighter_name] = {
             "elo": DEFAULT_ELO,
             "record": {},
         }
-        # print (f"Fighter {fighter_name} not found in {fighter_data_file}, adding to {fighter_data_file}")
-        with open(ACTION_LOG, "a") as f:
-            f.write(f"Fighter {fighter_name} not found in {fighter_data_file}, adding to {fighter_data_file}\n")
+        log_action(f"Fighter {fighter_name} not found in {fighter_data_file}, adding to {fighter_data_file}")
         with open(fighter_data_file, "w") as f:
             json.dump(fighter_data, f, indent=4)
 
+    # get elos, weight classes, odds, and results, and put them in the lists above
     for fighter_name, individual_fighter_data in fighter_data.items():
-        if fighter_odds[FIGHTER_ONE_INDEX] != 0 and fighter_odds[FIGHTER_TWO_INDEX] != 0: break
+        data_of_both_fighters_found = fighter_odds[FIGHTER_ONE_INDEX] != 0 and fighter_odds[FIGHTER_TWO_INDEX] != 0
+        if data_of_both_fighters_found: break
         if fighter_name != fighter_one and (fighter_name != fighter_two): continue
-        index = FIGHTER_ONE_INDEX
-        if fighter_name == fighter_two: index = FIGHTER_TWO_INDEX
+        
+        current_fighter_index = FIGHTER_ONE_INDEX
+        if fighter_name == fighter_two: current_fighter_index = FIGHTER_TWO_INDEX
+        other_fighter_index = abs(current_fighter_index-1)
 
-        fighter_elos[index] = float(individual_fighter_data["elo"])
-        fighter_weight_classes[index] = get_fighter_weight_class(individual_fighter_data["record"])
-        if fighter_weight_classes[index] == "": weight_class_ratio = 1
-        else: 
-            try: 
-                weight_class_ratio = WEIGHT_CLASSES[fighter_weight_classes[index]] / WEIGHT_CLASSES[weight_class]
-            except KeyError:
-                weight_class_ratio = 1
-        fighter_odds[index] = expected_odds(fighter_elos[index], fighter_elos[abs(index-1)], weight_class_ratio)
+        fighter_elos[current_fighter_index] = float(individual_fighter_data["elo"])
+        
+        fighter_weight_classes[current_fighter_index] = get_fighter_weight_class(individual_fighter_data["record"])
+        if fighter_weight_classes[current_fighter_index] == "": weight_class_ratio = 1
+        else: weight_class_ratio = calculate_weight_class_ratio(fighter_weight_classes[current_fighter_index], weight_class)
+        
+        fighter_odds[current_fighter_index] = expected_odds(fighter_elos[current_fighter_index], fighter_elos[other_fighter_index], weight_class_ratio)
 
-        if not draw and not no_contest: fighter_results[index] = int(fighter_name == winner)
+        if not draw and not no_contest: fighter_results[current_fighter_index] = int(fighter_name == winner)
 
+    #  calculate new elos
     new_fighter_elos = [0, 0]
     for i in range(2):
-        if fighter_odds[i] == 0: KeyError(f"Fighter {fighter_one} or {fighter_two} not found in {fighter_data_file}")
+        fighter_not_found = fighter_odds[i] == 0
+        if fighter_not_found: KeyError(f"Fighter {fighter_one} or {fighter_two} not found in {fighter_data_file}")
         fighter_has_less_than_two_fights = False
+        # check if this is what we want
         for fighter_name in (fighter_one, fighter_two):
             if len(fighter_data[fighter_name]["record"]) < 2: fighter_has_less_than_two_fights = True
         k_factor = 32
@@ -83,9 +88,7 @@ def add_fight(fighter_one: str, fighter_two: str, winner: str, date: str, weight
     # update elos, add fight to fighter records
     for fighter_name in fighter_data:
         if fighter_name != fighter_one and (fighter_name != fighter_two): continue
-        # print (f"Updating {fighter_name}'s elo from {fighter_data[fighter_name]['elo']} to {new_fighter_elos[FIGHTER_ONE_INDEX if fighter_name == fighter_one else FIGHTER_TWO_INDEX]}")
-        with open(ACTION_LOG, "a") as f:
-            f.write(f"Updating {fighter_name}'s elo from {fighter_data[fighter_name]['elo']} to {new_fighter_elos[FIGHTER_ONE_INDEX if fighter_name == fighter_one else FIGHTER_TWO_INDEX]}\n")
+        log_action(f"Updating {fighter_name}'s elo from {fighter_data[fighter_name]['elo']} to {new_fighter_elos[FIGHTER_ONE_INDEX if fighter_name == fighter_one else FIGHTER_TWO_INDEX]}")
         index = FIGHTER_ONE_INDEX
         if fighter_name == fighter_two: index = FIGHTER_TWO_INDEX
         # add fight to fighter's record
@@ -98,9 +101,7 @@ def add_fight(fighter_one: str, fighter_two: str, winner: str, date: str, weight
     
     with open(fighter_data_file, "w") as f:
         json.dump(fighter_data, f, indent=4)
-        with open(ACTION_LOG, "a") as f:
-            f.write(f"Fight between {fighter_one} and {fighter_two} on date {date} added to {fighter_data_file}\n")
-        # print (f"Fight between {fighter_one} and {fighter_two} on date {date} added to {fighter_data_file}")
+        log_action(f"Fight between {fighter_one} and {fighter_two} on date {date} added to {fighter_data_file}")
     return
 
 # get last 2 fights chronologically (they're sorted first->last), then pick the lighter of the 2 weight classes, then return that
@@ -118,11 +119,21 @@ def get_fighter_weight_class(fighter_record: dict):
     lighter_weight_class_weight = 10000
     for fight in last_two_fights:
         if fight["weight_class"].startswith("Catch"): continue
-        if WEIGHT_CLASSES[fight["weight_class"]] < lighter_weight_class_weight:
-            lighter_weight_class = fight["weight_class"]
-            lighter_weight_class_weight = WEIGHT_CLASSES[fight["weight_class"]]
+        if lighter_weight_class_weight <= WEIGHT_CLASSES[fight["weight_class"]]: continue
+        lighter_weight_class = fight["weight_class"]
+        lighter_weight_class_weight = WEIGHT_CLASSES[fight["weight_class"]]
     return lighter_weight_class    
     
+def calculate_weight_class_ratio(fighter_weight_class: str, fight_weight_class: str):
+    try: 
+        return WEIGHT_CLASSES[fighter_weight_class]/WEIGHT_CLASSES[fight_weight_class]
+    except KeyError:
+        return 1
+
+def log_action(action: str):
+    with open(ACTION_LOG, "a") as f:
+        f.write(action+"\n")
+    return
 
 if __name__ == "__main__":
     # copy fighter_data.json to test_fighter_data.json
