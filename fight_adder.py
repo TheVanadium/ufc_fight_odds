@@ -40,16 +40,16 @@ def add_fight(fighter_one: str, fighter_two: str, winner: str, date: str, weight
     FIGHTER_TWO_INDEX = 1
 
     for fighter_name in (fighter_one, fighter_two):
-        if fighter_name not in fighter_data:
-            fighter_data[fighter_name] = {
-                "elo": DEFAULT_ELO,
-                "record": {},
-            }
-            # print (f"Fighter {fighter_name} not found in {fighter_data_file}, adding to {fighter_data_file}")
-            with open(ACTION_LOG, "a") as f:
-                f.write(f"Fighter {fighter_name} not found in {fighter_data_file}, adding to {fighter_data_file}\n")
-            with open(fighter_data_file, "w") as f:
-                json.dump(fighter_data, f, indent=4)
+        if fighter_name in fighter_data: continue
+        fighter_data[fighter_name] = {
+            "elo": DEFAULT_ELO,
+            "record": {},
+        }
+        # print (f"Fighter {fighter_name} not found in {fighter_data_file}, adding to {fighter_data_file}")
+        with open(ACTION_LOG, "a") as f:
+            f.write(f"Fighter {fighter_name} not found in {fighter_data_file}, adding to {fighter_data_file}\n")
+        with open(fighter_data_file, "w") as f:
+            json.dump(fighter_data, f, indent=4)
 
     for fighter_name, individual_fighter_data in fighter_data.items():
         if fighter_odds[FIGHTER_ONE_INDEX] != 0 and fighter_odds[FIGHTER_TWO_INDEX] != 0: break
