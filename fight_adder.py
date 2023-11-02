@@ -108,7 +108,7 @@ def add_fight(fighter_one: str, fighter_two: str, winner: str, date: str, weight
     # if there's catchweight, treat it as ""
     # if there's only 1 fight, return that weight class
     # if there's no fights, return ""
-def get_fighter_weight_class(fighter_record: dict): 
+def get_fighter_weight_class(fighter_record: dict):
     last_two_fights = []
     for date, fight_data in fighter_record.items():
         last_two_fights.append(fight_data)
@@ -118,10 +118,16 @@ def get_fighter_weight_class(fighter_record: dict):
     lighter_weight_class = ""
     lighter_weight_class_weight = 10000
     for fight in last_two_fights:
-        if fight["weight_class"].startswith("Catch"): continue
+        try:
+            fight_weight_class = WEIGHT_CLASSES[fight["weight_class"]]
+        except KeyError:
+            # account for "ultimate fighter 28 heavyweight tournament weight class"
+            if "heavyweight" in fight["weight_class"].lower(): fight_weight_class = WEIGHT_CLASSES["Heavyweight"]
+            else: continue
         if lighter_weight_class_weight <= WEIGHT_CLASSES[fight["weight_class"]]: continue
         lighter_weight_class = fight["weight_class"]
         lighter_weight_class_weight = WEIGHT_CLASSES[fight["weight_class"]]
+    if lighter_weight_class_weight == 10000: return ""
     return lighter_weight_class    
     
 def calculate_weight_class_ratio(fighter_weight_class: str, fight_weight_class: str):
@@ -130,9 +136,12 @@ def calculate_weight_class_ratio(fighter_weight_class: str, fight_weight_class: 
     except KeyError:
         return 1
 
-def log_action(action: str):
+def log_action(action: str): 
     with open(ACTION_LOG, "a") as f:
-        f.write(action+"\n")
+        try: 
+            f.write(action+"\n")
+        except UnicodeEncodeError:
+            f.write("UnicodeEncodeError")
     return
 
 if __name__ == "__main__":
