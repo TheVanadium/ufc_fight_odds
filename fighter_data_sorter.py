@@ -2,11 +2,14 @@
 
 import csv
 import json
+from odds_calculation_methods import expected_odds, elo_change
 
-FIGHT_DATA_FILE = "chronological_total_fight_data.csv"
+FIGHT_DATA_FILE = "fight-data/chronological_total_fight_data.csv"
 OUTPUT_FILE = "fighter_data.json"
 
 def write_fighter_data(fight_data_file=FIGHT_DATA_FILE, output_file=OUTPUT_FILE):
+    highest_elo: int = 0
+    highest_elo: int = 0
     fighter_data = {}
     with (open(fight_data_file, "r")) as f:
         reader = csv.reader(f, delimiter=';')
@@ -86,31 +89,18 @@ def write_fighter_data(fight_data_file=FIGHT_DATA_FILE, output_file=OUTPUT_FILE)
                 opponent_name = fighter_data[fighter]["record"][row[DATE_INDEX]]["opponent"]
                 opponent_elo = fighter_data[opponent_name]["elo"]
 
-                current_fight_odds = expected_odds(current_elo, int(opponent_elo), target_opponent_weight_ratio=fighter_opponent_weight_ratio)
+                current_fight_odds = expected_odds(current_elo, int(opponent_elo), target_opponent_weight_ratio=fighter_opponent_weight_ratio)                
+                current_fight_odds = expected_odds(current_elo, int(opponent_elo), target_opponent_weight_ratio=fighter_opponent_weight_ratio)                
                 k_factor = STANDARD_K_FACTOR
                 if fighter_is_novel: k_factor = NOVEL_K_FACTOR
                 fighter_data[fighter]["elo"] += elo_change(current_fight_odds, result, k_factor)
+                if fighter_data[fighter]["elo"] > highest_elo: 
+                    highest_elo = fighter_data[fighter]["elo"]
+                    print(f"Fighter: {fighter}, Opponent: {opponent_name}, Elo: {fighter_data[fighter]['elo']}")
 
     with (open(output_file, "w", newline='')) as f:
         json.dump(fighter_data, f, indent=4)
         
-def expected_odds(target_fighter_elo, opponent_elo, target_fighter_last_game_was_loss=False, opponent_last_game_was_loss=False, target_opponent_weight_ratio=0):
-    elo_difference = target_fighter_elo - opponent_elo
-    # test this variable later
-    # LAST_GAME_WAS_LOST = 50
-    
-    # all else being equal, a fighter moving down 10% should have an 75% chance of winning
-    WEIGHT_FACTOR = 10
-
-    adjusted_elo_difference = elo_difference
-    adjusted_elo_difference += (target_opponent_weight_ratio-1)*100 * WEIGHT_FACTOR
-    # if target_fighter_last_game_was_loss: adjusted_elo_difference+=LAST_GAME_WAS_LOST
-    # if opponent_last_game_was_loss: adjusted_elo_difference-=LAST_GAME_WAS_LOST
-
-    return 1 / (1 + 10 ** (-(adjusted_elo_difference) / 400))
-
-def elo_change(expected_odds, result, k_factor=32):
-    return k_factor * (result - expected_odds)
 
 if __name__ == "__main__":
     write_fighter_data(output_file="fighter_data.json")
