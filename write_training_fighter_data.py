@@ -17,7 +17,7 @@ def write_training_fighter_data(training_data_files: list = TRAINING_DATA_FILES,
     # files are listed in reverse chronological order
     training_data_files.reverse()
     for training_data_file in training_data_files:
-        with open("data-collector/" + training_data_file, "r") as f:
+        with open("fight-data-collector/" + training_data_file, "r") as f:
             training_data = json.load(f)
 
         # training data is in reverse chronological order, so we need to reverse it

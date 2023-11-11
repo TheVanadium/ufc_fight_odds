@@ -18,7 +18,7 @@ Currently in the works:
 ## Admin Scripts
 Scripts that are used to manage the data for the app.
 
-`data-collector/` contains scripts and data for UFC fights from UFC 1 until UFC 294
+`fight-data-collector/` contains scripts and data for UFC fights from UFC 1 until UFC 294
 ### `additional_fight_scraper.py`
 Scrapes Wikipedia for fight data and writes it to 4 json files (for speed):
 - `fight_data_pre_2023-a.json`, `fight_data_pre_2023-b.json`, `fight_data_pre_2023-c.json`: Fight data for fights before 2023 in sorted in reverse chronological order.
