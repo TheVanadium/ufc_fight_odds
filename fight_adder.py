@@ -35,6 +35,7 @@ def add_fight(fighter_one: str, fighter_two: str, winner: str, date: str, weight
     FIGHTER_TWO_INDEX = 1
 
     DEFAULT_ELO = 1500
+    fighter_names = [fighter_one, fighter_two]
     fighter_elos = [DEFAULT_ELO, DEFAULT_ELO]
     fighter_weight_classes = ["", ""]
     fighter_odds = [0, 0]
@@ -76,12 +77,12 @@ def add_fight(fighter_one: str, fighter_two: str, winner: str, date: str, weight
     for i in range(2):
         fighter_not_found = fighter_odds[i] == 0
         if fighter_not_found: KeyError(f"Fighter {fighter_one} or {fighter_two} not found in {fighter_data_file}")
-        fighter_has_less_than_two_fights = False
-        # check if this is what we want
-        for fighter_name in (fighter_one, fighter_two):
-            if len(fighter_data[fighter_name]["record"]) < 2: fighter_has_less_than_two_fights = True
+        fighter_has_less_than_two_fights = len(fighter_data[fighter_names[i]]["record"]) < 2
         k_factor = 32
-        if fighter_has_less_than_two_fights: k_factor = 64
+        if fighter_has_less_than_two_fights:
+            # will need to remove first several ufcs, as overlapping same-day fights aren't increasing the fight count of the fighters 
+            log_action(f"Fighter {fighter_names[i]} has {len(fighter_data[fighter_names[i]]['record'].keys())} fights, using k_factor of 64")
+            k_factor = 64
         new_fighter_elos[i] = fighter_elos[i]+elo_change(fighter_odds[i], fighter_results[i], k_factor=k_factor)
         if no_contest: new_fighter_elos[i] = fighter_elos[i]
 
@@ -93,6 +94,11 @@ def add_fight(fighter_one: str, fighter_two: str, winner: str, date: str, weight
         if fighter_name == fighter_two: index = FIGHTER_TWO_INDEX
         # add fight to fighter's record
         fighter_data[fighter_name]["elo"] = new_fighter_elos[index]
+        # if the date is in the fighter record, make another date called date + "i" where i is the number of times that date has been used
+        if date in fighter_data[fighter_name]["record"]:
+            i = 1
+            while date+str(i) in fighter_data[fighter_name]["record"]: i += 1
+            date = date+str(i)
         fighter_data[fighter_name]["record"][date] = {
             "opponent": fighter_one if fighter_name == fighter_two else fighter_two,
             "result": fighter_results[index],
