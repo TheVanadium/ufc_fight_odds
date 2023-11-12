@@ -21,9 +21,59 @@ WEIGHT_CLASSES = {
     "Heavyweight": 265,
 }
 
-# no accents in fighter_one or fighter_two please
-# winner is fighter_one or fighter_two, even if it's a draw
-def add_fight(fighter_one: str, fighter_two: str, winner: str, date: str, weight_class: str, draw: bool, no_contest: bool, championship_fight: bool, fighter_data_file: str = FIGHTER_DATA_FILE):
+# Adds fight with given data to given fighter data file. For the 
+# purposes of the project, the correct data file is fighter_data.json
+# @param fighter_one: name of 
+
+
+def add_fight(
+    fighter_one: str, 
+    fighter_two: str, 
+    winner: str, 
+    date: str, 
+    weight_class: str, 
+    draw: bool, 
+    no_contest: bool, 
+    championship_fight: bool, 
+    fighter_data_file: str = FIGHTER_DATA_FILE
+) -> None:
+    """Adds fight with given data to given fighter data file. 
+
+    For the purposes of the project, the correct data file is fighter_data.json
+    Championship fight status as an odds factor remains to be implemented
+
+    Args:
+        fighter_one (str): 
+            name of first fighter
+        fighter_two (str): 
+            name of second fighter
+        winner (str): 
+            name of winner. If draw or no contest, the winner is still either 
+            fighter_one or fighter_two, randomly.
+        date (str): 
+            date of fight as a string. Format doesn't matter, but in the API, 
+            it's MMM DD, YYYY, with the month being 3 letters and the day never 
+            having leading zeroes.
+        weight_class (str): 
+            must be in WEIGHT_CLASSES. If not, weight will be ignored as a 
+            factor in calculating odds.
+        draw (bool): 
+            whether or not the fight was a draw
+        no_contest (bool): 
+            whether or not the fight was a no contest
+        championship_fight (bool): 
+            whether or not the fight was a championship fight (not including 
+            interim championships)
+        fighter_data_file (str, optional): 
+            path to fighter data file. Defaults to FIGHTER_DATA_FILE.
+
+    Returns:
+        None
+        
+    Raises:
+        KeyError: if fighter_one or fighter_two is not in fighter_data_file
+    """
+    
     with open(fighter_data_file, "r") as f:
         fighter_data = json.load(f)
 
@@ -114,7 +164,43 @@ def add_fight(fighter_one: str, fighter_two: str, winner: str, date: str, weight
     # if there's catchweight, treat it as ""
     # if there's only 1 fight, return that weight class
     # if there's no fights, return ""
-def get_fighter_weight_class(fighter_record: dict):
+def get_fighter_weight_class(fighter_record: dict) -> str:
+    """Gets the 'natural' weight class of the fighter, based on their last two 
+        fights.
+    
+        Picks the lighter of the two weight classes.
+    
+    Args:
+        fighter_record (dict): 
+            fighter record from fighter_data.json
+
+    Returns:
+        str: 
+            the 'natural' weight class of the fighter, based on their last two fights.
+            the natural weight is the lighter of the two weight classes. 
+            catchweight
+            is considered blank and the other weight class is considered the natural 
+            one.
+            if the fighter had no fights, or only catchweight fights, returns ""
+
+            Examples:
+                weight_class_of_last_two_fights = ["Lightweight", "Welterweight"]
+                returns "Lightweight"
+
+                weight_class_of_last_two_fights = ["Catchweight", "Welterweight"]
+                returns "Welterweight"
+
+                weight_class_of_last_two_fights = ["Catchweight", "Catchweight"]
+                returns ""
+
+                weight_class_of_last_two_fights = ["Lightweight"]
+                returns "Lightweight"
+
+                weight_class_of_last_two_fights = []
+                returns ""
+    """
+
+
     last_two_fights = []
     for date, fight_data in fighter_record.items():
         last_two_fights.append(fight_data)
@@ -136,13 +222,15 @@ def get_fighter_weight_class(fighter_record: dict):
     if lighter_weight_class_weight == 10000: return ""
     return lighter_weight_class    
     
-def calculate_weight_class_ratio(fighter_weight_class: str, fight_weight_class: str):
+def calculate_weight_class_ratio(fighter_weight_class: str, fight_weight_class: str) -> float:
+    """ This exists because the potential for a KeyError makes for a 
+        bulky chunk of code in add_fight()."""
     try: 
         return WEIGHT_CLASSES[fighter_weight_class]/WEIGHT_CLASSES[fight_weight_class]
     except KeyError:
         return 1
 
-def log_action(action: str): 
+def log_action(action: str) -> None: 
     with open(ACTION_LOG, "a") as f:
         try: 
             f.write(action+"\n")
