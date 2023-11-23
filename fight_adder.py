@@ -21,11 +21,6 @@ WEIGHT_CLASSES = {
     "Heavyweight": 265,
 }
 
-# Adds fight with given data to given fighter data file. For the 
-# purposes of the project, the correct data file is fighter_data.json
-# @param fighter_one: name of 
-
-
 def add_fight(
     fighter_one: str, 
     fighter_two: str, 
