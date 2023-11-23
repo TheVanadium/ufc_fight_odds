@@ -200,7 +200,6 @@ def get_fighter_weight_class(fighter_record: dict) -> str:
                 returns ""
     """
 
-
     last_two_fights = []
     for date, fight_data in fighter_record.items():
         last_two_fights.append(fight_data)
