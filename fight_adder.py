@@ -21,11 +21,6 @@ WEIGHT_CLASSES = {
     "Heavyweight": 265,
 }
 
-# Adds fight with given data to given fighter data file. For the 
-# purposes of the project, the correct data file is fighter_data.json
-# @param fighter_one: name of 
-
-
 def add_fight(
     fighter_one: str, 
     fighter_two: str, 
@@ -200,7 +195,6 @@ def get_fighter_weight_class(fighter_record: dict) -> str:
                 returns ""
     """
 
-
     last_two_fights = []
     for date, fight_data in fighter_record.items():
         last_two_fights.append(fight_data)
@@ -208,7 +202,8 @@ def get_fighter_weight_class(fighter_record: dict) -> str:
     if len(last_two_fights) == 0: return ""
     if len(last_two_fights) == 1: return last_two_fights[0]["weight_class"]
     lighter_weight_class = ""
-    lighter_weight_class_weight = 10000
+    UNDEFINED_WEIGHT_CLASS_VALUE: int = 10000
+    lighter_weight_class_weight: int = UNDEFINED_WEIGHT_CLASS_VALUE
     for fight in last_two_fights:
         try:
             fight_weight_class = WEIGHT_CLASSES[fight["weight_class"]]
@@ -219,7 +214,7 @@ def get_fighter_weight_class(fighter_record: dict) -> str:
         if lighter_weight_class_weight <= WEIGHT_CLASSES[fight["weight_class"]]: continue
         lighter_weight_class = fight["weight_class"]
         lighter_weight_class_weight = WEIGHT_CLASSES[fight["weight_class"]]
-    if lighter_weight_class_weight == 10000: return ""
+    if lighter_weight_class_weight == UNDEFINED_WEIGHT_CLASS_VALUE: return ""
     return lighter_weight_class    
     
 def calculate_weight_class_ratio(fighter_weight_class: str, fight_weight_class: str) -> float:
