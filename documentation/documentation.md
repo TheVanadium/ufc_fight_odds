@@ -59,3 +59,7 @@ Contains functions for calculating the odds of a fighter winning a match based o
 `write_training_fighter_data.py`
 Contains the function `write_training_fighter_data.py`, which goes through all 3 pre-2023 fight data files and uses `add_fight` (see `fight_adder.py`) to add all the fights to the fighter data file (`fighter_data.json`).
 Notably, this takes quite a long time (several minutes) to finish.
+
+#### Tests
+`test_fight_adder.py`
+Tests the `add_fight` function in `fight_adder.py` by adding a fight to a test fighter's record and checking if the result is correct. The changes are made to `test_fighter_data.json` after `fighter_data.json`'s data is copied into it. 
