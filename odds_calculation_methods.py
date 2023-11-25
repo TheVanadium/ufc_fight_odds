@@ -13,7 +13,7 @@ def expected_odds(
         target_opponent_weight_ratio (float): the ratio of the target fighter's weight to the opponent's weight
 
     Returns:
-        float: the expected odds of the target fighter winning
+        float: the expected odds of the target fighter winning, as a percentage from 0 to 1
 
     """
     
