@@ -34,6 +34,7 @@ def add_fight(
 ) -> None:
     """Adds fight with given data to given fighter data file. 
 
+    Also updates fighter's elo
     For the purposes of the project, the correct data file is fighter_data.json
     Championship fight status as an odds factor remains to be implemented
 
