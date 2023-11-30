@@ -8,4 +8,5 @@ Input: Two fighters' names
 Output: A prediction of the winner and the probability of that fighter winning
 
 ## Documentation
-See `documentation/documentation.md` for more information on the project.
+See `documentation/documentation.md` for more information on the project's methodology.
+See `documentation/CONTRIBUTING.md` for more information on how to contribute to the project.
