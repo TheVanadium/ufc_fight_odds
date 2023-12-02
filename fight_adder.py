@@ -95,8 +95,6 @@ def add_fight(
             "record": {},
         }
         log_action(f"Fighter {fighter_name} not found in {fighter_data_file}, adding to {fighter_data_file}")
-        with open(fighter_data_file, "w") as f:
-            json.dump(fighter_data, f, indent=4)
 
     # get elos, weight classes, odds, and results, and put them in the lists above
     for fighter_name, individual_fighter_data in fighter_data.items():
@@ -154,7 +152,6 @@ def add_fight(
     with open(fighter_data_file, "w") as f:
         json.dump(fighter_data, f, indent=4)
         log_action(f"Fight between {fighter_one} and {fighter_two} on date {date} added to {fighter_data_file}")
-    return
 
 # get last 2 fights chronologically (they're sorted first->last), then pick the lighter of the 2 weight classes, then return that
     # if there's catchweight, treat it as ""
