@@ -1,6 +1,5 @@
 import csv
 import json
-import datetime
 from odds_calculation_methods import expected_odds, elo_change
 
 FIGHTER_DATA_FILE = "fighter_data.json"
@@ -143,8 +142,6 @@ def add_fight(
             "result": fighter_results[index],
             "weight_class": weight_class,
         }
-    endtime = datetime.datetime.now()
-    print(f"add_fight() took {endtime-starttime} to run")
 
 # get last 2 fights chronologically (they're sorted first->last), then pick the lighter of the 2 weight classes, then return that
     # if there's catchweight, treat it as ""
