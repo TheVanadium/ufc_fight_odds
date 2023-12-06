@@ -5,7 +5,25 @@ from fight_adder import add_fight
 # there's some overlap in the training data i think, but it probably doesn't matter? since the fights should have the same key (date)
 TRAINING_DATA_FILES = ["fight_data_pre_2023_a.json", "fight_data_pre_2023_b.json", "fight_data_pre_2023_c.json"]
 
-def write_training_fighter_data(training_data_files: list = TRAINING_DATA_FILES, fighter_data_file: str = "fighter_data.json"):
+def write_training_fighter_data(
+    training_data_files: list = TRAINING_DATA_FILES, 
+    fighter_data_file: str = "fighter_data.json"
+) -> None:
+    """
+        Writes data from pre-2023 fight data to the fighter data file.
+
+        Args:
+            training_data_files (list): 
+                list of training data files to write to the fighter data file.
+                default: TRAINING_DATA_FILES
+            fighter_data_file (str): 
+                the fighter data file to write to.
+                default: "fighter_data.json"
+                For format, see the `fighter_data.json` section in documentation.md
+        Returns:
+            None
+    """
+    
     # ensures fighter_data_file is jsonable
     try:
         with open(fighter_data_file, "r") as f:
