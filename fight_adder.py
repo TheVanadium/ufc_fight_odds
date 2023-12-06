@@ -1,4 +1,3 @@
-import csv
 import json
 from odds_calculation_methods import expected_odds, elo_change
 

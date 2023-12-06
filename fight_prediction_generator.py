@@ -1,4 +1,3 @@
-import csv
 import json
 from odds_calculation_methods import expected_odds
 from fight_adder import get_fighter_weight_class, add_fight
