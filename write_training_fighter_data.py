@@ -6,7 +6,13 @@ from fight_adder import add_fight
 TRAINING_DATA_FILES = ["fight_data_pre_2023_a.json", "fight_data_pre_2023_b.json", "fight_data_pre_2023_c.json"]
 
 def write_training_fighter_data(training_data_files: list = TRAINING_DATA_FILES, fighter_data_file: str = "fighter_data.json"):
-    jsonify(fighter_data_file)
+    # ensures fighter_data_file is jsonable
+    try:
+        with open(fighter_data_file, "r") as f:
+            fighter_data = json.load(f)
+    except json.decoder.JSONDecodeError:
+        with open (fighter_data_file, "w") as f:
+            json.dump({}, f, indent=4)
 
     # files are listed in reverse chronological order
     training_data_files.reverse()
@@ -69,28 +75,6 @@ def add_event(event_data: dict, date: str, fighter_data_file):
         no_contest = fight_data["no_contest"]
         championship_fight = fight_data["championship_fight"]
         add_fight(winner, loser, winner, date, weight_class, draw, no_contest, championship_fight, fighter_data_file)
-
-def jsonify(file: str):
-    """Converts a non-json file to just {} so it is json-able.
-    
-    If the file is already json-able, this function does 
-    nothing.
-    This needs to exist because sometimes I clear the testing 
-    file without adding the {} back in, and then the file is 
-    not json-able.
-    
-    Args:
-        file (str): the file to jsonify
-
-    Returns:
-        None
-    """
-    try:
-        with open(file, "r") as f:
-            fighter_data = json.load(f)
-    except json.decoder.JSONDecodeError:
-        with open (file, "w") as f:
-            json.dump({}, f, indent=4)
 
 if __name__ == "__main__":
     # create a header for the action log
