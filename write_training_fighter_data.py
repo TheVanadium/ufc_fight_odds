@@ -10,6 +10,10 @@ def write_training_fighter_data(training_data_files: list = TRAINING_DATA_FILES,
 
     # files are listed in reverse chronological order
     training_data_files.reverse()
+
+    with open(fighter_data_file, "r") as f:
+        fighter_data = json.load(f)
+
     for training_data_file in training_data_files:
         with open("fight-data-collector/" + training_data_file, "r") as f:
             training_data = json.load(f)
@@ -35,7 +39,7 @@ def write_training_fighter_data(training_data_files: list = TRAINING_DATA_FILES,
         #       "championship_fight": false
         #     },
         #     ...
-        
+
         for date, event_data in training_data.items():
             for fight_name, fight_data in event_data.items():
                 winner = unidecode(fight_data["winner"])
@@ -44,7 +48,10 @@ def write_training_fighter_data(training_data_files: list = TRAINING_DATA_FILES,
                 draw = fight_data["draw"]
                 no_contest = fight_data["no_contest"]
                 championship_fight = fight_data["championship_fight"]
-                add_fight(winner, loser, winner, date, weight_class, draw, no_contest, championship_fight, fighter_data_file)
+                add_fight(winner, loser, winner, date, weight_class, draw, no_contest, championship_fight, fighter_data)
+        
+    with open(fighter_data_file, "w") as f:
+        json.dump(fighter_data, f, indent=4)
 
 def add_event(event_data: dict, date: str, fighter_data_file):
     """Adds all the fights of a UFC event to the fighter data file.

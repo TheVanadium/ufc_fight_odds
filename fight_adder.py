@@ -30,13 +30,12 @@ def add_fight(
     draw: bool, 
     no_contest: bool, 
     championship_fight: bool, 
-    fighter_data_file: str = FIGHTER_DATA_FILE
+    fighter_data: dict
 ) -> None:
-    """Adds fight with given data to given fighter data file. 
+    """Adds fight with given data to given fighter data dict (fighter_data). 
 
-    Also updates fighter's elo
-    For the purposes of the project, the correct data file is fighter_data.json
-    Championship fight status as an odds factor remains to be implemented
+    Also updates fighter's elo. Championship fight status as an odds factor 
+    remains to be implemented.
 
     Args:
         fighter_one (str): 
@@ -60,19 +59,14 @@ def add_fight(
         championship_fight (bool): 
             whether or not the fight was a championship fight (not including 
             interim championships)
-        fighter_data_file (str, optional): 
-            path to fighter data file. Defaults to FIGHTER_DATA_FILE.
+        fighter_data (dict):
+            the dict to be modified. information formatted the same as 
+            fighter_data.json, see documentation.md for details
 
     Returns:
         None
-        
-    Raises:
-        KeyError: if fighter_one or fighter_two is not in fighter_data_file
     """
     
-    with open(fighter_data_file, "r") as f:
-        fighter_data = json.load(f)
-
     # remove spaces from weight class to be consistent with other data
     weight_class = weight_class.replace(" ", "")
     weight_class = weight_class.replace("’", "'")
@@ -89,24 +83,22 @@ def add_fight(
 
     # if fighters are not in fighter_data, add them
     for fighter_name in (fighter_one, fighter_two):
-        if fighter_name in fighter_data: continue
-        fighter_data[fighter_name] = {
-            "elo": DEFAULT_ELO,
-            "record": {},
-        }
-        log_action(f"Fighter {fighter_name} not found in {fighter_data_file}, adding to {fighter_data_file}")
-        with open(fighter_data_file, "w") as f:
-            json.dump(fighter_data, f, indent=4)
+        try:
+            fighter_data[fighter_name]
+        except KeyError:
+            fighter_data[fighter_name] = {
+                "elo": DEFAULT_ELO,
+                "record": {},
+            }
+            log_action(f"Fighter {fighter_name} not found in fighter data, adding to fighter data")
 
     # get elos, weight classes, odds, and results, and put them in the lists above
-    for fighter_name, individual_fighter_data in fighter_data.items():
-        data_of_both_fighters_found = fighter_odds[FIGHTER_ONE_INDEX] != 0 and fighter_odds[FIGHTER_TWO_INDEX] != 0
-        if data_of_both_fighters_found: break
-        if fighter_name != fighter_one and (fighter_name != fighter_two): continue
-        
+    for fighter_name in (fighter_one, fighter_two):
         current_fighter_index = FIGHTER_ONE_INDEX
         if fighter_name == fighter_two: current_fighter_index = FIGHTER_TWO_INDEX
         other_fighter_index = abs(current_fighter_index-1)
+
+        individual_fighter_data = fighter_data[fighter_name]
 
         fighter_elos[current_fighter_index] = float(individual_fighter_data["elo"])
         
@@ -122,7 +114,7 @@ def add_fight(
     new_fighter_elos = [0, 0]
     for i in range(2):
         fighter_not_found = fighter_odds[i] == 0
-        if fighter_not_found: KeyError(f"Fighter {fighter_one} or {fighter_two} not found in {fighter_data_file}")
+        if fighter_not_found: KeyError(f"Fighter {fighter_one} or {fighter_two} not found in fighter data")
         fighter_has_less_than_two_fights = len(fighter_data[fighter_names[i]]["record"]) < 2
         k_factor = 32
         if fighter_has_less_than_two_fights:
@@ -150,11 +142,6 @@ def add_fight(
             "result": fighter_results[index],
             "weight_class": weight_class,
         }
-    
-    with open(fighter_data_file, "w") as f:
-        json.dump(fighter_data, f, indent=4)
-        log_action(f"Fight between {fighter_one} and {fighter_two} on date {date} added to {fighter_data_file}")
-    return
 
 # get last 2 fights chronologically (they're sorted first->last), then pick the lighter of the 2 weight classes, then return that
     # if there's catchweight, treat it as ""
