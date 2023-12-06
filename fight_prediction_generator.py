@@ -95,10 +95,12 @@ def write_fight_predictions(fight_data_file=FIGHT_DATA_FILE, output_file=OUTPUT_
                 draw=individual_fight_data["draw"],
                 no_contest=individual_fight_data["no_contest"],
                 championship_fight=individual_fight_data["championship_fight"],
-                fighter_data_file=fighter_data_file
+                fighter_data=fighter_data
             )
 
-    # write fight predictions to file
+    with open(fighter_data_file, "w") as f:
+        json.dump(fighter_data, f)    
+
     with open(output_file, "w") as f:
         json.dump(fight_predictions, f)
 
@@ -220,11 +222,14 @@ def brier_skill_score(fight_predictions_and_results: dict) -> float:
 if __name__ == "__main__":
     # write to test file that is copied from fighter_data.json
     # this way, we can test the fight prediction generator without messing up the actual fighter data
-    # with open(FIGHTER_DATA_FILE) as f:
-    #     fighter_data = json.load(f)
-    # with open("test_fighter_data.json", "w") as f:
-    #     json.dump(fighter_data, f)
-    # write_fight_predictions(fighter_data_file="test_fighter_data.json")
+    with open(FIGHTER_DATA_FILE) as f:
+        fighter_data = json.load(f)
+    with open("test_fighter_data.json", "w") as f:
+        json.dump(fighter_data, f)
+    write_fight_predictions(fighter_data_file="test_fighter_data.json")
     # print (get_win_percentage())
+    # write win percentage to file
+    with open("win_percentage.json", "w") as f:
+        json.dump(get_win_percentage(), f)
     print (brier_skill_score(get_win_percentage()))
     print (get_standard_deviation())
