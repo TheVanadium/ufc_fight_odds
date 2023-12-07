@@ -104,7 +104,7 @@ def write_fight_predictions(fight_data_file=FIGHT_DATA_FILE, output_file=OUTPUT_
         json.dump(fight_predictions, f)
 
 def get_weight_ratio(fighter_one: str, fighter_two: str, bout_weight_class: str, fighter_data: dict) -> float:
-    '''
+    """
         Computes the ratio of the weight classes of two fighters.
         If either fighter is debuting, their weight class is assumed to be the bout weight class.
         If the bout weight class is not in WEIGHT_CLASSES, the ratio is assumed to be 1.
@@ -118,7 +118,7 @@ def get_weight_ratio(fighter_one: str, fighter_two: str, bout_weight_class: str,
 
         Returns:
             The ratio of the weight classes of the two fighters.
-    '''
+    """
     
     # if bout weight class is catchweight or weird or something, make it a default value of 1
     if bout_weight_class.replace(" ", "") not in WEIGHT_CLASSES: return 1
@@ -150,7 +150,7 @@ def get_weight_ratio(fighter_one: str, fighter_two: str, bout_weight_class: str,
 
 # basic function that reads prediction file, spits out result by adding all wins and losses in each key and dividing by total number of fights, spitting out key-value pairs of odds and win percentage
 def get_win_percentage(fight_predictions_file=OUTPUT_FILE) -> dict:
-    '''
+    """
         Computes the win percentage of each fighter based on the fight predictions in a file.
         
         Args:
@@ -159,7 +159,7 @@ def get_win_percentage(fight_predictions_file=OUTPUT_FILE) -> dict:
 
         Returns:
             A dictionary containing the win percentage of each fighter.
-    '''
+    """
     with open(fight_predictions_file) as f:
         fight_predictions = json.load(f)
 
@@ -171,7 +171,7 @@ def get_win_percentage(fight_predictions_file=OUTPUT_FILE) -> dict:
     return win_percentages
 
 def get_standard_deviation(fight_predictions_file=OUTPUT_FILE) -> float:
-    '''
+    """
         Computes the standard deviation of the win percentages of each fighter based on the fight predictions in a file.
         
         Args:
@@ -180,7 +180,7 @@ def get_standard_deviation(fight_predictions_file=OUTPUT_FILE) -> float:
 
         Returns:
             The standard deviation of the win percentages of each fighter.
-    '''
+    """
     with open(fight_predictions_file) as f:
         fight_predictions = json.load(f)
 
@@ -195,7 +195,7 @@ def get_standard_deviation(fight_predictions_file=OUTPUT_FILE) -> float:
     return standard_deviation
 
 def brier_skill_score(fight_predictions_and_results: dict) -> float:
-    '''
+    """
         Computes the Brier skill score of a set of fight predictions.
         
         Args:
@@ -208,7 +208,7 @@ def brier_skill_score(fight_predictions_and_results: dict) -> float:
 
         Returns:
             The Brier skill score of the fight predictions.
-    '''
+    """
     brier_skill_score = 0
 
     for odds, results in fight_predictions_and_results.items():
