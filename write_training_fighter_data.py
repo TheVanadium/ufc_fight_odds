@@ -7,7 +7,7 @@ TRAINING_DATA_FILES = ["fight_data_pre_2023_a.json", "fight_data_pre_2023_b.json
 
 def write_training_fighter_data(
     training_data_files: list = TRAINING_DATA_FILES, 
-    fighter_data_file: str = "fighter_data.json"
+    fighter_data_file: str = "training_fighter_data.json"
 ) -> None:
     """
         Writes data from pre-2023 fight data to the fighter data file.
@@ -18,8 +18,8 @@ def write_training_fighter_data(
                 default: TRAINING_DATA_FILES
             fighter_data_file (str): 
                 the fighter data file to write to.
-                default: "fighter_data.json"
-                For format, see the `fighter_data.json` section in documentation.md
+                default: "training_fighter_data.json"
+                For format, see the `training_fighter_data.json` section in documentation.md
         Returns:
             None
     """

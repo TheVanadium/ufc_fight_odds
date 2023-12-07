@@ -2,11 +2,11 @@ import unittest
 import json
 from fight_adder import add_fight
 
-REAL_FILE = "fighter_data.json"
+REAL_FILE = "training_fighter_data.json"
 TEST_FILE = "test_fighter_data.json"
 
 class TestFightAdder(unittest.TestCase):
-    with open("fighter_data.json", "r") as f:
+    with open("training_fighter_data.json", "r") as f:
         json_data = f.read()
     with open(TEST_FILE, "w") as f:
         f.write(json_data)
