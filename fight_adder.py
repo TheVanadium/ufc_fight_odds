@@ -1,7 +1,7 @@
 import json
 from odds_calculation_methods import expected_odds, elo_change
 
-FIGHTER_DATA_FILE = "fighter_data.json"
+FIGHTER_DATA_FILE = "training_fighter_data.json"
 ACTION_LOG = "action_log.txt"
 
 WEIGHT_CLASSES = {
@@ -60,7 +60,7 @@ def add_fight(
             interim championships)
         fighter_data (dict):
             the dict to be modified. information formatted the same as 
-            fighter_data.json, see documentation.md for details
+            training_fighter_data.json, see documentation.md for details
 
     Returns:
         None
@@ -154,7 +154,7 @@ def get_fighter_weight_class(fighter_record: dict) -> str:
     
     Args:
         fighter_record (dict): 
-            fighter record from fighter_data.json
+            fighter record from training_fighter_data.json
 
     Returns:
         str: 
@@ -221,8 +221,8 @@ def log_action(action: str) -> None:
     return
 
 if __name__ == "__main__":
-    # copy fighter_data.json to test_fighter_data.json
-    with open("fighter_data.json", "r") as f:
+    # copy training_fighter_data.json to test_fighter_data.json
+    with open("training_fighter_data.json", "r") as f:
         fighter_data = json.load(f)
     with open("test_fighter_data.json", "w") as f:
         json.dump(fighter_data, f, indent=4)

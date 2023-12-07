@@ -3,7 +3,7 @@ from odds_calculation_methods import expected_odds
 from fight_adder import get_fighter_weight_class, add_fight
 
 FIGHT_DATA_FILE = "fight-data-collector/fight_data_2023.json"
-FIGHTER_DATA_FILE = "fighter_data.json"
+FIGHTER_DATA_FILE = "training_fighter_data.json"
 OUTPUT_FILE = "predictions.json"
 
 WEIGHT_CLASSES = {
@@ -112,7 +112,7 @@ def get_weight_ratio(fighter_one: str, fighter_two: str, bout_weight_class: str,
             fighter_two: name of second fighter
             bout_weight_class: string containing the weight class of the bout
             fighter_data: dictionary containing fighter data
-                (see documentation.md's description of fighter_data.json for format)
+                (see documentation.md's description of training_fighter_data.json for format)
 
         Returns:
             The ratio of the weight classes of the two fighters.
@@ -217,7 +217,7 @@ def brier_skill_score(fight_predictions_and_results: dict) -> float:
 
 if __name__ == "__main__":
     ### TEST CODE ###
-    # # write to test file that is copied from fighter_data.json
+    # # write to test file that is copied from training_fighter_data.json
     # # this way, we can test the fight prediction generator without messing up the actual fighter data
     # with open(FIGHTER_DATA_FILE) as f:
     #     fighter_data = json.load(f)
@@ -229,7 +229,7 @@ if __name__ == "__main__":
     #     json.dump(get_win_percentage(), f)
 
     ### EXECUTION CODE ###
-    # Note: Ensure test_fighter_data.json is a copy of fighter_data.json before running this code
+    # Note: Ensure test_fighter_data.json is a copy of training_fighter_data.json before running this code
     write_fight_predictions()
 
     if PRINT_DEBUG: 
