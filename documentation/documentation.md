@@ -56,6 +56,7 @@ Contains functions for calculating the odds of a fighter winning a match based o
 
 `write_training_fighter_data.py`<br>
 Contains the function `write_training_fighter_data.py`, which goes through all 3 pre-2023 fight data files and uses `add_fight` (see `fight_adder.py`) to generate a dictionary containing all the fighters then adds all the fights to the fighter data file (`fighter_data.json`).
+This data will be the training data for the prediction model. The testing data will be 2023 fights, onwards.
 
 #### Tests
 `test_fight_adder.py`<br>
