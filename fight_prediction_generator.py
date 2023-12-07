@@ -96,10 +96,7 @@ def write_fight_predictions(fight_data_file=FIGHT_DATA_FILE, output_file=OUTPUT_
                 no_contest=individual_fight_data["no_contest"],
                 championship_fight=individual_fight_data["championship_fight"],
                 fighter_data=fighter_data
-            )
-
-    with open(fighter_data_file, "w") as f:
-        json.dump(fighter_data, f)    
+            ) 
 
     with open(output_file, "w") as f:
         json.dump(fight_predictions, f)
