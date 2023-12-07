@@ -146,7 +146,6 @@ def get_weight_ratio(fighter_one: str, fighter_two: str, bout_weight_class: str,
     
     return WEIGHT_CLASSES[fighter_one_weight_class] / WEIGHT_CLASSES[fighter_two_weight_class]
 
-# basic function that reads prediction file, spits out result by adding all wins and losses in each key and dividing by total number of fights, spitting out key-value pairs of odds and win percentage
 def get_win_percentage(fight_predictions_file=OUTPUT_FILE) -> dict:
     """
         Computes the win percentage of each fighter based on the fight predictions in a file.
