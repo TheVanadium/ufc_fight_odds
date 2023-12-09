@@ -115,12 +115,7 @@ def add_fight(
         fighter_not_found = fighter_odds[i] == 0
         if fighter_not_found: KeyError(f"Fighter {fighter_one} or {fighter_two} not found in fighter data")
         fighter_has_less_than_two_fights = len(fighter_data[fighter_names[i]]["record"]) < 2
-        k_factor = 32
-        if fighter_has_less_than_two_fights:
-            # will need to remove first several ufcs, as overlapping same-day fights aren't increasing the fight count of the fighters 
-            log_action(f"Fighter {fighter_names[i]} has {len(fighter_data[fighter_names[i]]['record'].keys())} fights, using k_factor of 64")
-            k_factor = 64
-        new_fighter_elos[i] = fighter_elos[i]+elo_change(fighter_odds[i], fighter_results[i], k_factor=k_factor)
+        new_fighter_elos[i] = fighter_elos[i]+elo_change(fighter_odds[i], fighter_results[i], fighter_has_less_than_two_fights)
         if no_contest: new_fighter_elos[i] = fighter_elos[i]
 
     # update elos, add fight to fighter records

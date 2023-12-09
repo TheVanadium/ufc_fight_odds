@@ -1,3 +1,13 @@
+import json
+def get_prediction_factors():
+    """Gets the prediction factors from the prediction_factors.json file.
+
+    Returns:
+        dict: the prediction factors
+    """
+    with open("prediction_factors.json", "r") as f:
+        return json.load(f)
+
 def expected_odds(
         target_fighter_elo, opponent_elo, 
         target_fighter_last_game_was_loss=False, 
@@ -31,9 +41,11 @@ def expected_odds(
 
     return 1 / (1 + 10 ** (-(adjusted_elo_difference) / 400))
 
-def elo_change(expected_odds: float, result: float, k_factor: int=32):
+def elo_change(expected_odds: float, result: float, newcomer: bool=False):
     """Calculates the elo change of a fighter after a fight.
     
         Using standard elo change formula
     """
+    k_factor = get_prediction_factors()["k-factor"]
+    if newcomer: k_factor = get_prediction_factors()["newcomer_k-factor"]
     return k_factor * (result - expected_odds)
