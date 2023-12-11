@@ -32,7 +32,7 @@ def expected_odds(
     # LAST_GAME_WAS_LOST = 50
     
     # all else being equal, a fighter moving down 10% should have an 75% chance of winning
-    WEIGHT_FACTOR = 10
+    WEIGHT_FACTOR = get_prediction_factors()["per_pound_advantage"]
 
     adjusted_elo_difference = elo_difference
     adjusted_elo_difference += (target_opponent_weight_ratio-1)*100 * WEIGHT_FACTOR
