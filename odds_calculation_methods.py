@@ -41,10 +41,19 @@ def expected_odds(
 
     return 1 / (1 + 10 ** (-(adjusted_elo_difference) / 400))
 
-def elo_change(expected_odds: float, result: float, newcomer: bool=False):
+def elo_change(expected_odds: float, result: float, newcomer: bool=False) -> float:
     """Calculates the elo change of a fighter after a fight.
     
         Using standard elo change formula
+
+    Args:
+        expected_odds (float): the expected odds of the fighter winning
+        result (float): the result of the fight, 1 for win, 0 for loss
+        newcomer (bool, optional): whether the fighter is a newcomer. Defaults to False.
+            a newcomer is a fighter with less than 2 fights
+
+    Returns:
+        float: the elo change of the fighter
     """
     k_factor = get_prediction_factors()["k-factor"]
     if newcomer: k_factor = get_prediction_factors()["newcomer_k-factor"]
