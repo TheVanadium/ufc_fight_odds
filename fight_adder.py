@@ -77,6 +77,7 @@ def add_fight(
     fighter_names = [fighter_one, fighter_two]
     fighter_elos = [DEFAULT_ELO, DEFAULT_ELO]
     fighter_weight_classes = ["", ""]
+    fighter_last_fight_was_loss = [False, False]
     fighter_odds = [0, 0]
     fighter_results = [0.5, 0.5]
 
@@ -105,7 +106,24 @@ def add_fight(
         if fighter_weight_classes[current_fighter_index] == "": weight_class_ratio = 1
         else: weight_class_ratio = calculate_weight_class_ratio(fighter_weight_classes[current_fighter_index], weight_class)
         
-        fighter_odds[current_fighter_index] = expected_odds(fighter_elos[current_fighter_index], fighter_elos[other_fighter_index], weight_class_ratio)
+        # get fighter last fight was loss
+        try:
+            last_fight = list(individual_fighter_data["record"].values())[-1]
+            if last_fight["result"] == 0: fighter_last_fight_was_loss[current_fighter_index] = True
+        except IndexError:
+            pass
+        log_action(f"Fighter {fighter_name} last fight was loss: {fighter_last_fight_was_loss[current_fighter_index]}")
+        
+        # if both are filled in, calculate odds
+        if fighter_weight_classes[FIGHTER_ONE_INDEX] != "" and fighter_weight_classes[FIGHTER_TWO_INDEX] != "":
+            fighter_odds[current_fighter_index] = expected_odds(
+                fighter_elos[current_fighter_index], 
+                fighter_elos[other_fighter_index], 
+                fighter_last_fight_was_loss[current_fighter_index],
+                fighter_last_fight_was_loss[other_fighter_index],
+                weight_class_ratio
+            )
+            fighter_odds[other_fighter_index] = 1-fighter_odds[current_fighter_index]
 
         if not draw and not no_contest: fighter_results[current_fighter_index] = int(fighter_name == winner)
 
@@ -114,14 +132,11 @@ def add_fight(
     for i in range(2):
         fighter_not_found = fighter_odds[i] == 0
         if fighter_not_found: KeyError(f"Fighter {fighter_one} or {fighter_two} not found in fighter data")
+        log_action(f"fighter_not_found: {fighter_not_found}")
         fighter_has_less_than_two_fights = len(fighter_data[fighter_names[i]]["record"]) < 2
-        k_factor = 32
-        if fighter_has_less_than_two_fights:
-            # will need to remove first several ufcs, as overlapping same-day fights aren't increasing the fight count of the fighters 
-            log_action(f"Fighter {fighter_names[i]} has {len(fighter_data[fighter_names[i]]['record'].keys())} fights, using k_factor of 64")
-            k_factor = 64
-        new_fighter_elos[i] = fighter_elos[i]+elo_change(fighter_odds[i], fighter_results[i], k_factor=k_factor)
+        new_fighter_elos[i] = fighter_elos[i]+elo_change(fighter_odds[i], fighter_results[i], fighter_has_less_than_two_fights)
         if no_contest: new_fighter_elos[i] = fighter_elos[i]
+        log_action(f"Fighter {fighter_names[i]} has {len(fighter_data[fighter_names[i]]['record'])} fights, so their elo change is {elo_change(fighter_odds[i], fighter_results[i], fighter_has_less_than_two_fights)}")
 
     # update elos, add fight to fighter records
     for i, fighter_name in enumerate(fighter_names):

@@ -1,4 +1,6 @@
 {
     "k-factor": 32,
-    "prior-loss-effect": 1
+    "newcomer_k-factor": 64,
+    "prior_loss_effect": 1,
+    "per_pound_advantage": 10
 }
