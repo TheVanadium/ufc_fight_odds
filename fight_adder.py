@@ -124,21 +124,18 @@ def add_fight(
         if no_contest: new_fighter_elos[i] = fighter_elos[i]
 
     # update elos, add fight to fighter records
-    for fighter_name in fighter_data:
-        if fighter_name != fighter_one and (fighter_name != fighter_two): continue
-        log_action(f"Updating {fighter_name}'s elo from {fighter_data[fighter_name]['elo']} to {new_fighter_elos[FIGHTER_ONE_INDEX if fighter_name == fighter_one else FIGHTER_TWO_INDEX]}")
-        index = FIGHTER_ONE_INDEX
-        if fighter_name == fighter_two: index = FIGHTER_TWO_INDEX
+    for i, fighter_name in enumerate(fighter_names):
+        log_action(f"Updating {fighter_name}'s elo from {fighter_data[fighter_name]['elo']} to {new_fighter_elos[i]}")
         # add fight to fighter's record
-        fighter_data[fighter_name]["elo"] = new_fighter_elos[index]
-        # if the date is in the fighter record, make another date called date + "i" where i is the number of times that date has been used
+        fighter_data[fighter_name]["elo"] = new_fighter_elos[i]
+        # if the date is in the fighter record, make another date called date + "j" where j is the number of times that date has been used
         if date in fighter_data[fighter_name]["record"]:
-            i = 1
-            while date+str(i) in fighter_data[fighter_name]["record"]: i += 1
-            date = date+str(i)
+            j = 1
+            while date+str(j) in fighter_data[fighter_name]["record"]: j += 1
+            date = date+str(j)
         fighter_data[fighter_name]["record"][date] = {
-            "opponent": fighter_one if fighter_name == fighter_two else fighter_two,
-            "result": fighter_results[index],
+            "opponent": fighter_names[abs(i-1)],
+            "result": fighter_results[i],
             "weight_class": weight_class,
         }
 
