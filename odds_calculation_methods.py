@@ -36,8 +36,8 @@ def expected_odds(
 
     adjusted_elo_difference = elo_difference
     adjusted_elo_difference += (target_opponent_weight_ratio-1)*100 * WEIGHT_FACTOR
-    # if target_fighter_last_game_was_loss: adjusted_elo_difference+=LAST_GAME_WAS_LOST
-    # if opponent_last_game_was_loss: adjusted_elo_difference-=LAST_GAME_WAS_LOST
+    if target_fighter_last_game_was_loss: adjusted_elo_difference+=get_prediction_factors()["prior_loss_effect"]
+    if opponent_last_game_was_loss: adjusted_elo_difference-=get_prediction_factors()["prior_loss_effect"]
 
     return 1 / (1 + 10 ** (-(adjusted_elo_difference) / 400))
 
