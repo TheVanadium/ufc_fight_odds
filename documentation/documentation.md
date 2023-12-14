@@ -25,7 +25,7 @@ Contains collection scripts and data for UFC fights from UFC 1 until UFC 294
 - `fight_data_2023.json`: Fight data for fights in 2023 in sorted in reverse chronological order, with the latest fight being October 21, 2023 (because that was the most recent at the time the data was scraped).
 
 `fight_adder.py`<br>
-Contains the function `add_fight`, which takes a fighter data dictionary as an input (formatted the same way as `training_fighter_data.json`) and adds the fight to the fighter's record in the input dictionary.
+Contains the function `add_fight`, which takes a fighter data dictionary as an input (formatted the same way as `training_fighter_data.json`) and adds the fight to the fighter's record in the input dictionary. There is no return type; editing is done in-place.
 
 `fight_prediction_generator`<br>
 Still under construction
@@ -60,5 +60,4 @@ This data will be the training data for the prediction model. The testing data w
 
 #### Tests
 `test_fight_adder.py`<br>
-<i>DEPRECATED<i>
-Tests the `add_fight` function in `fight_adder.py` by adding a fight to a test fighter's record and checking if the result is correct. The changes are made to `test_fighter_data.json` after `training_fighter_data.json`'s data is copied into it. 
+Tests the `add_fight` function in `fight_adder.py`.
