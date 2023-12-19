@@ -3,8 +3,9 @@ In Progress
 
 ## Purpose
 To generate strong and accurate predictions for UFC fights based on the fighters' previous fights (because I'm cheap and don't want to pay for a UFC fight API)
+Approximate "Fight Elo" of sorts for UFC fighters
 
-Input: Two fighters' names
+Input: Two fighters' names <br>
 Output: A prediction of the winner and the probability of that fighter winning
 
 ### Architecture
