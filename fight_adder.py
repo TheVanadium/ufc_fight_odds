@@ -92,7 +92,7 @@ def add_fight(
             }
             log_action(f"Fighter {fighter_name} not found in fighter data, adding to fighter data")
 
-    # get elos, weight classes, odds, and results, and put them in the lists above
+    # get elos, weight classes, and results, and put them in the lists above
     for fighter_name in (fighter_one, fighter_two):
         current_fighter_index = FIGHTER_ONE_INDEX
         if fighter_name == fighter_two: current_fighter_index = FIGHTER_TWO_INDEX
@@ -102,10 +102,6 @@ def add_fight(
 
         fighter_elos[current_fighter_index] = float(individual_fighter_data["elo"])
         
-        fighter_weight_classes[current_fighter_index] = get_fighter_weight_class(individual_fighter_data["record"])
-        if fighter_weight_classes[current_fighter_index] == "": weight_class_ratio = 1
-        else: weight_class_ratio = calculate_weight_class_ratio(fighter_weight_classes[current_fighter_index], weight_class)
-        
         # get fighter last fight was loss
         try:
             last_fight = list(individual_fighter_data["record"].values())[-1]
@@ -113,19 +109,20 @@ def add_fight(
         except IndexError:
             pass
         log_action(f"Fighter {fighter_name} last fight was loss: {fighter_last_fight_was_loss[current_fighter_index]}")
-        
-        # if both are filled in, calculate odds
-        if fighter_weight_classes[FIGHTER_ONE_INDEX] != "" and fighter_weight_classes[FIGHTER_TWO_INDEX] != "":
-            fighter_odds[current_fighter_index] = expected_odds(
-                fighter_elos[current_fighter_index], 
-                fighter_elos[other_fighter_index], 
-                fighter_last_fight_was_loss[current_fighter_index],
-                fighter_last_fight_was_loss[other_fighter_index],
-                weight_class_ratio
-            )
-            fighter_odds[other_fighter_index] = 1-fighter_odds[current_fighter_index]
 
         if not draw and not no_contest: fighter_results[current_fighter_index] = int(fighter_name == winner)
+
+    # calculate odds and put them in the list above 
+    for i, fighter_name in enumerate(fighter_names):
+        other_fighter_index = abs(i-1)
+        weight_class_ratio = calculate_weight_class_ratio(fighter_weight_classes[i], weight_class)
+        fighter_odds[i] = expected_odds(
+            fighter_elos[i], 
+            fighter_elos[other_fighter_index], 
+            fighter_last_fight_was_loss[i],
+            fighter_last_fight_was_loss[other_fighter_index],
+            weight_class_ratio
+        )      
 
     #  calculate new elos
     new_fighter_elos = [0, 0]
