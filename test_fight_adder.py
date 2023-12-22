@@ -128,7 +128,6 @@ class TestFightAdder(unittest.TestCase):
         )
         self.assertTrue(training_fighter_data["Fake Fighter 1"]["elo"] == correct_winner_elo)
 
-    # does not pass
     def test_two_new_fighters_elo_updated_loser(self):
         with open("training_fighter_data.json", "r") as f:
             training_fighter_data = f.read()
