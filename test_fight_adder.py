@@ -112,9 +112,9 @@ class TestFightAdder(unittest.TestCase):
         with open("training_fighter_data.json", "r") as f:
             training_fighter_data = f.read()
         training_fighter_data = json.loads(training_fighter_data)
-        # the elo change should be exactly the newcomer k-factor as the odds are 50/50
+        # the elo change should be half the newcomer k-factor as the odds are 50/50
         DEFAULT_ELO = 1500
-        correct_winner_elo = DEFAULT_ELO + get_prediction_factors()["newcomer_k-factor"]
+        correct_winner_elo = DEFAULT_ELO + 0.5*get_prediction_factors()["newcomer_k-factor"]
         add_fight(
             "Fake Fighter 1",
             "Fake Fighter 2",
@@ -134,9 +134,9 @@ class TestFightAdder(unittest.TestCase):
             training_fighter_data = f.read()
         training_fighter_data = json.loads(training_fighter_data)
 
-        # the elo change should be exactly the newcomer k-factor as the odds are 50/50
+        # the elo change should be half the newcomer k-factor as the odds are 50/50
         DEFAULT_ELO = 1500
-        correct_loser_elo = DEFAULT_ELO - get_prediction_factors()["newcomer_k-factor"]
+        correct_loser_elo = DEFAULT_ELO - 0.5*get_prediction_factors()["newcomer_k-factor"]
         add_fight(
             "Fake Fighter 1",
             "Fake Fighter 2",
