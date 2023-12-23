@@ -77,23 +77,6 @@ def write_training_fighter_data(
     with open(fighter_data_file, "w") as f:
         json.dump(fighter_data, f, indent=4)
 
-def add_event(event_data: dict, date: str, fighter_data_file):
-    """Adds all the fights of a UFC event to the fighter data file.
-    
-    Args:
-        event_data (dict): the event data to add
-        date (str): the date of the event
-        fighter_data_file (str): the fighter data file to add the event to
-    """
-    for fight_name, fight_data in event_data.items():
-        winner = unidecode(fight_data["winner"])
-        loser = unidecode(fight_data["loser"])
-        weight_class = fight_data["weight_class"]
-        draw = fight_data["draw"]
-        no_contest = fight_data["no_contest"]
-        championship_fight = fight_data["championship_fight"]
-        add_fight(winner, loser, winner, date, weight_class, draw, no_contest, championship_fight, fighter_data_file)
-
 if __name__ == "__main__":
     # create a header for the action log
     with open("action_log.txt", "w") as f:
