@@ -42,25 +42,6 @@ def write_training_fighter_data(
         # training data is in reverse chronological order, so we need to reverse it
         training_data = dict(reversed(list(training_data.items())))
 
-        # "Jul 22, 2017": {
-        #       "Fight: Chris Weidman vs Kelvin Gastelum": {
-        #       "winner": "Chris Weidman",
-        #       "loser": "Kelvin Gastelum",
-        #       "weight_class": "Middleweight",
-        #       "draw": false,
-        #       "no_contest": false,
-        #       "championship_fight": false
-        #     },
-        #       "Fight: Darren Elkins vs Dennis Bermudez": {
-        #       "winner": "Darren Elkins",
-        #       "loser": "Dennis Bermudez",
-        #       "weight_class": "Featherweight",
-        #       "draw": false,
-        #       "no_contest": false,
-        #       "championship_fight": false
-        #     },
-        #     ...
-
         for date, event_data in training_data.items():
             for fight_name, fight_data in event_data.items():
                 winner = unidecode(fight_data["winner"])

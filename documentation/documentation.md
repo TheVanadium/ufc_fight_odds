@@ -25,6 +25,48 @@ Contains collection scripts and data for UFC fights from UFC 1 until UFC 294
 - `fight_data_pre_2023-a.json`, `fight_data_pre_2023-b.json`, `fight_data_pre_2023-c.json`: Fight data for fights before 2023 in sorted in reverse chronological order.
 - `fight_data_2023.json`: Fight data for fights in 2023 in sorted in reverse chronological order, with the latest fight being October 21, 2023 (because that was the most recent at the time the data was scraped).
 
+Fight data format:
+    Template:
+    "MMM DD, YYYY(#)": {
+        "Fight: Fighter 1 vs Fighter 2": {
+            "winner": "Fighter 1",
+            "loser": "Fighter 2",
+            "weight_class": "Weight Class",
+            "draw": false,
+            "no_contest": false,
+            "championship_fight": false
+        },
+        "Fight: Fighter 3 vs Fighter 4": {
+            "winner": "Fighter 3",
+            "loser": "Fighter 4",
+            "weight_class": "Weight Class",
+            "draw": false,
+            "no_contest": false,
+            "championship_fight": false
+        },
+        ...
+    },
+
+    Example:
+    "Jul 22, 2017": {
+        "Fight: Chris Weidman vs Kelvin Gastelum": {
+        "winner": "Chris Weidman",
+        "loser": "Kelvin Gastelum",
+        "weight_class": "Middleweight",
+        "draw": false,
+        "no_contest": false,
+        "championship_fight": false
+    },
+        "Fight: Darren Elkins vs Dennis Bermudez": {
+        "winner": "Darren Elkins",
+        "loser": "Dennis Bermudez",
+        "weight_class": "Featherweight",
+        "draw": false,
+        "no_contest": false,
+        "championship_fight": false
+    },
+    ...
+
 `fight_adder.py`<br>
 Contains the function `add_fight`, which takes a fighter data dictionary as an input (formatted the same way as `training_fighter_data.json`) and adds the fight to the fighter's record in the input dictionary. There is no return type; editing is done in-place.
 
