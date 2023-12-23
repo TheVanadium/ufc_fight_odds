@@ -83,18 +83,18 @@ Contains functions for calculating the odds of a fighter winning a match based o
 Contains data for each fighter until 2023 in the following format:<br>
 
     "Fighter name": {
-            "elo": XXXX.XXXXXX,
-            "record": {
-                "MMM DD, YYYY(#)": {
-                    "opponent": "Opponent Name",
-                    "result": result#,
-                    "weight_class": "Weight Class"
-                },
-                ...
-            }
-        },
-        ...
-        
+        "elo": XXXX.XXXXXX,
+        "record": {
+            "MMM DD, YYYY(#)": {
+                "opponent": "Opponent Name",
+                "result": result#,
+                "weight_class": "Weight Class"
+            },
+            ...
+        }
+    },
+    ...
+
 "elo" is a float representing the fighter's general fighting skill (higher elo indicates higher skill)
 "record" is a dictionary of the fighter's fights, sorted in chronological order
 -In the date key, the month is abbreviated to 3 letters (Jan, Feb, Mar, etc.), the day can be 1 or 2 digits, and the year is 4 digits, potentially with an additional number after it representing the index (zero-indexed) of the fight in the day (for example, Nov 12, 19931 would represent that fighter's 2nd fight on Nov 12)
