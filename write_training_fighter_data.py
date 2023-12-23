@@ -31,13 +31,10 @@ def write_training_fighter_data(
     except json.decoder.JSONDecodeError:
         with open (fighter_data_file, "w") as f:
             json.dump({}, f, indent=4)
+        fighter_data = {}
 
     # files are listed in reverse chronological order
     training_data_files.reverse()
-
-    with open(fighter_data_file, "r") as f:
-        fighter_data = json.load(f)
-
     for training_data_file in training_data_files:
         with open("fight-data-collector/" + training_data_file, "r") as f:
             training_data = json.load(f)
