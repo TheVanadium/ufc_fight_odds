@@ -29,7 +29,8 @@ def add_fight(
     draw: bool, 
     no_contest: bool, 
     championship_fight: bool, 
-    fighter_data: dict
+    fighter_data: dict,
+    prediction_factors_file="prediction_factors.json"
 ) -> None:
     """Adds fight with given data to given fighter data dict (fighter_data). 
 
@@ -61,6 +62,9 @@ def add_fight(
         fighter_data (dict):
             the dict to be modified. information formatted the same as 
             training_fighter_data.json, see documentation.md for details
+        prediction_factors_file (str, optional):
+            the path to the prediction_factors.json file. Defaults to 
+            "prediction_factors.json".
 
     Returns:
         None
@@ -121,7 +125,8 @@ def add_fight(
             fighter_elos[other_fighter_index], 
             fighter_last_fight_was_loss[i],
             fighter_last_fight_was_loss[other_fighter_index],
-            weight_class_ratio
+            weight_class_ratio,
+            prediction_factors_file=prediction_factors_file
         )      
 
     #  calculate new elos
@@ -131,9 +136,9 @@ def add_fight(
         if fighter_not_found: KeyError(f"Fighter {fighter_one} or {fighter_two} not found in fighter data")
         log_action(f"fighter_not_found: {fighter_not_found}")
         fighter_has_less_than_two_fights = len(fighter_data[fighter_names[i]]["record"]) < 2
-        new_fighter_elos[i] = fighter_elos[i]+elo_change(fighter_odds[i], fighter_results[i], fighter_has_less_than_two_fights)
+        new_fighter_elos[i] = fighter_elos[i]+elo_change(fighter_odds[i], fighter_results[i], fighter_has_less_than_two_fights, prediction_factors_file=prediction_factors_file)
         if no_contest: new_fighter_elos[i] = fighter_elos[i]
-        log_action(f"Fighter {fighter_names[i]} has {len(fighter_data[fighter_names[i]]['record'])} fights, so their elo change is {elo_change(fighter_odds[i], fighter_results[i], fighter_has_less_than_two_fights)}")
+        log_action(f"Fighter {fighter_names[i]} has {len(fighter_data[fighter_names[i]]['record'])} fights, so their elo change is {new_fighter_elos[i]-fighter_elos[i]}")
 
     # update elos, add fight to fighter records
     for i, fighter_name in enumerate(fighter_names):

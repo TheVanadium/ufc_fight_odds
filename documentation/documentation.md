@@ -60,5 +60,7 @@ Contains the function `write_training_fighter_data.py`, which goes through all 3
 This data will be the training data for the prediction model. The testing data will be 2023 fights, onwards.
 
 #### Tests
+Tests are located in the `tests` directory.
+
 `test_fight_adder.py`<br>
 Tests the `add_fight` function in `fight_adder.py`.
