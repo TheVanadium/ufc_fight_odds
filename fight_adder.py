@@ -30,7 +30,8 @@ def add_fight(
     no_contest: bool, 
     championship_fight: bool, 
     fighter_data: dict,
-    prediction_factors_file="prediction_factors.json"
+    prediction_factors_file="prediction_factors.json",
+    log_actions=True
 ) -> None:
     """Adds fight with given data to given fighter data dict (fighter_data). 
 
@@ -65,11 +66,22 @@ def add_fight(
         prediction_factors_file (str, optional):
             the path to the prediction_factors.json file. Defaults to 
             "prediction_factors.json".
+        log_actions (bool, optional):
+            whether or not to log actions to action_log.txt. Used for debugging.
+            Defaults to False.
 
     Returns:
         None
     """
     
+    def log_action(action: str) -> None: 
+        if not log_actions: return
+        with open(ACTION_LOG, "a") as f:
+            try: 
+                f.write(action+"\n")
+            except UnicodeEncodeError:
+                f.write("UnicodeEncodeError")
+
     # remove spaces from weight class to be consistent with other data
     weight_class = weight_class.replace(" ", "")
     weight_class = weight_class.replace("’", "'")
@@ -225,14 +237,6 @@ def calculate_weight_class_ratio(fighter_weight_class: str, fight_weight_class: 
         return WEIGHT_CLASSES[fighter_weight_class]/WEIGHT_CLASSES[fight_weight_class]
     except KeyError:
         return 1
-
-def log_action(action: str) -> None: 
-    with open(ACTION_LOG, "a") as f:
-        try: 
-            f.write(action+"\n")
-        except UnicodeEncodeError:
-            f.write("UnicodeEncodeError")
-    return
 
 if __name__ == "__main__":
     # copy training_fighter_data.json to test_fighter_data.json
