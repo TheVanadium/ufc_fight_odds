@@ -25,6 +25,50 @@ Contains collection scripts and data for UFC fights from UFC 1 until UFC 294
 - `fight_data_pre_2023-a.json`, `fight_data_pre_2023-b.json`, `fight_data_pre_2023-c.json`: Fight data for fights before 2023 in sorted in reverse chronological order.
 - `fight_data_2023.json`: Fight data for fights in 2023 in sorted in reverse chronological order, with the latest fight being October 21, 2023 (because that was the most recent at the time the data was scraped).
 
+Fight data format: <br>
+    Template
+    
+    "MMM DD, YYYY(#)": {
+        "Fight: Fighter 1 vs Fighter 2": {
+            "winner": "Fighter 1",
+            "loser": "Fighter 2",
+            "weight_class": "Weight Class",
+            "draw": false,
+            "no_contest": false,
+            "championship_fight": false
+        },
+        "Fight: Fighter 3 vs Fighter 4": {
+            "winner": "Fighter 3",
+            "loser": "Fighter 4",
+            "weight_class": "Weight Class",
+            "draw": false,
+            "no_contest": false,
+            "championship_fight": false
+        },
+        ...
+    },
+<br>Example
+
+    "Jul 22, 2017": {
+            "Fight: Chris Weidman vs Kelvin Gastelum": {
+            "winner": "Chris Weidman",
+            "loser": "Kelvin Gastelum",
+            "weight_class": "Middleweight",
+            "draw": false,
+            "no_contest": false,
+            "championship_fight": false
+        },
+            "Fight: Darren Elkins vs Dennis Bermudez": {
+            "winner": "Darren Elkins",
+            "loser": "Dennis Bermudez",
+            "weight_class": "Featherweight",
+            "draw": false,
+            "no_contest": false,
+            "championship_fight": false
+        },
+    }
+    ...
+
 `fight_adder.py`<br>
 Contains the function `add_fight`, which takes a fighter data dictionary as an input (formatted the same way as `training_fighter_data.json`) and adds the fight to the fighter's record in the input dictionary. There is no return type; editing is done in-place.
 
@@ -36,8 +80,9 @@ Contains the function `write_fight_predictions` which uses the fighter data file
 Contains functions for calculating the odds of a fighter winning a match based on elo and other parameters
 
 `training_fighter_data.json`<br>
-Contains data for each fighter until 2023 in the following format:
-"Fighter name": {
+Contains data for each fighter until 2023 in the following format:<br>
+
+    "Fighter name": {
         "elo": XXXX.XXXXXX,
         "record": {
             "MMM DD, YYYY(#)": {
@@ -49,6 +94,7 @@ Contains data for each fighter until 2023 in the following format:
         }
     },
     ...
+
 "elo" is a float representing the fighter's general fighting skill (higher elo indicates higher skill)
 "record" is a dictionary of the fighter's fights, sorted in chronological order
 -In the date key, the month is abbreviated to 3 letters (Jan, Feb, Mar, etc.), the day can be 1 or 2 digits, and the year is 4 digits, potentially with an additional number after it representing the index (zero-indexed) of the fight in the day (for example, Nov 12, 19931 would represent that fighter's 2nd fight on Nov 12)
