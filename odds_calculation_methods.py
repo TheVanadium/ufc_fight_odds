@@ -5,6 +5,8 @@ def expected_odds(
         target_fighter_last_game_was_loss=False, 
         opponent_last_game_was_loss=False, 
         target_opponent_weight_ratio=1,
+        target_fighter_months_since_last_fight=0,
+        opponent_months_since_last_fight=0,
         prediction_factors_file="prediction_factors.json"
         ) -> float:
     """ Calculates the expected odds of a fighter winning a fight using the elo system.
@@ -24,16 +26,17 @@ def expected_odds(
         prediction_factors = json.load(f)
 
     elo_difference = target_fighter_elo - opponent_elo
-    # test this variable later
-    # LAST_GAME_WAS_LOST = 50
-    
-    # all else being equal, a fighter moving down 10% should have an 75% chance of winning
-    WEIGHT_FACTOR = prediction_factors["per_pound_advantage"]
 
     adjusted_elo_difference = elo_difference
-    adjusted_elo_difference += (target_opponent_weight_ratio-1)*100 * WEIGHT_FACTOR
+    adjusted_elo_difference += (target_opponent_weight_ratio-1)*100 * prediction_factors["per_pound_advantage"]
     if target_fighter_last_game_was_loss: adjusted_elo_difference+=prediction_factors["prior_loss_effect"]
     if opponent_last_game_was_loss: adjusted_elo_difference-=prediction_factors["prior_loss_effect"]
+    for i in range(target_fighter_months_since_last_fight):
+        if i <= 4: continue
+        adjusted_elo_difference+=prediction_factors["ring_rust_effect"]
+    for i in range(opponent_months_since_last_fight):
+        if i <= 4: continue
+        adjusted_elo_difference-=prediction_factors["ring_rust_effect"]
 
     return 1 / (1 + 10 ** (-(adjusted_elo_difference) / 400))
 
