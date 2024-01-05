@@ -3,5 +3,5 @@
     "newcomer_k-factor": 64,
     "prior_loss_effect": 1,
     "per_pound_advantage": 10,
-    "ring_rust": 1
+    "ring_rust_effect": 0.5
 }

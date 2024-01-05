@@ -94,6 +94,7 @@ def add_fight(
     fighter_elos = [DEFAULT_ELO, DEFAULT_ELO]
     fighter_weight_classes = ["", ""]
     fighter_last_fight_was_loss = [False, False]
+    fighter_months_since_last_fight = [0, 0]
     fighter_odds = [0, 0]
     fighter_results = [0.5, 0.5]
 
@@ -108,7 +109,7 @@ def add_fight(
             }
             log_action(f"Fighter {fighter_name} not found in fighter data, adding to fighter data")
 
-    # get elos, weight classes, and results, and put them in the lists above
+    # get elos, weight classes, months since last fight, and results, and put them in the lists above
     for fighter_name in (fighter_one, fighter_two):
         current_fighter_index = FIGHTER_ONE_INDEX
         if fighter_name == fighter_two: current_fighter_index = FIGHTER_TWO_INDEX
@@ -126,6 +127,31 @@ def add_fight(
             pass
         log_action(f"Fighter {fighter_name} last fight was loss: {fighter_last_fight_was_loss[current_fighter_index]}")
 
+        # get the months since the fighter's last fight
+        try:
+            last_fight_date = list(individual_fighter_data["record"].keys())[-1]
+            last_fight_month = last_fight_date.split(" ")[0]
+            last_fight_year = last_fight_date.split(" ")[2]
+            MONTH_NUMBERS = {
+                "Jan": 1,
+                "Feb": 2,
+                "Mar": 3,
+                "Apr": 4,
+                "May": 5,
+                "Jun": 6,
+                "Jul": 7,
+                "Aug": 8,
+                "Sep": 9,
+                "Oct": 10,
+                "Nov": 11,
+                "Dec": 12,
+            }
+            last_fight_month_number = MONTH_NUMBERS[last_fight_month]
+            current_fight_month_number = MONTH_NUMBERS[date.split(" ")[0]]
+            fighter_months_since_last_fight[current_fighter_index] = current_fight_month_number-last_fight_month_number
+        except IndexError:
+            fighter_months_since_last_fight[current_fighter_index] = 0
+
         if not draw and not no_contest: fighter_results[current_fighter_index] = int(fighter_name == winner)
 
     # calculate odds and put them in the list above 
@@ -138,6 +164,8 @@ def add_fight(
             fighter_last_fight_was_loss[i],
             fighter_last_fight_was_loss[other_fighter_index],
             weight_class_ratio,
+            fighter_months_since_last_fight[i],
+            fighter_months_since_last_fight[other_fighter_index],
             prediction_factors_file=prediction_factors_file
         )      
 
