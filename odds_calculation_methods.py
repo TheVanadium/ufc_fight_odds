@@ -24,14 +24,9 @@ def expected_odds(
         prediction_factors = json.load(f)
 
     elo_difference = target_fighter_elo - opponent_elo
-    # test this variable later
-    # LAST_GAME_WAS_LOST = 50
-    
-    # all else being equal, a fighter moving down 10% should have an 75% chance of winning
-    WEIGHT_FACTOR = prediction_factors["per_pound_advantage"]
 
     adjusted_elo_difference = elo_difference
-    adjusted_elo_difference += (target_opponent_weight_ratio-1)*100 * WEIGHT_FACTOR
+    adjusted_elo_difference += (target_opponent_weight_ratio-1)*100 * prediction_factors["per_pound_advantage"]
     if target_fighter_last_game_was_loss: adjusted_elo_difference+=prediction_factors["prior_loss_effect"]
     if opponent_last_game_was_loss: adjusted_elo_difference-=prediction_factors["prior_loss_effect"]
 
