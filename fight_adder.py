@@ -1,7 +1,7 @@
 import json
 from odds_calculation_methods import expected_odds, elo_change
 
-FIGHTER_DATA_FILE = "fighter_data.json"
+FIGHTER_DATA_FILE = "training_fighter_data.json"
 ACTION_LOG = "action_log.txt"
 
 WEIGHT_CLASSES = {
@@ -29,7 +29,9 @@ def add_fight(
     draw: bool, 
     no_contest: bool, 
     championship_fight: bool, 
-    fighter_data: dict
+    fighter_data: dict,
+    prediction_factors_file="prediction_factors.json",
+    log_actions=True
 ) -> None:
     """Adds fight with given data to given fighter data dict (fighter_data). 
 
@@ -60,12 +62,26 @@ def add_fight(
             interim championships)
         fighter_data (dict):
             the dict to be modified. information formatted the same as 
-            fighter_data.json, see documentation.md for details
+            training_fighter_data.json, see documentation.md for details
+        prediction_factors_file (str, optional):
+            the path to the prediction_factors.json file. Defaults to 
+            "prediction_factors.json".
+        log_actions (bool, optional):
+            whether or not to log actions to action_log.txt. Used for debugging.
+            Defaults to False.
 
     Returns:
         None
     """
     
+    def log_action(action: str) -> None: 
+        if not log_actions: return
+        with open(ACTION_LOG, "a") as f:
+            try: 
+                f.write(action+"\n")
+            except UnicodeEncodeError:
+                f.write("UnicodeEncodeError")
+
     # remove spaces from weight class to be consistent with other data
     weight_class = weight_class.replace(" ", "")
     weight_class = weight_class.replace("’", "'")
@@ -92,7 +108,7 @@ def add_fight(
             }
             log_action(f"Fighter {fighter_name} not found in fighter data, adding to fighter data")
 
-    # get elos, weight classes, odds, and results, and put them in the lists above
+    # get elos, weight classes, and results, and put them in the lists above
     for fighter_name in (fighter_one, fighter_two):
         current_fighter_index = FIGHTER_ONE_INDEX
         if fighter_name == fighter_two: current_fighter_index = FIGHTER_TWO_INDEX
@@ -102,10 +118,6 @@ def add_fight(
 
         fighter_elos[current_fighter_index] = float(individual_fighter_data["elo"])
         
-        fighter_weight_classes[current_fighter_index] = get_fighter_weight_class(individual_fighter_data["record"])
-        if fighter_weight_classes[current_fighter_index] == "": weight_class_ratio = 1
-        else: weight_class_ratio = calculate_weight_class_ratio(fighter_weight_classes[current_fighter_index], weight_class)
-        
         # get fighter last fight was loss
         try:
             last_fight = list(individual_fighter_data["record"].values())[-1]
@@ -113,19 +125,21 @@ def add_fight(
         except IndexError:
             pass
         log_action(f"Fighter {fighter_name} last fight was loss: {fighter_last_fight_was_loss[current_fighter_index]}")
-        
-        # if both are filled in, calculate odds
-        if fighter_weight_classes[FIGHTER_ONE_INDEX] != "" and fighter_weight_classes[FIGHTER_TWO_INDEX] != "":
-            fighter_odds[current_fighter_index] = expected_odds(
-                fighter_elos[current_fighter_index], 
-                fighter_elos[other_fighter_index], 
-                fighter_last_fight_was_loss[current_fighter_index],
-                fighter_last_fight_was_loss[other_fighter_index],
-                weight_class_ratio
-            )
-            fighter_odds[other_fighter_index] = 1-fighter_odds[current_fighter_index]
 
         if not draw and not no_contest: fighter_results[current_fighter_index] = int(fighter_name == winner)
+
+    # calculate odds and put them in the list above 
+    for i, fighter_name in enumerate(fighter_names):
+        other_fighter_index = abs(i-1)
+        weight_class_ratio = calculate_weight_class_ratio(fighter_weight_classes[i], weight_class)
+        fighter_odds[i] = expected_odds(
+            fighter_elos[i], 
+            fighter_elos[other_fighter_index], 
+            fighter_last_fight_was_loss[i],
+            fighter_last_fight_was_loss[other_fighter_index],
+            weight_class_ratio,
+            prediction_factors_file=prediction_factors_file
+        )      
 
     #  calculate new elos
     new_fighter_elos = [0, 0]
@@ -134,26 +148,23 @@ def add_fight(
         if fighter_not_found: KeyError(f"Fighter {fighter_one} or {fighter_two} not found in fighter data")
         log_action(f"fighter_not_found: {fighter_not_found}")
         fighter_has_less_than_two_fights = len(fighter_data[fighter_names[i]]["record"]) < 2
-        new_fighter_elos[i] = fighter_elos[i]+elo_change(fighter_odds[i], fighter_results[i], fighter_has_less_than_two_fights)
+        new_fighter_elos[i] = fighter_elos[i]+elo_change(fighter_odds[i], fighter_results[i], fighter_has_less_than_two_fights, prediction_factors_file=prediction_factors_file)
         if no_contest: new_fighter_elos[i] = fighter_elos[i]
-        log_action(f"Fighter {fighter_names[i]} has {len(fighter_data[fighter_names[i]]['record'])} fights, so their elo change is {elo_change(fighter_odds[i], fighter_results[i], fighter_has_less_than_two_fights)}")
+        log_action(f"Fighter {fighter_names[i]} has {len(fighter_data[fighter_names[i]]['record'])} fights, so their elo change is {new_fighter_elos[i]-fighter_elos[i]}")
 
     # update elos, add fight to fighter records
-    for fighter_name in fighter_data:
-        if fighter_name != fighter_one and (fighter_name != fighter_two): continue
-        log_action(f"Updating {fighter_name}'s elo from {fighter_data[fighter_name]['elo']} to {new_fighter_elos[FIGHTER_ONE_INDEX if fighter_name == fighter_one else FIGHTER_TWO_INDEX]}")
-        index = FIGHTER_ONE_INDEX
-        if fighter_name == fighter_two: index = FIGHTER_TWO_INDEX
+    for i, fighter_name in enumerate(fighter_names):
+        log_action(f"Updating {fighter_name}'s elo from {fighter_data[fighter_name]['elo']} to {new_fighter_elos[i]}")
         # add fight to fighter's record
-        fighter_data[fighter_name]["elo"] = new_fighter_elos[index]
-        # if the date is in the fighter record, make another date called date + "i" where i is the number of times that date has been used
+        fighter_data[fighter_name]["elo"] = new_fighter_elos[i]
+        # if the date is in the fighter record, make another date called date + "j" where j is the number of times that date has been used
         if date in fighter_data[fighter_name]["record"]:
-            i = 1
-            while date+str(i) in fighter_data[fighter_name]["record"]: i += 1
-            date = date+str(i)
+            j = 1
+            while date+str(j) in fighter_data[fighter_name]["record"]: j += 1
+            date = date+str(j)
         fighter_data[fighter_name]["record"][date] = {
-            "opponent": fighter_one if fighter_name == fighter_two else fighter_two,
-            "result": fighter_results[index],
+            "opponent": fighter_names[abs(i-1)],
+            "result": fighter_results[i],
             "weight_class": weight_class,
         }
 
@@ -169,7 +180,7 @@ def get_fighter_weight_class(fighter_record: dict) -> str:
     
     Args:
         fighter_record (dict): 
-            fighter record from fighter_data.json
+            fighter record from training_fighter_data.json
 
     Returns:
         str: 
@@ -227,17 +238,9 @@ def calculate_weight_class_ratio(fighter_weight_class: str, fight_weight_class: 
     except KeyError:
         return 1
 
-def log_action(action: str) -> None: 
-    with open(ACTION_LOG, "a") as f:
-        try: 
-            f.write(action+"\n")
-        except UnicodeEncodeError:
-            f.write("UnicodeEncodeError")
-    return
-
 if __name__ == "__main__":
-    # copy fighter_data.json to test_fighter_data.json
-    with open("fighter_data.json", "r") as f:
+    # copy training_fighter_data.json to test_fighter_data.json
+    with open("training_fighter_data.json", "r") as f:
         fighter_data = json.load(f)
     with open("test_fighter_data.json", "w") as f:
         json.dump(fighter_data, f, indent=4)

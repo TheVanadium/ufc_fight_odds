@@ -7,7 +7,7 @@ TRAINING_DATA_FILES = ["fight_data_pre_2023_a.json", "fight_data_pre_2023_b.json
 
 def write_training_fighter_data(
     training_data_files: list = TRAINING_DATA_FILES, 
-    fighter_data_file: str = "fighter_data.json"
+    fighter_data_file: str = "training_fighter_data.json"
 ) -> None:
     """
         Writes data from pre-2023 fight data to the fighter data file.
@@ -18,8 +18,8 @@ def write_training_fighter_data(
                 default: TRAINING_DATA_FILES
             fighter_data_file (str): 
                 the fighter data file to write to.
-                default: "fighter_data.json"
-                For format, see the `fighter_data.json` section in documentation.md
+                default: "training_fighter_data.json"
+                For format, see the `training_fighter_data.json` section in documentation.md
         Returns:
             None
     """
@@ -31,38 +31,16 @@ def write_training_fighter_data(
     except json.decoder.JSONDecodeError:
         with open (fighter_data_file, "w") as f:
             json.dump({}, f, indent=4)
+        fighter_data = {}
 
     # files are listed in reverse chronological order
     training_data_files.reverse()
-
-    with open(fighter_data_file, "r") as f:
-        fighter_data = json.load(f)
-
     for training_data_file in training_data_files:
         with open("fight-data-collector/" + training_data_file, "r") as f:
             training_data = json.load(f)
 
         # training data is in reverse chronological order, so we need to reverse it
         training_data = dict(reversed(list(training_data.items())))
-
-        # "Jul 22, 2017": {
-        #       "Fight: Chris Weidman vs Kelvin Gastelum": {
-        #       "winner": "Chris Weidman",
-        #       "loser": "Kelvin Gastelum",
-        #       "weight_class": "Middleweight",
-        #       "draw": false,
-        #       "no_contest": false,
-        #       "championship_fight": false
-        #     },
-        #       "Fight: Darren Elkins vs Dennis Bermudez": {
-        #       "winner": "Darren Elkins",
-        #       "loser": "Dennis Bermudez",
-        #       "weight_class": "Featherweight",
-        #       "draw": false,
-        #       "no_contest": false,
-        #       "championship_fight": false
-        #     },
-        #     ...
 
         for date, event_data in training_data.items():
             for fight_name, fight_data in event_data.items():
@@ -76,23 +54,6 @@ def write_training_fighter_data(
         
     with open(fighter_data_file, "w") as f:
         json.dump(fighter_data, f, indent=4)
-
-def add_event(event_data: dict, date: str, fighter_data_file):
-    """Adds all the fights of a UFC event to the fighter data file.
-    
-    Args:
-        event_data (dict): the event data to add
-        date (str): the date of the event
-        fighter_data_file (str): the fighter data file to add the event to
-    """
-    for fight_name, fight_data in event_data.items():
-        winner = unidecode(fight_data["winner"])
-        loser = unidecode(fight_data["loser"])
-        weight_class = fight_data["weight_class"]
-        draw = fight_data["draw"]
-        no_contest = fight_data["no_contest"]
-        championship_fight = fight_data["championship_fight"]
-        add_fight(winner, loser, winner, date, weight_class, draw, no_contest, championship_fight, fighter_data_file)
 
 if __name__ == "__main__":
     # create a header for the action log

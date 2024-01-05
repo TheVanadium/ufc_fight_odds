@@ -3,8 +3,8 @@ from odds_calculation_methods import expected_odds
 from fight_adder import get_fighter_weight_class, add_fight
 
 FIGHT_DATA_FILE = "fight-data-collector/fight_data_2023.json"
-FIGHTER_DATA_FILE = "fighter_data.json"
-OUTPUT_FILE = "test_predictions.json"
+FIGHTER_DATA_FILE = "training_fighter_data.json"
+OUTPUT_FILE = "predictions.json"
 
 WEIGHT_CLASSES = {
     "Women'sStrawweight": 115,
@@ -21,6 +21,8 @@ WEIGHT_CLASSES = {
     "LightHeavyweight": 205,
     "Heavyweight": 265,
 }
+
+PRINT_DEBUG: bool = False
 
 def write_fight_predictions(fight_data_file=FIGHT_DATA_FILE, output_file=OUTPUT_FILE, fighter_data_file=FIGHTER_DATA_FILE) -> None:
     # get fight and fighter data
@@ -40,8 +42,7 @@ def write_fight_predictions(fight_data_file=FIGHT_DATA_FILE, output_file=OUTPUT_
         # update fighter's records
     for date, event_data in fight_data.items():
         for fight, individual_fight_data in event_data.items(): 
-            print(fight)
-            # if fight is not "Fight: Zac Pauga vs Jordan Wright": continue
+            if PRINT_DEBUG: print(fight)
             try:
                 winner_elo = fighter_data[individual_fight_data["winner"]]["elo"]
             except KeyError:
@@ -66,7 +67,7 @@ def write_fight_predictions(fight_data_file=FIGHT_DATA_FILE, output_file=OUTPUT_
 
             from decimal import Decimal
             rounded_odds_for_winner = Decimal(round(Decimal(odds_for_winner*20)))/20
-            print(rounded_odds_for_winner)
+            if PRINT_DEBUG: print(rounded_odds_for_winner)
             rounded_odds_for_loser = 1-rounded_odds_for_winner
 
             if float(rounded_odds_for_winner) not in fight_predictions:
@@ -95,10 +96,7 @@ def write_fight_predictions(fight_data_file=FIGHT_DATA_FILE, output_file=OUTPUT_
                 no_contest=individual_fight_data["no_contest"],
                 championship_fight=individual_fight_data["championship_fight"],
                 fighter_data=fighter_data
-            )
-
-    with open(fighter_data_file, "w") as f:
-        json.dump(fighter_data, f)    
+            ) 
 
     with open(output_file, "w") as f:
         json.dump(fight_predictions, f)
@@ -114,7 +112,7 @@ def get_weight_ratio(fighter_one: str, fighter_two: str, bout_weight_class: str,
             fighter_two: name of second fighter
             bout_weight_class: string containing the weight class of the bout
             fighter_data: dictionary containing fighter data
-                (see documentation.md's description of fighter_data.json for format)
+                (see documentation.md's description of training_fighter_data.json for format)
 
         Returns:
             The ratio of the weight classes of the two fighters.
@@ -148,7 +146,6 @@ def get_weight_ratio(fighter_one: str, fighter_two: str, bout_weight_class: str,
     
     return WEIGHT_CLASSES[fighter_one_weight_class] / WEIGHT_CLASSES[fighter_two_weight_class]
 
-# basic function that reads prediction file, spits out result by adding all wins and losses in each key and dividing by total number of fights, spitting out key-value pairs of odds and win percentage
 def get_win_percentage(fight_predictions_file=OUTPUT_FILE) -> dict:
     """
         Computes the win percentage of each fighter based on the fight predictions in a file.
@@ -219,16 +216,22 @@ def brier_skill_score(fight_predictions_and_results: dict) -> float:
     return brier_skill_score
 
 if __name__ == "__main__":
-    # write to test file that is copied from fighter_data.json
-    # this way, we can test the fight prediction generator without messing up the actual fighter data
-    with open(FIGHTER_DATA_FILE) as f:
-        fighter_data = json.load(f)
-    with open("test_fighter_data.json", "w") as f:
-        json.dump(fighter_data, f)
-    write_fight_predictions(fighter_data_file="test_fighter_data.json")
-    # print (get_win_percentage())
-    # write win percentage to file
-    with open("win_percentage.json", "w") as f:
-        json.dump(get_win_percentage(), f)
-    print (brier_skill_score(get_win_percentage()))
-    print (get_standard_deviation())
+    ### TEST CODE ###
+    # # write to test file that is copied from training_fighter_data.json
+    # # this way, we can test the fight prediction generator without messing up the actual fighter data
+    # with open(FIGHTER_DATA_FILE) as f:
+    #     fighter_data = json.load(f)
+    # with open("test_fighter_data.json", "w") as f:
+    #     json.dump(fighter_data, f)
+    # write_fight_predictions(fighter_data_file="test_fighter_data.json", output_file="test_predictions.json")
+    # # write win percentage to file
+    # with open("win_percentage.json", "w") as f:
+    #     json.dump(get_win_percentage(), f)
+
+    ### EXECUTION CODE ###
+    # Note: Ensure test_fighter_data.json is a copy of training_fighter_data.json before running this code
+    write_fight_predictions()
+
+    if PRINT_DEBUG: 
+        print (brier_skill_score(get_win_percentage()))
+        print (get_standard_deviation())
