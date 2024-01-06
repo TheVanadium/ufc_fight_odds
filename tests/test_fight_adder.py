@@ -147,6 +147,7 @@ class TestFightAdder(unittest.TestCase):
             fighter_data=training_fighter_data,
             prediction_factors_file=PREDICTION_FACTORS_FILE
         )
+        print (training_fighter_data["Fake Fighter 1"]["elo"])
         self.assertTrue(training_fighter_data["Fake Fighter 1"]["elo"] == correct_winner_elo)
 
     def test_two_new_fighters_elo_updated_loser(self):
@@ -172,6 +173,7 @@ class TestFightAdder(unittest.TestCase):
             fighter_data=training_fighter_data,
             prediction_factors_file=PREDICTION_FACTORS_FILE
         )
+        print (training_fighter_data["Fake Fighter 2"]["elo"])
         self.assertTrue(training_fighter_data["Fake Fighter 2"]["elo"] == correct_loser_elo)
 
 if __name__ == '__main__':
