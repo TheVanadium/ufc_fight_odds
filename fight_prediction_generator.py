@@ -22,7 +22,7 @@ WEIGHT_CLASSES = {
     "Heavyweight": 265,
 }
 
-PRINT_DEBUG: bool = False
+PRINT_DEBUG: bool = True
 
 def write_fight_predictions(fight_data_file=FIGHT_DATA_FILE, output_file=OUTPUT_FILE, fighter_data_file=FIGHTER_DATA_FILE) -> None:
     # get fight and fighter data
@@ -215,6 +215,22 @@ def brier_skill_score(fight_predictions_and_results: dict) -> float:
 
     return brier_skill_score
 
+def evaluate_accuracy(brier_skill_score: float, standard_deviation: float) -> float:
+    """
+        Computes the accuracy of a set of fight predictions.
+        
+        Args:
+            brier_skill_score: the Brier skill score of the fight predictions
+            standard_deviation: the standard deviation of the win percentages of each fighter
+
+        Returns:
+            The accuracy of the fight predictions.
+    """
+    brier_skill_score_weight = 0.4*(1-(brier_skill_score**0.5))
+    standard_deviation_weight = 0.6*(1-(standard_deviation**0.5))
+
+    return brier_skill_score_weight + standard_deviation_weight
+
 if __name__ == "__main__":
     ### TEST CODE ###
     # # write to test file that is copied from training_fighter_data.json
@@ -230,8 +246,9 @@ if __name__ == "__main__":
 
     ### EXECUTION CODE ###
     # Note: Ensure test_fighter_data.json is a copy of training_fighter_data.json before running this code
-    write_fight_predictions()
+    # write_fight_predictions()
 
     if PRINT_DEBUG: 
         print (brier_skill_score(get_win_percentage()))
         print (get_standard_deviation())
+        print (evaluate_accuracy(brier_skill_score(get_win_percentage()), get_standard_deviation()))
