@@ -16,6 +16,15 @@ Output: A prediction of the winner and the probability of that fighter winning
 3. Train a model to predict the winner of a fight based on the fighters' previous fights
 4. Create a web app to display the predictions
 
+### Related Projects
+What makes this project distinct is that it uses an elo system based on fighters' records to predict the outcome of fights, as well as percentage odds for the result. This system ignores fighting statistics such as striking and takedown accuracy. This project will try to optimize the odds calculation using brier scores and standard deviation.
+
+#### "Ranking MMA fighters using the Elo rating system" by Leonardo Pinheiro: https://medium.com/geekculture/ranking-mma-fighters-using-the-elo-rating-system-2704adbf0c94
+This project used an elo ranking system for fighters, but did not use it to predict fights. It also does not try optimizing to find the ideal k-factor for fight elo.
+
+#### "UFC MMA Predictor" by Jason Chan: https://github.com/jasonchanhku/UFC-MMA-Predictor
+This project predicts odds for UFC fights based on fighter's fighting statistics and betting odds. This project will attempt to predict odds based on previous fights, not betting odds or statistics.
+
 ## Admin Scripts
 Scripts that are used to manage the data for the app.
 
