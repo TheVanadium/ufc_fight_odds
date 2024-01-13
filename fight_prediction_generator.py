@@ -24,7 +24,7 @@ WEIGHT_CLASSES = {
 
 PRINT_DEBUG: bool = True
 
-def write_fight_predictions(fight_data_file=FIGHT_DATA_FILE, output_file=OUTPUT_FILE, fighter_data_file=FIGHTER_DATA_FILE) -> None:
+def write_fight_predictions(fight_data_file=FIGHT_DATA_FILE, output_file=OUTPUT_FILE, fighter_data_file=FIGHTER_DATA_FILE, prediction_factors_file="prediction_factors.json") -> None:
     # get fight and fighter data
     # create dictionary to store fight predictions
     with open(fight_data_file) as f:
@@ -60,7 +60,8 @@ def write_fight_predictions(fight_data_file=FIGHT_DATA_FILE, output_file=OUTPUT_
             odds_for_winner = expected_odds(
                 winner_elo, 
                 loser_elo, 
-                target_opponent_weight_ratio=winner_weight_ratio
+                target_opponent_weight_ratio=winner_weight_ratio,
+                prediction_factors_file=prediction_factors_file
             )
             # round odds to the nearest 0.05, then append result to fight_predictions[odds]
             # also do the inverse, as the odds of the loser winning are the inverse of the odds of the winner winning
@@ -232,7 +233,7 @@ def evaluate_accuracy(brier_skill_score: float, standard_deviation: float) -> fl
     return brier_skill_score_weight + standard_deviation_weight
 
 if __name__ == "__main__":
-    ### TEST CODE ###
+    # ## TEST CODE ###
     # # write to test file that is copied from training_fighter_data.json
     # # this way, we can test the fight prediction generator without messing up the actual fighter data
     # with open(FIGHTER_DATA_FILE) as f:
