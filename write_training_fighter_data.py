@@ -7,7 +7,8 @@ TRAINING_DATA_FILES = ["fight_data_pre_2023_a.json", "fight_data_pre_2023_b.json
 
 def write_training_fighter_data(
     training_data_files: list = TRAINING_DATA_FILES, 
-    fighter_data_file: str = "training_fighter_data.json"
+    fighter_data_file: str = "training_fighter_data.json",
+    prediction_factors_file: str = "prediction_factors.json"
 ) -> None:
     """
         Writes data from pre-2023 fight data to the fighter data file.
@@ -50,7 +51,7 @@ def write_training_fighter_data(
                 draw = fight_data["draw"]
                 no_contest = fight_data["no_contest"]
                 championship_fight = fight_data["championship_fight"]
-                add_fight(winner, loser, winner, date, weight_class, draw, no_contest, championship_fight, fighter_data)
+                add_fight(winner, loser, winner, date, weight_class, draw, no_contest, championship_fight, fighter_data, prediction_factors_file)
         
     with open(fighter_data_file, "w") as f:
         json.dump(fighter_data, f, indent=4)
