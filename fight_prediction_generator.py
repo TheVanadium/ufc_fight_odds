@@ -87,9 +87,9 @@ def write_fight_predictions(fight_data_file=FIGHT_DATA_FILE, output_file=OUTPUT_
 
             # update fighter records
             add_fight(
-                fighter_one=individual_fight_data["winner"],
-                fighter_two=individual_fight_data["loser"],
-                winner=individual_fight_data["winner"],
+                fighter_one_name=individual_fight_data["winner"],
+                fighter_two_name=individual_fight_data["loser"],
+                winner_name=individual_fight_data["winner"],
                 date=date,
                 weight_class=individual_fight_data["weight_class"],
                 draw=individual_fight_data["draw"],
