@@ -10,7 +10,7 @@ Output: A prediction of the winner and the probability of that fighter winning
 
 ### Architecture
 
-1. Scraped Wikipedia for fight data via ```additional_fight_scraper.py```
+1. Scraped Wikipedia for fight data via ```fight_scraper.py```
 2. Sorted fight data into fighter data via ```write_training_fighter_data.py```<br>
 <i>The following is in progress:</i>
 3. Train a model to predict the winner of a fight based on the fighters' previous fights
@@ -30,7 +30,7 @@ Scripts that are used to manage the data for the app.
 
 `fight-data-collector/` <br>
 Contains collection scripts and data for UFC fights from UFC 1 until UFC 294
-- `additional_fight_scraper.py` Scrapes Wikipedia for fight data and writes it to 4 json files (for speed), below:
+- `fight_scraper.py` Scrapes Wikipedia for fight data and writes it to 4 json files (for speed), below:
 - `fight_data_pre_2023-a.json`, `fight_data_pre_2023-b.json`, `fight_data_pre_2023-c.json`: Fight data for fights before 2023 in sorted in reverse chronological order.
 - `fight_data_2023.json`: Fight data for fights in 2023 in sorted in reverse chronological order, with the latest fight being October 21, 2023 (because that was the most recent at the time the data was scraped).
 
